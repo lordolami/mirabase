@@ -57,4 +57,4 @@ Create a local review package only. Public repositories, releases, package regis
 
 ## Cloud is a separate launch
 
-The [managed cloud gates](../cloud/acceptance.md) add native commit/replay, quorum durability, fencing, failover, placement, capacity/economics, migration, isolation and billing. Passing standalone checks does not launch that platform.
+The [managed cloud gates](../roadmap/platform/acceptance.md) add native commit/replay, quorum durability, fencing, failover, placement, capacity/economics, migration, isolation and billing. Passing standalone checks does not launch that platform.

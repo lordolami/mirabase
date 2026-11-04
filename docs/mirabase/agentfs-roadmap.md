@@ -1,6 +1,6 @@
 # AgentFS integration build design
 
-**Current release authority:** [current implementation inventory](../current-product.md), [user documentation](../user/index.md) and [launch status](../launch/status.md). Initial v0.1/roadmap delivery labels below preserve planning contracts; they do not establish today's implementation or permit deleting subsequently integrated features. [Managed cloud](../cloud/README.md) has separate design and gates.
+**Current release authority:** [current implementation inventory](../current-product.md), [user documentation](../user/index.md) and [launch status](../launch/status.md). Initial v0.1/roadmap delivery labels below preserve planning contracts; they do not establish today's implementation or permit deleting subsequently integrated features. [Open-source platform roadmap](../roadmap/platform/README.md) has separate design and gates.
 
 **Delivery: roadmap R9.** No AgentFS SDK, workspace API, mount helper or dashboard feature belongs to [v0.1](v0.1-build.md). This is the full integration to build later, including its adapters, storage, authority, failures and acceptance. It adds agent workspace storage to MiraBase while preserving ordinary collections/files/auth and the one-process server model.
 

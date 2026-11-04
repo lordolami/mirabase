@@ -81,12 +81,12 @@ func main() {
 			fatal(err)
 		}
 		sum := sha256.Sum256(artifact)
-		manifest := map[string]any{"version": *version, "target": *targetOS + "/" + *targetArch, "engineRevision": "b0e1b8fde8eff66ef9843fdd1139fa3305cb16dd", "nativeSHA256": pin, "executableSHA256": hex.EncodeToString(sum[:]), "executableBytes": len(artifact), "toolchain": runtime.Version(), "releaseQualified": false, "qualification": "Build completed; execute target tests, security/fault acceptance, signatures and launch gates separately."}
+		manifest := map[string]any{"formatVersion": 2, "version": *version, "target": *targetOS + "/" + *targetArch, "engineRevision": "b0e1b8fde8eff66ef9843fdd1139fa3305cb16dd", "nativeSHA256": pin, "executableSHA256": hex.EncodeToString(sum[:]), "executableBytes": len(artifact), "toolchain": runtime.Version(), "buildStatus": "succeeded", "signatureStatus": "unsigned", "releaseQualified": false, "acceptanceScope": "Build and digest facts only. The existing full qualification verdict remains separate from distribution/publication; see release/qualification.json and docs/current-product.md."}
 		body, _ := json.MarshalIndent(manifest, "", "  ")
 		if err := os.WriteFile(*output+".manifest.json", append(body, '\n'), 0644); err != nil {
 			fatal(err)
 		}
-		fmt.Println("Built", *output, "(qualification pending)")
+		fmt.Println("Built", *output)
 	}
 }
 

@@ -1,6 +1,6 @@
 # Pinned source reference
 
-**Current release authority:** [current implementation inventory](../current-product.md), [user documentation](../user/index.md) and [launch status](../launch/status.md). Initial v0.1/roadmap delivery labels below preserve planning contracts; they do not establish today's implementation or permit deleting subsequently integrated features. [Managed cloud](../cloud/README.md) has separate design and gates.
+**Current release authority:** [current implementation inventory](../current-product.md), [user documentation](../user/index.md) and [launch status](../launch/status.md). Initial v0.1/roadmap delivery labels below preserve planning contracts; they do not establish today's implementation or permit deleting subsequently integrated features. [Open-source platform roadmap](../roadmap/platform/README.md) has separate design and gates.
 
 **Delivery: source baseline.** Apply the [v0.1 allocation](v0.1-build.md) to current features; [roadmap](roadsmap.md) owns later integrations. Source facts alone do not qualify runtime behavior.
 

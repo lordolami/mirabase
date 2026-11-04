@@ -2,7 +2,7 @@
 
 This tutorial takes a fresh checkout through build, startup, dashboard setup, ordinary-member login, record creation and a second-account isolation check. It uses the included [HTML/JavaScript frontend](../../examples/quickstart/README.md) and normal inherited record API. No frontend package installation is needed.
 
-**Development candidate:** no signed, qualified binary release is published. Check [launch status](../launch/status.md). This example uses shared storage with per-record owner rules; a physical DB per user/tenant/agent is a separate [storage layout](databases.md).
+**Windows package available:** [download and run](downloads.md) without building from source, then continue here from operator setup. To serve this example from the extracted ZIP, run `.\mirabase.exe serve --http=127.0.0.1:8090 --publicDir=./examples/quickstart`. Source-building steps below are optional for package users. Check [launch status](../launch/status.md) for exact evidence and limitations. This example uses shared storage with per-record owner rules; a physical DB per user/tenant/agent is a separate [storage layout](databases.md).
 
 ## 1. Install and check tools
 
@@ -31,7 +31,7 @@ go run ./tools/release --version dev
 
 Stay at this repository root for the remaining commands. The public checkout already contains `go.mod`, `tools`, `docs` and `examples`; do not enter another `server` directory. A first Go build needs network access for module dependencies. Upgrade an old Go toolchain rather than lowering `go.mod`.
 
-Expected output includes `Built dist/... (qualification pending)`. The executable and adjacent `.manifest.json` are under `dist`:
+Expected output includes `Built dist/...`. The executable and adjacent `.manifest.json` are under `dist`; the manifest records build facts separately from full qualification:
 
 - Windows: `mirabase-windows-amd64.exe`.
 - Linux: `mirabase-linux-amd64`.

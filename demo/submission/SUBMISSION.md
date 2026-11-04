@@ -87,9 +87,9 @@ See [current implementation](../../docs/current-product.md), [launch status](../
 
 1. Complete collection-policy parity and outstanding safety dependencies; qualify platforms, SDKs, resource behavior, recovery and signed delivery.
 2. Complete ordinary-client offline bootstrap/native sync and full upstream AgentFS integration. Investigate Wasm/wazero packaging against actual filesystem, feature, performance and lifetime requirements.
-3. Develop the future open-source platform and managed-deployment capabilities: placement, replication, routing, fenced failover, balancing, cold-database handling, backups/recovery, project console and metering. Keep the application/private-database model while infrastructure changes underneath it. This is planned, not deployed. One hot database's write sharding and cross-database distributed transactions are not implied.
+3. Develop the future open-source platform capabilities: placement, replication, routing, fenced failover, balancing, cold-database handling, backups/recovery, project console and metering. Keep the application/private-database model while infrastructure changes underneath it. This is planned, not deployed. One hot database's write sharding and cross-database distributed transactions are not implied.
 
-Self-hosted MiraBase remains useful without a managed-cloud account. Distribution and managed-deployment tooling remain part of the future open-source roadmap; no current hosted service or commercial offering is implied.
+Self-hosted MiraBase remains useful without a managed-cloud account. Distribution and operator-deployment tooling remain part of the future open-source roadmap; no current hosted service or commercial offering is implied.
 
 ## Why this matters
 

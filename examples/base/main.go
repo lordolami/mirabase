@@ -102,11 +102,11 @@ func main() {
 
 	// load jsvm (mb_hooks and mb_migrations)
 	jsvm.MustRegister(app, jsvm.Config{
-		MigrationsDir:  migrationsDir,
-		HooksDir:       hooksDir,
-		HooksWatch:     hooksWatch,
-		HooksPoolSize:  hooksPool,
-		LegacyPbHooks:  legacyPbHooks,
+		MigrationsDir: migrationsDir,
+		HooksDir:      hooksDir,
+		HooksWatch:    hooksWatch,
+		HooksPoolSize: hooksPool,
+		LegacyPbHooks: legacyPbHooks,
 	})
 
 	// migrate command (with js templates)
@@ -144,9 +144,15 @@ func main() {
 
 // the default mb_public dir location is relative to the executable
 func defaultPublicDir() string {
+	publicDir := filepath.Join(os.Args[0], "../mb_public")
+	// A distributed archive may itself be extracted under the OS temp/cache
+	// directory. Its bundled assets take priority over the loose go-run hint.
+	if info, err := os.Stat(publicDir); err == nil && info.IsDir() {
+		return publicDir
+	}
 	if osutils.IsProbablyGoRun() {
 		return "./mb_public"
 	}
 
-	return filepath.Join(os.Args[0], "../mb_public")
+	return publicDir
 }

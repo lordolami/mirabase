@@ -1,6 +1,6 @@
 # MiraBase roadmap
 
-**Current release authority:** [current implementation inventory](../current-product.md), [user documentation](../user/index.md) and [launch status](../launch/status.md). Initial v0.1/roadmap delivery labels below preserve planning contracts; they do not establish today's implementation or permit deleting subsequently integrated features. [Managed cloud](../cloud/README.md) has separate design and gates.
+**Current release authority:** [current implementation inventory](../current-product.md), [user documentation](../user/index.md) and [launch status](../launch/status.md). Initial v0.1/roadmap delivery labels below preserve planning contracts; they do not establish today's implementation or permit deleting subsequently integrated features. [Open-source platform roadmap](../roadmap/platform/README.md) has separate design and gates.
 
 [v0.1 build contract](v0.1-build.md) defines the current release. This roadmap preserves the rest of the complete design and adds the AgentFS integration. A roadmap entry is planned work, with its own implementation and qualification gates. It is never recorded as shipped because a native symbol, configuration key, schema or document exists.
 

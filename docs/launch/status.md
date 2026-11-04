@@ -44,10 +44,10 @@ Earlier watcher/OAuth full-run failures pass in the latest complete Windows pack
 
 ## Artifacts and video
 
-The current Windows executable and native digest pins are recorded in its local build manifest and the qualification report. Local review packages remain unsigned and unpublished. The Linux archive is an older baseline, explicitly distinguished above.
+The current Windows executable and native digest pins are recorded in its build manifest and the qualification report. The standalone Windows download, checksums and scoped package checks have their own [distribution record](../../release/distribution.json) and [download guide](../user/downloads.md). The executable remains unsigned; publishing an artifact does not change the production-assurance verdict above. The Linux archive is an older baseline, explicitly distinguished above.
 
 The three-minute demo contains real application footage, local narration, burned-in captions, a separate subtitle file, chapter metadata and an explicitly planned roadmap. The coverage manifest describes each scene. A short feature overview does not certify every operation, platform, security boundary or recovery path.
 
-[Current inventory](../current-product.md) · [Requirement ledger](../../release/implementation-ledger.json) · [Launch procedure](README.md) · [Managed cloud design](../cloud/README.md)
+[Current inventory](../current-product.md) · [Requirement ledger](../../release/implementation-ledger.json) · [Launch procedure](README.md) · [Open-source platform roadmap](../roadmap/platform/README.md)
 
-Private raw logs and recording material are retained in the workspace `_build` directory. Managed cloud remains design work; no distributed service is claimed as deployed.
+Private raw logs and recording material are retained in the workspace `_build` directory. There is no MiraBase cloud or managed hosting product. Future distribution/operations remain open-source roadmap work.

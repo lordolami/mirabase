@@ -4,5 +4,6 @@
 # exclude from the ignore filter
 !.gitignore
 !main.go
+!main_test.go
 !dbconnect.go
 !dbconnect_turso.go

@@ -1,0 +1,43 @@
+{
+  "formatVersion": 1,
+  "releaseId": "standalone-2026-11-04",
+  "publicationStatus": "artifacts-verified",
+  "distributionScope": "Windows x64 standalone ZIP and JS/TS SDK tarball",
+  "releasePage": "https://github.com/lordolami/mirabase/releases/tag/standalone-2026-11-04",
+  "artifacts": [
+    {
+      "name": "mirabase-windows-amd64.zip",
+      "bytes": 24541168,
+      "sha256": "d8e9a9d47f3e178e1e208096587d19c267ae0c2981316fa8c8412350a70020b2"
+    },
+    {
+      "name": "mirabase-sdk-0.1.0.tgz",
+      "bytes": 4656,
+      "sha256": "1a314ace7799defbd5915bfa04d15976e6fb5ea9a6b3cf028328025612987cbe"
+    },
+    {
+      "name": "standalone-checks.json",
+      "bytes": 2735,
+      "sha256": "ba82f4a63e00f1a023368460171902ab355a605ab98e4f4b051b1b4b47c327e1"
+    }
+  ],
+  "checks": {
+    "build": "passed",
+    "zipCRCAndFileDigests": "passed",
+    "extractedPackageOutsideSource": "passed",
+    "memberRulesAndRestart": "passed",
+    "artifactWorkspaceSmoke": "passed",
+    "sdkTransport": "4 passed; zero failed/skipped",
+    "bundledAssetsUnderTemp": "passed after startup fix",
+    "sdkPackagedFiles": "match tested SDK files"
+  },
+  "runtimeRequirements": [
+    "Windows x64; runtime checked on Windows 11",
+    "Microsoft Visual C++ v14 x64 runtime"
+  ],
+  "signatureStatus": "unsigned",
+  "knownLimitations": "../docs/current-product.md",
+  "roadmap": "../ROADMAP.md",
+  "qualificationEvidence": "qualification.json",
+  "qualificationInterpretation": "Existing full qualification evidence is preserved unchanged; this file records separate artifact/publication facts, not a replacement verdict."
+}

@@ -52,7 +52,7 @@ For the complete user-facing inventory, read the [42-family feature catalog](fea
 - Native page encryption, page-key rotation and custom codecs are refused by the current create/rotation handlers. Settings protection and outbox-envelope encryption are separate; route/config presence does not implement encrypted database pages.
 - The additive schema planner refuses `type.define`, `type.drop`, `view.define` and `sequence.define`. Inherited read-only view collections are a different path. Further native types need complete collection/UI/SDK integration.
 - Only Windows amd64 and Linux amd64 payload files are present; other required targets have no embedded payload. Linux runtime qualification is separate from its file existing.
-- Future distribution and managed-deployment capabilities are [open-source roadmap work](cloud/README.md), not implemented by local route registration.
+- Future distribution and operations capabilities are [open-source roadmap work](roadmap/platform/README.md), not implemented by local route registration.
 
 ## Contracts and verification
 

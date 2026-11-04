@@ -4,6 +4,10 @@
 
 **Empowering the next generation of indie hackers and AI agents with zero-infra multi-tenancy.**
 
+**[Download Windows x64 ZIP](https://github.com/lordolami/mirabase/releases/download/standalone-2026-11-04/mirabase-windows-amd64.zip)** · [Release notes, SDK and source](https://github.com/lordolami/mirabase/releases/tag/standalone-2026-11-04) · [Download/start guide](docs/user/downloads.md)
+
+Extract the whole ZIP, then run `start-mirabase.cmd` or `.\mirabase.exe serve --http=127.0.0.1:8090`. The dashboard and native payload are included. Running it needs no Go/Rust/Node; the Windows engine requires the [Microsoft VC++ x64 runtime](docs/user/downloads.md).
+
 MiraBase extends the PocketBase backend and dashboard with the Turso database engine. Build your frontend against collections, authentication, rules, files and realtime; optionally give each customer, workspace, user or agent its own database in one server process.
 
 The goal is to give a solo developer PocketBase's familiar backend experience with Turso's multi-database capabilities, so they can build a SaaS or multi-agent application without assembling a separate backend deployment for every tenant. Here, **zero-infra multi-tenancy** means no additional process/container/service to provision for each database. You still deploy and operate a server, manage persistent storage and configure access policies.
@@ -43,7 +47,7 @@ A user can belong to multiple tenants. A tenant database is a storage boundary i
 
 ## Start your backend
 
-The public repository is a development source distribution; there is no signed, qualified binary release yet. Install **Git and Go 1.27.x**, then build from source. The included dashboard and amd64 native payloads mean Rust/Node/npm are not needed for this first build on a compatible target. Rebuilding those components needs their separate toolchains.
+For the ready-to-run Windows package, follow [download and start](docs/user/downloads.md). The executable is unsigned and the current qualification/endpoint limits remain documented. To build from source instead, install **Git and Go 1.27.x**. The included dashboard and amd64 native payloads mean Rust/Node/npm are not needed for that first build on a compatible target. Rebuilding those components needs their separate toolchains.
 
 ```sh
 git clone https://github.com/lordolami/mirabase.git
@@ -242,11 +246,11 @@ Fresh paths are `mb_data`, `mb_hooks`, `mb_migrations` and `mb_public`. Database
 
 ## Future open-source platform roadmap
 
-The current project is the self-hosted open-source backend. Future open-source platform work covers placement, replication, routing, failover, balancing, cold databases, backups/PITR, a project console, quotas, resource metering and optional operator billing integrations. Preserve the frontend/API and private-database model as those capabilities develop.
+**There is no MiraBase cloud or managed hosting offering.** The current project is the self-hosted open-source backend. Future open-source platform work covers placement, replication, routing, failover, balancing, cold databases, backups/PITR, an operator console, quotas and resource accounting. Preserve the frontend/API and private-database model as those capabilities develop.
 
-[Open-source roadmap](ROADMAP.md) · [Future platform scope](docs/cloud/README.md) · [Distributed design](docs/cloud/distributed-architecture.md) · [Operator journey](docs/cloud/customer-journey.md) · [Resources/economics](docs/cloud/operations-and-economics.md) · [Future acceptance](docs/cloud/acceptance.md)
+[Open-source roadmap](ROADMAP.md) · [Future platform scope](docs/roadmap/platform/README.md) · [Distributed design](docs/roadmap/platform/distributed-architecture.md) · [Operator journey](docs/roadmap/platform/customer-journey.md) · [Resources/economics](docs/roadmap/platform/operations-and-economics.md) · [Future acceptance](docs/roadmap/platform/acceptance.md)
 
-These remain roadmap designs, not a launched managed service or current distributed runtime. They add no required cloud account or distributed cluster to today's standalone. The existing `docs/cloud` paths retain the detailed proposals and their acceptance obligations; the roadmap is part of the open-source project. No hosted-service availability, prices or SLA is promised.
+These are open-source roadmap designs, not current distributed runtime features. They add no vendor account, subscription or distributed-cluster requirement to today's standalone. Details live in `docs/roadmap/platform`; no vendor-operated service is part of the product direction.
 
 ## Build from this folder
 
@@ -265,4 +269,12 @@ Run nested loader-module, SDK, UI, security/fault and platform checks too. [Laun
 
 [Detailed contracts](docs/mirabase/README.md) retain wire/storage/field definitions and decisions. Their initial v0.1 allocation is not today's implementation inventory. See [roadmap](ROADMAP.md), [contributing](CONTRIBUTING.md), [security](SECURITY.md), [license](LICENSE.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
 
-Preserve PocketBase and Turso copyright/license notices. No package publication, deployment, certification or production qualification is implied by this source.
+Preserve PocketBase and Turso copyright/license notices. Downloadable artifact checks and publication are recorded separately in [distribution metadata](release/distribution.json); production-assurance evidence remains in [launch status](docs/launch/status.md).
+
+## Hackathon provenance
+
+PocketBase v0.41.1 (`f70b24e186df98df2e7ebc703f103cb94dc3ca63`) and Turso (`b0e1b8fde8eff66ef9843fdd1139fa3305cb16dd`) are pre-existing upstream inputs. PocketBase's framework, dashboard, authentication, collections, files, realtime, extension points and upstream tests are attributed to its authors. Turso's engine and the vendored driver are attributed to theirs. Licenses and notices are retained.
+
+Our contribution is MiraBase's engine integration and owned native patches, multi-database services, context and authority extensions, search, schema workflows, synchronization/live-query services, workspace helpers, adoption tooling, SDK wrappers, documentation, examples and delivery tooling. The separate [Formal Verification](https://github.com/lordolami/formal-verification) project drives pre-existing Quint; it does not claim to implement Quint itself. Implementation used 1.3-contributor; architecture documentation used Muse Wonder.
+
+The public MiraBase repository was created on November 4, 2026. Its first source commit imports a development snapshot; it is not contemporaneous incremental history for every earlier development action, and that import timestamp alone does not establish when each line was written. Subsequent commits retain their actual dates. The hackathon's contribution window begins October 26, 2026 at 12:24 PM ET; pre-existing upstream work is explicitly identified above rather than claimed as hackathon output.
