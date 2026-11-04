@@ -1,24 +1,30 @@
 {
   "formatVersion": 1,
   "releaseId": "standalone-2026-11-04",
-  "publicationStatus": "artifacts-verified",
+  "publicationStatus": "published",
   "distributionScope": "Windows x64 standalone ZIP and JS/TS SDK tarball",
   "releasePage": "https://github.com/lordolami/mirabase/releases/tag/standalone-2026-11-04",
   "artifacts": [
     {
       "name": "mirabase-windows-amd64.zip",
       "bytes": 24541168,
-      "sha256": "d8e9a9d47f3e178e1e208096587d19c267ae0c2981316fa8c8412350a70020b2"
+      "sha256": "d8e9a9d47f3e178e1e208096587d19c267ae0c2981316fa8c8412350a70020b2",
+      "githubAssetId": 710117596,
+      "downloadURL": "https://github.com/lordolami/mirabase/releases/download/standalone-2026-11-04/mirabase-windows-amd64.zip"
     },
     {
       "name": "mirabase-sdk-0.1.0.tgz",
       "bytes": 4656,
-      "sha256": "1a314ace7799defbd5915bfa04d15976e6fb5ea9a6b3cf028328025612987cbe"
+      "sha256": "1a314ace7799defbd5915bfa04d15976e6fb5ea9a6b3cf028328025612987cbe",
+      "githubAssetId": 710117609,
+      "downloadURL": "https://github.com/lordolami/mirabase/releases/download/standalone-2026-11-04/mirabase-sdk-0.1.0.tgz"
     },
     {
       "name": "standalone-checks.json",
       "bytes": 2735,
-      "sha256": "ba82f4a63e00f1a023368460171902ab355a605ab98e4f4b051b1b4b47c327e1"
+      "sha256": "ba82f4a63e00f1a023368460171902ab355a605ab98e4f4b051b1b4b47c327e1",
+      "githubAssetId": 710117606,
+      "downloadURL": "https://github.com/lordolami/mirabase/releases/download/standalone-2026-11-04/standalone-checks.json"
     }
   ],
   "checks": {
@@ -39,5 +45,8 @@
   "knownLimitations": "../docs/current-product.md",
   "roadmap": "../ROADMAP.md",
   "qualificationEvidence": "qualification.json",
-  "qualificationInterpretation": "Existing full qualification evidence is preserved unchanged; this file records separate artifact/publication facts, not a replacement verdict."
+  "qualificationInterpretation": "Existing full qualification evidence is preserved unchanged; this file records separate artifact/publication facts, not a replacement verdict.",
+  "publishedAt": "2026-11-04T16:23:02Z",
+  "githubReleaseId": 434160724,
+  "anonymousDownloadVerification": "passed; downloaded ZIP, SDK and scoped check report match local SHA-256 and byte lengths; SHA256SUMS matches"
 }
