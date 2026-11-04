@@ -16,7 +16,7 @@ MiraBase extends the PocketBase application backend and dashboard with an in-pro
 | Unavailable | The current path rejects the requested feature or the implementation is missing. |
 | Planned | Target design, not a current runtime feature. |
 
-**The release remains unqualified.** Tests, code presence and release qualification are different. Exact executions, targets and remaining blockers belong to [launch status](launch/status.md) and the [feature evidence matrix](../release/feature-qualification.json). This catalog does not replace either or give every bullet an independent acceptance verdict.
+**Testing status:** production-focused tests have been executed, with the recorded Windows results, earlier Linux baseline and focused runtime checks available in [the evidence report](launch/status.md). Specific implementation and platform/signing/fault gates remain open; the [feature matrix](../release/feature-qualification.json) preserves those boundaries. This catalog describes individual capabilities rather than assigning a blanket acceptance verdict to every feature. Future open-source platform work is tracked separately from current standalone testing.
 
 ## Navigation
 
