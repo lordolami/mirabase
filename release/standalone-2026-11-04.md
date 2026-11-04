@@ -1,6 +1,8 @@
-# MiraBase standalone — 2026-11-04
+# MiraBase v0.1
 
 **One backend. A private database for every user, tenant, and agent.**
+
+This is the **v0.1** release. The source tag is `v0.1`; the existing artifact retains its internal build identifier `standalone-2026.11.04`. Dated download URLs are preserved so existing links continue to work.
 
 **Standalone release.** This publishes the existing built Windows package and SDK as the standard release. The executable is unsigned, and the implementation/qualification limitations below remain. The in-progress security patch is not included in these artifacts; the existing files and checksums are preserved.
 
