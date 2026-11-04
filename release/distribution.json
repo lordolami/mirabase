@@ -49,8 +49,9 @@
   "publishedAt": "2026-11-04T16:23:02Z",
   "githubReleaseId": 434160724,
   "anonymousDownloadVerification": "passed; downloaded ZIP, SDK and scoped check report match local SHA-256 and byte lengths; SHA256SUMS matches",
-  "releaseChannel": "release-candidate",
-  "isPrerelease": true,
+  "releaseChannel": "release",
+  "isPrerelease": false,
   "productionRelease": false,
-  "signingIdentityStatus": "No usable code-signing certificate found locally; no repository signing secrets configured; owner confirms no signing identity yet."
+  "signingIdentityStatus": "No usable code-signing certificate found locally; no repository signing secrets configured; owner confirms no signing identity yet.",
+  "publicationInterpretation": "Maintainer requested standard/latest publication of the existing built package without further checks. Existing production qualification and known-limit records remain unchanged. In-progress security changes are not included in the published artifacts."
 }

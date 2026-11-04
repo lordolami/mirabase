@@ -2,7 +2,7 @@
 
 ## Windows x64 standalone
 
-The current download is a **release candidate**. It is unsigned and not production-qualified; see the [release notes and current limits](https://github.com/lordolami/mirabase/releases/tag/standalone-2026-11-04). The package checks below establish specific behavior, not completion of the outstanding production gates.
+The current download is the **standalone release**. It is unsigned; see the [release notes and current production limitations](https://github.com/lordolami/mirabase/releases/tag/standalone-2026-11-04). The package checks below establish specific behavior, not completion of the outstanding production gates.
 
 [Download the Windows x64 ZIP](https://github.com/lordolami/mirabase/releases/download/standalone-2026-11-04/mirabase-windows-amd64.zip) · [Release notes and all assets](https://github.com/lordolami/mirabase/releases/tag/standalone-2026-11-04) · [SHA256SUMS](https://github.com/lordolami/mirabase/releases/download/standalone-2026-11-04/SHA256SUMS)
 

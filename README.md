@@ -188,7 +188,7 @@ Full offline/native sync, full AgentFS, independent application isolation, remai
 
 ## Download and start
 
-The current Windows download is an **unsigned release candidate**, not a production-qualified release. Its tested behavior and remaining gates are recorded in [launch status](docs/launch/status.md) and [release notes](release/standalone-2026-11-04.md).
+The current Windows download is the **standalone release**. It is unsigned; its tested behavior and remaining production limitations are recorded in [launch status](docs/launch/status.md) and [release notes](release/standalone-2026-11-04.md).
 
 **[Download Windows x64 ZIP](https://github.com/lordolami/mirabase/releases/download/standalone-2026-11-04/mirabase-windows-amd64.zip)** · [Release notes, SDK and source](https://github.com/lordolami/mirabase/releases/tag/standalone-2026-11-04) · [Download/start guide](docs/user/downloads.md)
 

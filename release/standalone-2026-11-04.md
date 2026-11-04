@@ -2,7 +2,7 @@
 
 **One backend. A private database for every user, tenant, and agent.**
 
-**Release candidate, not a production-qualified release.** The current Windows executable is unsigned, and the implementation/qualification obligations below remain open. The previous stable/latest classification was incorrect; the existing artifacts and their checksums are preserved.
+**Standalone release.** This publishes the existing built Windows package and SDK as the standard release. The executable is unsigned, and the implementation/qualification limitations below remain. The in-progress security patch is not included in these artifacts; the existing files and checksums are preserved.
 
 [Full hackathon build account](https://github.com/lordolami/mirabase/blob/main/docs/hackathon-build.md) · [Formal Verification companion](https://github.com/lordolami/formal-verification) · [Three-minute demo](https://youtu.be/PVRYAADs-EQ)
 
