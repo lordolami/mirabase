@@ -1,0 +1,14 @@
+{
+  "retrievedOn": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://dev.meta.ai/events/global-hackathon",
+      "use": "Event context and startup/indie descriptions; no unverified scoring percentages claimed."
+    },
+    {
+      "url": "https://api.github.com/repos/lordolami/formal-verification/readme",
+      "use": "Primary repository README inspected for companion capabilities. No whole-MiraBase proof inferred."
+    }
+  ],
+  "aiBuildProvenance": "Muse Spark 1.3 usage supplied by the project author."
+}

@@ -1,0 +1,15 @@
+diff --git a/core/vdbe/execute.rs b/core/vdbe/execute.rs
+index 39c43f3..82ed805 100644
+--- a/core/vdbe/execute.rs
++++ b/core/vdbe/execute.rs
+@@ -20570,6 +20570,10 @@ fn op_vacuum_into_inner(program: &Program, state: &mut ProgramState, insn: &Insn
+                 let source_db = program.connection.get_source_database(source_db_id);
+                 program.connection.execute("BEGIN DEFERRED")?;
+                 state.auto_txn_cleanup = TxnCleanup::RollbackTxn;
++                // The export owns a read snapshot. Rebuild this connection's
++                // schema within that snapshot before preparing helper SQL;
++                // another connection may have committed DDL since it opened.
++                program.connection.reparse_schema()?;
+                 let page_size: u32 = extract_pragma_int(
+                     &program
+                         .connection

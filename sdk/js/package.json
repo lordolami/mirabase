@@ -1,0 +1,33 @@
+{
+  "name": "@mirabase/sdk",
+  "version": "0.1.0",
+  "description": "MiraBase JavaScript/TypeScript SDK: immutable context-aware client views over the inherited collection API and the /api/mirabase/v1 additive services.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "keywords": [
+    "mirabase",
+    "backend",
+    "sdk"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm run build",
+    "test": "npm run build && node --test test/transport.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}

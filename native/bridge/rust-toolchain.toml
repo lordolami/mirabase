@@ -1,0 +1,5 @@
+# Toolchain pin for the MiraBase native bridge payload.
+# Mirrors the pinned engine's toolchain (turso/rust-toolchain.toml, channel 1.88)
+# so shared dependency versions compile identically; recorded in build manifests.
+[toolchain]
+channel = "1.88"

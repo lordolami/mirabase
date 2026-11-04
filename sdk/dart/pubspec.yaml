@@ -1,0 +1,8 @@
+name: mirabase
+description: "MiraBase Dart SDK: immutable context-aware client views over the inherited collection API and the /api/mirabase/v1 additive services."
+version: 0.1.0
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# The example runs against a real backend:
+#   dart pub get && dart run example/context_and_search.dart

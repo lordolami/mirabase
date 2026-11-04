@@ -1,0 +1,28 @@
+.page-mirabase-import {
+    .mb-import-file {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
+        .btn {
+            flex: 0 0 auto;
+            width: auto;
+            margin: 0;
+            padding: 9px 13px;
+            min-height: 36px;
+        }
+        .mb-import-filename {
+            min-width: 0;
+            flex: 1 1 auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .mb-import-step {
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--surfaceAlt2Color);
+        > .btn { flex: 0 0 auto; }
+    }
+}

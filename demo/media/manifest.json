@@ -1,0 +1,20 @@
+{
+  "durationSeconds": 180,
+  "width": 1920,
+  "height": 1080,
+  "releaseQualified": false,
+  "artifacts": [
+    {
+      "name": "MiraBase-Submission-3min.mp4",
+      "sha256": "bfa8d86a3bbfd3c51010adebe1cf365b04193a3fb3c94bb0bcfcf5a4c4bff097"
+    },
+    {
+      "name": "MiraBase-Submission-3min.srt",
+      "sha256": "34b52357713cd9d9f9e7137d426f538a81293b25975c861d8171d62aad2c06de"
+    },
+    {
+      "name": "preview.png",
+      "sha256": "5fbf32a32a2768cf07fd73994ab1fabb2980e24425dc643c6c01c22304711501"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+// Exactly 180 seconds. These are editorial targets, not fabricated results.
+export const story=[
+ {id:'dashboard',seconds:11,title:'One backend. Private databases.',text:'Building for one customer is easy. Serving thousands without mixing their data is harder. Meet Mira Base: one backend, private databases.'},
+ {id:'records',seconds:6,title:'The backend foundation',actions:['projects','invalid-project'],text:'Keep collections, typed fields, relations, validation, and the familiar Pocket Base dashboard.'},
+ {id:'auth',seconds:5,title:'Identity and rules',actions:['sign-in','own-profile','wrong-profile'],text:'Authentication and access rules stay part of your backend.'},
+ {id:'files',seconds:8,title:'Files and realtime',actions:['upload-file','realtime','realtime-change'],text:'Upload real files and stream record changes straight to your frontend. These are live server responses.'},
+ {id:'databases',seconds:17,title:'User. Tenant. Agent.',actions:['list-dbs','alice-data','bob-data','team-data','agent-data'],text:'Alice, Bob, a company workspace, and a research agent each get a different database. One running server manages them all. A tenant shares data with its team; a user keeps an individual workspace.'},
+ {id:'access',seconds:12,title:'Isolation you can see',actions:['access-denied','grant','granted-read','revoke'],text:'Here Bob is refused access to Alice’s database. Grant read access, and it works. Revoke the grant, and the next request is refused.'},
+ {id:'search',seconds:15,title:'Search with Turso',actions:['text-search','vector-search','hybrid-search','fuzzy-search'],text:'Turso adds more than storage. Search full text, find similar vectors, combine both with hybrid ranking, or recover a near match with fuzzy search. The results come from Alice’s database.'},
+ {id:'changes',seconds:5,title:'Durable change history',actions:['journal-create','journal-update','journal-delete','journal-read'],text:'Committed record changes also enter a durable, ordered journal.'},
+ {id:'sync',seconds:8,title:'Record synchronization',actions:['bootstrap','bootstrap-page','push','pull','ack'],text:'Bootstrap a snapshot, push client mutations, and pull changes back. This is the real record synchronization API.'},
+ {id:'live',seconds:10,title:'Live query results',actions:['publish-live','live-stream','live-mutate','live-cancel'],text:'Publish a SQL query and subscribe to its result. A new committed record becomes a live result update.'},
+ {id:'schema',seconds:6,title:'Schemas and templates',actions:['get-template','schema-plan','schema-apply'],text:'Templates and verified schema plans make private databases manageable as your application evolves.'},
+ {id:'references',seconds:7,title:'Shared reference data',actions:['define-reference','refresh-reference','read-reference','reference-status'],text:'Reference copies distribute selected shared fields, while keeping each private database’s own records separate.'},
+ {id:'reports',seconds:5,title:'Cross-database reporting',actions:['define-report','rebuild-report','get-report'],text:'Reports aggregate across matching databases without combining their files.'},
+ {id:'workspace',seconds:15,title:'Persistent agent workspaces',actions:['workspace-create','workspace-write','workspace-snapshot','workspace-change','workspace-restore'],text:'Agents need more than chat history. Give them working files. Save a snapshot, replace a note, and restore it. Watch the original bytes return from stored history.'},
+ {id:'operations',seconds:7,title:'Operate your backend',actions:['diagnostics','jobs','export','backup','backups'],text:'Inspect diagnostics, review durable jobs, and create real backup and export archives.'},
+ {id:'sdk',seconds:5,title:'Scoped client SDK',actions:['sdk-parallel','sdk-path-refusal'],text:'Immutable client views keep concurrent database requests scoped separately.'},
+ {id:'pg',seconds:7,title:'External PostgreSQL client',actions:['pg-client'],text:'A scoped PostgreSQL gateway connects existing clients over authenticated, verified TLS.'},
+ {id:'import',seconds:7,title:'A home for PocketBase applications',text:'Pocket Base adoption has a guided workflow: analyze, preview, stage, validate, then cut over.'},
+ {id:'roadmap',seconds:18,title:'What comes next · planned',text:'Next: complete offline clients and native sync, full Agent F S integration, and a Wasm packaging investigation. Beyond standalone, our planned managed platform adds placement, replication, routing, and failover. Same backend experience; distribution underneath.'},
+ {id:'outro',seconds:6,title:'Build your frontend. Own your backend.',text:'Built with Spark one point three. Mira Base: build your frontend.'},
+];
+if(story.reduce((n,s)=>n+s.seconds,0)!==180)throw Error('The hackathon cut must be exactly three minutes.');

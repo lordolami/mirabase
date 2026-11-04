@@ -1,0 +1,51 @@
+/.vscode/
+.idea
+
+.DS_Store
+
+# goreleaser builds folder
+/.builds/
+
+# tests coverage
+coverage.out
+
+# plaintask todo files
+*.todo
+
+# generated markdown previews
+README.html
+LICENSE.html
+SECURITY.html
+CHANGELOG.html
+CHANGELOG_22_39.html
+CHANGELOG_16_22.html
+CHANGELOG_8_15.html
+
+# Local state and release staging (never source/publication inputs)
+/mb_data/
+/.zcode/
+/dist/
+/.releasechecks/
+/base.exe
+/native/engine/
+/native/bridge/target/
+/sdk/js/node_modules/
+/sdk/js/dist/
+/sdk/js/*.tgz
+/sdk/dart/.dart_tool/
+*.key
+.env
+
+# Dependency/build caches anywhere in the source tree
+node_modules/
+.dart_tool/
+__pycache__/
+*.pyc
+*.log
+
+# Private environment overrides; publish only documented templates
+.env.*
+!.env.example
+/_build/
+/mb_hooks/
+/mb_public/

@@ -1,0 +1,171 @@
+1
+00:00:00,400 --> 00:00:04,650
+What if every customer, every team, and every AI agent could have
+
+2
+00:00:04,650 --> 00:00:08,545
+a private database, without running a separate backend for each one?
+
+3
+00:00:10,400 --> 00:00:13,300
+This is Mira Base, running locally.
+
+4
+00:00:13,300 --> 00:00:19,100
+Create a collection, define typed fields, and save a real record in
+
+5
+00:00:19,100 --> 00:00:24,900
+the dashboard. Collections, authentication, access rules, files, realtime, and trusted hooks build
+
+6
+00:00:24,900 --> 00:00:26,350
+on Pocket Base.
+
+7
+00:00:27,150 --> 00:00:30,800
+One running server. Four separate database files.
+
+8
+00:00:31,150 --> 00:00:33,999
+Alice gets a private user database.
+
+9
+00:00:35,150 --> 00:00:37,871
+Bob gets a different user database.
+
+10
+00:00:39,150 --> 00:00:42,793
+Northstar shares a tenant database across its team.
+
+11
+00:00:43,150 --> 00:00:45,993
+The research agent has its own database.
+
+12
+00:00:47,150 --> 00:00:49,000
+Bob tries Alice’s records.
+
+13
+00:00:49,350 --> 00:00:53,300
+Denied. His own identity does not authorize her database.
+
+14
+00:00:53,650 --> 00:00:56,593
+An operator adds an explicit read grant.
+
+15
+00:00:58,650 --> 00:01:01,910
+Now Bob reads the same records successfully.
+
+16
+00:01:03,650 --> 00:01:08,071
+Revoke the grant. His next request is denied again.
+
+17
+00:01:09,400 --> 00:01:14,869
+Alice can search her own workspace with full text, vector similarity, hybrid
+
+18
+00:01:14,869 --> 00:01:20,337
+ranking, or fuzzy matching. The results shown here come from Turso through
+
+19
+00:01:20,337 --> 00:01:25,350
+Mira Base. Application developers get these search APIs alongside their backend.
+
+20
+00:01:26,400 --> 00:01:30,875
+Files, realtime record events, and live query results connect the frontend to
+
+21
+00:01:30,875 --> 00:01:35,350
+changes. Committed records also have a durable journal and record synchronization APIs.
+
+22
+00:01:36,150 --> 00:01:40,249
+An operator creates a persistent workspace for the research agent.
+
+23
+00:01:40,950 --> 00:01:43,527
+Write a note into its working file.
+
+24
+00:01:44,950 --> 00:01:47,871
+Save a snapshot of the original bytes.
+
+25
+00:01:49,050 --> 00:01:51,882
+Replace the note with different contents.
+
+26
+00:01:53,950 --> 00:01:57,800
+Restore the snapshot. The original note returns.
+
+27
+00:01:58,400 --> 00:02:03,033
+Operators can inspect jobs and diagnostics, export data, and create backups.
+
+28
+00:02:03,033 --> 00:02:08,087
+Pocket Base adoption has a real dashboard workflow: analyze, preview, stage, validate,
+
+29
+00:02:08,087 --> 00:02:09,350
+then cut over.
+
+30
+00:02:10,400 --> 00:02:15,361
+We used Muse Spark one point three to build Mira Base and
+
+31
+00:02:15,361 --> 00:02:17,428
+a separate Quint-based verification harness.
+
+32
+00:02:17,428 --> 00:02:21,562
+It connects claims, executable models, adversarial checks, and reproducible evidence.
+
+33
+00:02:21,562 --> 00:02:23,629
+Bounds and failures stay visible.
+
+34
+00:02:23,629 --> 00:02:27,350
+This is not a blanket proof of the backend.
+
+35
+00:02:28,400 --> 00:02:33,987
+Next we close policy and platform qualification gaps, complete offline clients and
+
+36
+00:02:33,987 --> 00:02:37,711
+native sync, and integrate full Agent F S.
+
+37
+00:02:37,711 --> 00:02:40,039
+We will investigate Wasm packaging.
+
+38
+00:02:40,039 --> 00:02:45,626
+Our designed managed platform adds placement, replication, routing, and failover underneath the
+
+39
+00:02:45,626 --> 00:02:49,350
+same backend model. Those cloud capabilities are planned.
+
+40
+00:02:50,400 --> 00:02:52,531
+Start on your own server.
+
+41
+00:02:52,531 --> 00:02:55,940
+Give users, tenants, and agents their own data.
+
+42
+00:02:55,940 --> 00:02:58,071
+Mira Base: build your frontend.
+
+43
+00:02:58,071 --> 00:02:59,350
+Own your backend.

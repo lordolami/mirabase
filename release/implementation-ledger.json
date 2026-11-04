@@ -1,0 +1,1064 @@
+{
+  "formatVersion": 1,
+  "date": "2026-11-03",
+  "releaseQualified": false,
+  "evidence": "qualification.json",
+  "requirements": [
+    {
+      "id": "MB-BRAND",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-ADOPT",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-CORE",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-01"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-23"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-27"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-29"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-30"
+        }
+      ]
+    },
+    {
+      "id": "MB-FIELDS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-23"
+        }
+      ]
+    },
+    {
+      "id": "MB-COLLECTIONS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-01"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-23"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-27"
+        }
+      ]
+    },
+    {
+      "id": "MB-CRUD",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-01"
+        }
+      ]
+    },
+    {
+      "id": "MB-BATCH",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-01"
+        }
+      ]
+    },
+    {
+      "id": "MB-PASSWORD",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-02"
+        }
+      ]
+    },
+    {
+      "id": "MB-OAUTH",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-02"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-24"
+        }
+      ]
+    },
+    {
+      "id": "MB-OTP",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-02"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-29"
+        }
+      ]
+    },
+    {
+      "id": "MB-ACCOUNT",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-02"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-29"
+        }
+      ]
+    },
+    {
+      "id": "MB-RULES",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-08"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-30"
+        }
+      ]
+    },
+    {
+      "id": "MB-IMPERSONATE",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-02"
+        }
+      ]
+    },
+    {
+      "id": "MB-FILES",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-03"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-04"
+        }
+      ]
+    },
+    {
+      "id": "MB-MAIL",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-25"
+        }
+      ]
+    },
+    {
+      "id": "MB-SSE",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-05"
+        }
+      ]
+    },
+    {
+      "id": "MB-ADMIN",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-11"
+        }
+      ]
+    },
+    {
+      "id": "MB-LOGS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-26"
+        }
+      ]
+    },
+    {
+      "id": "MB-HOOKS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-07"
+        }
+      ]
+    },
+    {
+      "id": "MB-MIGRATIONS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-26"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-27"
+        }
+      ]
+    },
+    {
+      "id": "MB-PROVIDER",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-27"
+        }
+      ]
+    },
+    {
+      "id": "MB-ABI",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "report": "qualification.json",
+          "note": "See exact target/client/size/runtime scope and blocking findings."
+        }
+      ]
+    },
+    {
+      "id": "MB-ASYNC",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-SQL",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-06"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-27"
+        }
+      ]
+    },
+    {
+      "id": "MB-MVCC",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-18"
+        }
+      ]
+    },
+    {
+      "id": "MB-RECOVERY",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-18"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-28"
+        }
+      ]
+    },
+    {
+      "id": "MB-TYPES",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-23"
+        }
+      ]
+    },
+    {
+      "id": "MB-ARRAY",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        }
+      ]
+    },
+    {
+      "id": "MB-DEFAULTS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-23"
+        }
+      ]
+    },
+    {
+      "id": "MB-VECTOR",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-13"
+        }
+      ]
+    },
+    {
+      "id": "MB-FTS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-13"
+        }
+      ]
+    },
+    {
+      "id": "MB-FUZZY",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-13"
+        }
+      ]
+    },
+    {
+      "id": "MB-HYBRID",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-13"
+        }
+      ]
+    },
+    {
+      "id": "MB-VIEWS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-27"
+        }
+      ]
+    },
+    {
+      "id": "MB-LIVE",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-15"
+        }
+      ]
+    },
+    {
+      "id": "MB-CDC",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-14"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-17"
+        }
+      ]
+    },
+    {
+      "id": "MB-RETENTION",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-RSYNC",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-SYNCFILES",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-NSYNC",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-PARTIAL",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-SYNCCHECK",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-PG",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-17"
+        }
+      ]
+    },
+    {
+      "id": "MB-PGAUTH",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-17"
+        }
+      ]
+    },
+    {
+      "id": "MB-SQLHTTP",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-LIFECYCLE",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-09"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-11"
+        }
+      ]
+    },
+    {
+      "id": "MB-PARTITION",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-08"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-09"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        }
+      ]
+    },
+    {
+      "id": "MB-AGENT",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-09"
+        }
+      ]
+    },
+    {
+      "id": "MB-RELATIONS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-30"
+        }
+      ]
+    },
+    {
+      "id": "MB-RESOURCES",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-19"
+        }
+      ]
+    },
+    {
+      "id": "MB-ROLLOUT",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-11"
+        }
+      ]
+    },
+    {
+      "id": "MB-ENCRYPT",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-CODEC",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-EXTENSIONS",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-BACKUP",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-06"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-11"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-28"
+        }
+      ]
+    },
+    {
+      "id": "MB-PORTABLE",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-11"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-12"
+        }
+      ]
+    },
+    {
+      "id": "MB-JOBS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-18"
+        }
+      ]
+    },
+    {
+      "id": "MB-SDK",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "report": "qualification.json",
+          "note": "See exact target/client/size/runtime scope and blocking findings."
+        }
+      ]
+    },
+    {
+      "id": "MB-LOCALSDK",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-UI",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "report": "qualification.json",
+          "note": "See exact target/client/size/runtime scope and blocking findings."
+        }
+      ]
+    },
+    {
+      "id": "MB-DEPLOY",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "report": "qualification.json",
+          "note": "See exact target/client/size/runtime scope and blocking findings."
+        }
+      ]
+    },
+    {
+      "id": "MB-PACKAGE",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "report": "qualification.json",
+          "note": "See exact target/client/size/runtime scope and blocking findings."
+        }
+      ]
+    },
+    {
+      "id": "MB-PERF",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "report": "qualification.json",
+          "note": "See exact target/client/size/runtime scope and blocking findings."
+        }
+      ]
+    },
+    {
+      "id": "MB-OPERATE",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-11"
+        }
+      ]
+    },
+    {
+      "id": "MB-EVIDENCE",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-22"
+        }
+      ]
+    },
+    {
+      "id": "MB-PBIMPORT",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-12"
+        }
+      ]
+    },
+    {
+      "id": "MB-TENANTPLAN",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-12"
+        }
+      ]
+    },
+    {
+      "id": "MB-TENANTACCESS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-08"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        }
+      ]
+    },
+    {
+      "id": "MB-TENANTDATA",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-TENANTCHECK",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-TENANTCUTOVER",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-TENANTRECOVERY",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-TENANTUI",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-APPLICATION",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        }
+      ]
+    },
+    {
+      "id": "MB-APPAUTH",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-APPRUNTIME",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-APPRECOVERY",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-ONBOARD",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        }
+      ]
+    },
+    {
+      "id": "MB-MEMBERSHIP",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        }
+      ]
+    },
+    {
+      "id": "MB-CONSOLIDATE",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-APPEND",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-OWNERTRANSFER",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-09"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-11"
+        }
+      ]
+    },
+    {
+      "id": "MB-REFERENCE",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-16"
+        }
+      ]
+    },
+    {
+      "id": "MB-RELWORKFLOW",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        },
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-16"
+        }
+      ]
+    },
+    {
+      "id": "MB-LAYOUT",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-LIVEPLAN",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-15"
+        }
+      ]
+    },
+    {
+      "id": "MB-ROLLOUTCTL",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-10"
+        }
+      ]
+    },
+    {
+      "id": "MB-SYNCCOMPACT",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-FAIRNESS",
+      "requirementComplete": false,
+      "status": "selected runtime assertions executed; full-family acceptance remains unqualified",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md",
+      "selectedExecutedEvidence": [
+        {
+          "matrix": "feature-qualification.json",
+          "areaId": "FQ-19"
+        }
+      ]
+    },
+    {
+      "id": "MB-LOCALIDENTITY",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-APPOBS",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-APPCONFIG",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    },
+    {
+      "id": "MB-APPBACKUP",
+      "requirementComplete": false,
+      "status": "full acceptance not established by this audit",
+      "contract": "../docs/mirabase/requirements-and-acceptance.md"
+    }
+  ]
+}

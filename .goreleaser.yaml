@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "project_name": "mirabase",
+  "dist": ".builds",
+  "before": {
+    "hooks": [
+      "go mod verify",
+      "go run ./tools/release --check"
+    ]
+  },
+  "builds": [
+    {
+      "id": "native_windows_amd64",
+      "main": "./examples/base",
+      "binary": "mirabase",
+      "flags": [
+        "-tags=no_default_driver"
+      ],
+      "ldflags": [
+        "-s -w -X mirabase.Version={{ .Version }} -X mirabase/internal/mbengine.pinnedLibraryDigest=fb0e6862e11ba39a33bf5b739f01576ac499eff1455318d1af1a9abc3ed0cc70 -X github.com/tursodatabase/turso-go-platform-libs.expectedDigest=fb0e6862e11ba39a33bf5b739f01576ac499eff1455318d1af1a9abc3ed0cc70"
+      ],
+      "env": [
+        "CGO_ENABLED=0"
+      ],
+      "goos": [
+        "windows"
+      ],
+      "goarch": [
+        "amd64"
+      ]
+    },
+    {
+      "id": "native_linux_amd64",
+      "main": "./examples/base",
+      "binary": "mirabase",
+      "flags": [
+        "-tags=no_default_driver"
+      ],
+      "ldflags": [
+        "-s -w -X mirabase.Version={{ .Version }} -X mirabase/internal/mbengine.pinnedLibraryDigest=409617922e2fcdb711beb94f76cea2343e3d5dba8690d20b569b80277c86e89c -X github.com/tursodatabase/turso-go-platform-libs.expectedDigest=409617922e2fcdb711beb94f76cea2343e3d5dba8690d20b569b80277c86e89c"
+      ],
+      "env": [
+        "CGO_ENABLED=0"
+      ],
+      "goos": [
+        "linux"
+      ],
+      "goarch": [
+        "amd64"
+      ]
+    }
+  ],
+  "release": {
+    "draft": true
+  },
+  "archives": [
+    {
+      "id": "native",
+      "ids": [
+        "native_windows_amd64",
+        "native_linux_amd64"
+      ],
+      "formats": [
+        "zip"
+      ],
+      "files": [
+        "LICENSE.md",
+        "THIRD_PARTY_NOTICES.md",
+        "README.md",
+        "ROADMAP.md",
+        "docs/**"
+      ]
+    }
+  ],
+  "checksum": {
+    "name_template": "checksums.txt"
+  }
+}
+

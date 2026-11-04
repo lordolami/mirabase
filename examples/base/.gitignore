@@ -1,0 +1,8 @@
+# ignore everything
+/*
+
+# exclude from the ignore filter
+!.gitignore
+!main.go
+!dbconnect.go
+!dbconnect_turso.go

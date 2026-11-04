@@ -1,0 +1,25 @@
+{
+  "repository": "https://github.com/tursodatabase/turso",
+  "revision": "b0e1b8fde8eff66ef9843fdd1139fa3305cb16dd",
+  "path": "bindings/go",
+  "filesSHA256": {
+    "bindings.go": "f7cdf480c6369746a6edb738def0a09d7be29a1e08fbbd8501a3ad1b04fcf66d",
+    "bindings_db.go": "dc40807bb04ca4a1d492d1fe7581b9ee109e4e30787cdab1acbf280fa6b57e6a",
+    "bindings_db_test.go": "f2cbeb5c62139bb01a0e20b882c3b42bd9d186230f4df7bcac6e7a9f18b0c57b",
+    "bindings_sync.go": "5e0a26cc73b06f74bacaeec5612f5b6a76a24b9cc48839b6deae6e582b3dcd89",
+    "driver_db.go": "47764c4f1953539c3dad137f485c739459b5a3788387e252b309c059c77b53da",
+    "driver_db_test.go": "4d2f2aeba96b6d123499aa43ddb488458373fa1cdadcd244a1840987bdbad66a",
+    "driver_sync.go": "29673800472fe90dc038627f397997a92f745a61c774afe3e115214da6857fd2",
+    "driver_sync_test.go": "4066ef6c40783b6279c506ac1a541e9661945dfb9410fdec44ccf8d3ea095dfa",
+    "go-bindings-db-tests.mdx": "92208d956a062e84e66947d3cec17763909fa35d41a1ab34f146d24b01626c15",
+    "go-bindings-db.mdx": "106e0ffe727e5f358ad880faac590769f8f990f2a379d89bc8ff1c5b8b14ed00",
+    "go-bindings-sync.mdx": "061bed0a8d6103329b5b093ae2319accd021fb24befe914aad8db3b1dbaebe0c",
+    "go-driver-db.mdx": "9ca8c2a9741253fc41b61319133e0306907c164b3450d176aa484b8993068d57",
+    "go-driver-sync.mdx": "9650ce5a313bd37f7c9cecdddb30d1c72ff019292613679faec69de4371371bb",
+    "go.mod": "028280d2beb7b83e9ad388d8731f6fb3069854c2151ea94117efd367745220e5",
+    "go.sum": "8673eb751bca2d9289f7df9475e5675637030fd2cd327a2cc8fd9d002c99cc00",
+    "LICENSE.md": "cdacbdbb8bd8b82c0fef31edb7968c9c491f6cae0ffb6d4b47803a70bf3c7579",
+    "README.md": "ee82f0fbe27b5c02ee5ff170ba5d44be22d61edc3d0484fc6cae232cdb744cae",
+    "VERSION": "1a3ef372b41f5a7e490a9246a60c28b283fda290f10c26e6c4e2ab4518830f12"
+  }
+}

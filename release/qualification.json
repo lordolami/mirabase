@@ -1,0 +1,675 @@
+{
+  "formatVersion": 2,
+  "date": "2026-11-04",
+  "releaseQualified": false,
+  "result": "Windows runtime assertions and approved archive checks pass on the updated candidate. Full release qualification remains blocked by implementation, other-platform, signing and acceptance gates.",
+  "toolchain": "go1.27.0",
+  "nativeProviderBuildTags": [
+    "no_default_driver"
+  ],
+  "engineRevision": "b0e1b8fde8eff66ef9843fdd1139fa3305cb16dd",
+  "pocketBaseReference": "f70b24e186df98df2e7ebc703f103cb94dc3ca63",
+  "pinnedReferencesUnmodified": true,
+  "featureMatrix": "feature-qualification.json",
+  "nativeGoEvidence": {
+    "windows/amd64": {
+      "runs": [
+        {
+          "artifact": "qualification-windows-qualified.jsonl",
+          "sha256": "040a28f34771f4c0b646081879739aad3c0967d11521b227ac26feef889928db",
+          "testOutcomesIncludingSubtests": {
+            "pass": 5229,
+            "fail": 4
+          },
+          "packageOutcomes": {
+            "pass": 39,
+            "skip": 14,
+            "fail": 2
+          },
+          "packagesWithoutTests": [
+            "mirabase/examples/base",
+            "mirabase/examples/embedded",
+            "mirabase/internal/livequery",
+            "mirabase/internal/mbengine",
+            "mirabase/mails/templates",
+            "mirabase/migrations",
+            "mirabase/plugins/jsvm/internal/types",
+            "mirabase/plugins/jsvm/internal/types/generated",
+            "mirabase/tests",
+            "mirabase/tools/filesystem/blob",
+            "mirabase/tools/filesystem/internal/fileblob",
+            "mirabase/tools/filesystem/internal/s3blob/s3/tests",
+            "mirabase/tools/release",
+            "mirabase/ui"
+          ],
+          "failedTests": [
+            "mirabase/apis:TestBackupsList/authorized_as_regular_user",
+            "mirabase/apis:TestBackupsList",
+            "mirabase/core:TestMFAHasExpired/2_5m0s",
+            "mirabase/core:TestMFAHasExpired"
+          ],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": false
+        },
+        {
+          "artifact": "qualification-archive-admin.jsonl",
+          "sha256": "f2de9b35aa3522449967c85acfa15ac8114b4eb3e425025cb32383f9fe6cfbd6",
+          "testOutcomesIncludingSubtests": {
+            "pass": 4
+          },
+          "packageOutcomes": {
+            "pass": 1
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        },
+        {
+          "artifact": "qualification-windows-core-api-final.jsonl",
+          "sha256": "17202cc589b6cda9beec9445f59b68e07a244fba7235653745fca70b7b60bbc7",
+          "testOutcomesIncludingSubtests": {
+            "pass": 3461,
+            "fail": 5
+          },
+          "packageOutcomes": {
+            "fail": 2
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [
+            "mirabase/core:TestNotifyWatcher_CollectionsUpdate",
+            "mirabase/apis:TestRecordAuthWithOAuth2/creating_user_(with_mapped_OAuth2_fields_and_avatarURL->file_field)",
+            "mirabase/apis:TestRecordAuthWithOAuth2",
+            "mirabase/apis:TestBackupsRestore/authorized_as_regular_user",
+            "mirabase/apis:TestBackupsRestore"
+          ],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": false
+        },
+        {
+          "artifact": "qualification-windows-intermittent-rerun.jsonl",
+          "sha256": "4a250df683abb061d2438c897ca3521e9cc6bbf8cbfac0c751654b4c9cacfc71",
+          "testOutcomesIncludingSubtests": {
+            "pass": 6
+          },
+          "packageOutcomes": {
+            "pass": 2
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        },
+        {
+          "artifact": "qualification-windows-schema-full.jsonl",
+          "sha256": "e557b22148c3bb2abf9da2515986c36a4e723d5b7f84002f403c846588e8b249",
+          "testOutcomesIncludingSubtests": {
+            "pass": 5236,
+            "fail": 4
+          },
+          "packageOutcomes": {
+            "pass": 41,
+            "skip": 14,
+            "fail": 1
+          },
+          "packagesWithoutTests": [
+            "mirabase/examples/base",
+            "mirabase/examples/embedded",
+            "mirabase/internal/livequery",
+            "mirabase/internal/mbengine",
+            "mirabase/mails/templates",
+            "mirabase/migrations",
+            "mirabase/plugins/jsvm/internal/types",
+            "mirabase/plugins/jsvm/internal/types/generated",
+            "mirabase/tests",
+            "mirabase/tools/filesystem/blob",
+            "mirabase/tools/filesystem/internal/fileblob",
+            "mirabase/tools/filesystem/internal/s3blob/s3/tests",
+            "mirabase/tools/release",
+            "mirabase/ui"
+          ],
+          "failedTests": [
+            "mirabase/tools/archive:TestCreateFailure",
+            "mirabase/tools/archive:TestCreateSuccess",
+            "mirabase/tools/archive:TestExtractFailure",
+            "mirabase/tools/archive:TestExtractSuccess"
+          ],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": false
+        },
+        {
+          "artifact": "qualification-archive-admin-current.jsonl",
+          "sha256": "6fe1fe04a5873a9c741702e894e1ca30c036c0212456eca6af028181dda74747",
+          "testOutcomesIncludingSubtests": {
+            "pass": 4
+          },
+          "packageOutcomes": {
+            "pass": 1
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        },
+        {
+          "artifact": "qualification-template-ready.jsonl",
+          "sha256": "726ce85e2bcf6139f8911d2a7389e69ac3a03b244dadaa63b61b111892799a90",
+          "testOutcomesIncludingSubtests": {
+            "pass": 3
+          },
+          "packageOutcomes": {
+            "pass": 2
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        },
+        {
+          "artifact": "qualification-backup-schema-exports.jsonl",
+          "sha256": "dcd369932956508f965744561b3ed2271b8a675b02003c94d642f29292c93931",
+          "testOutcomesIncludingSubtests": {
+            "pass": 1
+          },
+          "packageOutcomes": {
+            "pass": 1
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        },
+        {
+          "artifact": "qualification-import-case-final.jsonl",
+          "sha256": "39c77b424cf2b7b0e8933293cafcadf37acea5995d5a9c6f398dceee0124902f",
+          "testOutcomesIncludingSubtests": {
+            "pass": 4
+          },
+          "packageOutcomes": {
+            "pass": 2
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        }
+      ],
+      "mergedTestOutcomesIncludingSubtests": {
+        "pass": 5277
+      },
+      "mergedPackageOutcomes": {
+        "pass": 42,
+        "skip": 14
+      }
+    },
+    "linux/amd64": {
+      "runs": [
+        {
+          "artifact": "qualification-linux-ext4.jsonl",
+          "sha256": "32c0c8a9786f718e4ed0a7c1c5af2c6f61a9bcb20fba573b9e3ae8142b681d13",
+          "testOutcomesIncludingSubtests": {
+            "pass": 5238
+          },
+          "packageOutcomes": {
+            "pass": 42,
+            "skip": 14
+          },
+          "packagesWithoutTests": [
+            "mirabase/examples/base",
+            "mirabase/examples/embedded",
+            "mirabase/internal/livequery",
+            "mirabase/internal/mbengine",
+            "mirabase/mails/templates",
+            "mirabase/migrations",
+            "mirabase/plugins/jsvm/internal/types",
+            "mirabase/plugins/jsvm/internal/types/generated",
+            "mirabase/tests",
+            "mirabase/tools/filesystem/blob",
+            "mirabase/tools/filesystem/internal/fileblob",
+            "mirabase/tools/filesystem/internal/s3blob/s3/tests",
+            "mirabase/tools/release",
+            "mirabase/ui"
+          ],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        }
+      ],
+      "mergedTestOutcomesIncludingSubtests": {
+        "pass": 5238
+      },
+      "mergedPackageOutcomes": {
+        "pass": 42,
+        "skip": 14
+      }
+    }
+  },
+  "windowsArchiveAdministratorRun": {
+    "approved": true,
+    "exit": 0,
+    "testPass": 4,
+    "testSkip": 0,
+    "changedWindowsSecuritySettings": false,
+    "evidence": "qualification-archive-admin-current.jsonl",
+    "sha256": "6fe1fe04a5873a9c741702e894e1ca30c036c0212456eca6af028181dda74747"
+  },
+  "linuxExecution": {
+    "environment": "Ubuntu on WSL2, amd64; glibc 2.43",
+    "kernel": "6.6.114.1-microsoft-standard-WSL2",
+    "source": {
+      "sourceRoot": "/home/lakesbim/.cache/mirabase-qualification/source-ntpx49hp",
+      "verifiedSourceAndFixtureHashes": 689,
+      "archiveSHA256": "551e00c57e7b8afee7aa9a118a6efaf9ff61fa02b1b69608741fc4b182993149"
+    },
+    "flags": [
+      "-count=1",
+      "-p=2",
+      "-parallel=4",
+      "-tags=no_default_driver",
+      "-timeout=15m"
+    ],
+    "fullSuiteExit": 0,
+    "passedTestsAndSubtests": 5238,
+    "failedTestsAndSubtests": 0,
+    "skippedTestCases": 0,
+    "packagesWithTestsPassed": 42,
+    "packagesWithoutTests": 14
+  },
+  "nativeLoaderTrustTests": {
+    "windows": "passed: 1 test, no skips",
+    "linux": "passed: 1 test, no skips",
+    "source": "internal/mbengine/platform/loader_test.go",
+    "assertions": [
+      "missing/malformed/mismatched compiled digest rejected",
+      "actual payload extraction and dynamic load",
+      "extracted SHA-256 matches trusted pin",
+      "tampered cache repaired from embedded authority",
+      "system/mixed/unknown library search strategies rejected"
+    ]
+  },
+  "javascriptSDK": {
+    "build": "passed",
+    "transportTests": 4,
+    "transportPass": 4,
+    "transportSkipped": 0,
+    "packageArchive": "sdk/js/mirabase-sdk-0.1.0.tgz",
+    "packageSHA256": "f246eb48f9d46af8633e17c4b63b711b4b1f449e3f2227308a05291e4dab4aa6",
+    "scope": [
+      "immutable context selectors",
+      "Headers and tuple normalization",
+      "FormData boundary",
+      "credential path escape refusal"
+    ]
+  },
+  "dartSDK": {
+    "analyzer": "passed, no issues",
+    "runtime": "Windows Dart VM; real server create/read/delete and escaped-path rejection passed",
+    "browserSupport": "not qualified; transport imports dart:io"
+  },
+  "browserAndDartRuntime": {
+    "backendSetup": "passed",
+    "browser": {
+      "login": "passed",
+      "collectionVisible": "passed",
+      "title": "users - MiraBase"
+    },
+    "dart": {
+      "exit": 0,
+      "output": "{\"crud\":\"passed\",\"pathEscapeNegative\":\"passed\"}",
+      "errors": ""
+    },
+    "workspace": {
+      "changedBytesRestore": "passed",
+      "deletedBytesRestore": "passed",
+      "pathTraversal": "refused",
+      "anonymousRead": "refused"
+    },
+    "unauthorizedRead": 403
+  },
+  "artifactSmokes": {
+    "windowsFailedRun": {
+      "target": "Windows/AMD64",
+      "kernel": "11",
+      "executableSHA256": "20139f88491188874ec89dc66dcccfc55c0c447644321b2490deddde2e0168af",
+      "releaseQualified": false,
+      "kind": "isolated artifact smoke, not full acceptance",
+      "observedReadyMs": 3031,
+      "health": "passed",
+      "crudAndAuthorization": "passed",
+      "passed": false,
+      "error": "ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host"
+    },
+    "windowsIsolatedRerun": {
+      "target": "Windows/AMD64",
+      "kernel": "11",
+      "executableSHA256": "20139f88491188874ec89dc66dcccfc55c0c447644321b2490deddde2e0168af",
+      "releaseQualified": false,
+      "kind": "isolated artifact smoke, not full acceptance",
+      "observedReadyMs": 2297,
+      "health": "passed",
+      "crudAndAuthorization": "passed",
+      "workspaceRestoreAndNegativeControls": "passed",
+      "passed": true
+    },
+    "linux": {
+      "target": "Linux/x86_64",
+      "kernel": "6.6.114.1-microsoft-standard-WSL2",
+      "executableSHA256": "999fd2c1bbbe827c2939b57b1afd2af908af6364830c17fc97bacc7c7655d9c8",
+      "releaseQualified": false,
+      "kind": "isolated artifact smoke, not full acceptance",
+      "observedReadyMs": 7961,
+      "health": "passed",
+      "crudAndAuthorization": "passed",
+      "workspaceRestoreAndNegativeControls": "passed",
+      "singleSampleResidentMemory": {
+        "VmHWM": "258568 kB",
+        "VmRSS": "258568 kB"
+      },
+      "passed": true
+    }
+  },
+  "builds": [
+    {
+      "engineRevision": "b0e1b8fde8eff66ef9843fdd1139fa3305cb16dd",
+      "executableBytes": 65873408,
+      "executableSHA256": "7af2ccfd2cb99a44c78250da350fe38f8d4f63aa79d7165fc52ddef94fcd467e",
+      "nativeSHA256": "fb0e6862e11ba39a33bf5b739f01576ac499eff1455318d1af1a9abc3ed0cc70",
+      "qualification": "Build completed; execute target tests, security/fault acceptance, signatures and launch gates separately.",
+      "releaseQualified": false,
+      "target": "windows/amd64",
+      "toolchain": "go1.27.0",
+      "version": "dev"
+    },
+    {
+      "engineRevision": "b0e1b8fde8eff66ef9843fdd1139fa3305cb16dd",
+      "executableBytes": 68485383,
+      "executableSHA256": "999fd2c1bbbe827c2939b57b1afd2af908af6364830c17fc97bacc7c7655d9c8",
+      "nativeSHA256": "409617922e2fcdb711beb94f76cea2343e3d5dba8690d20b569b80277c86e89c",
+      "qualification": "Build completed; execute target tests, security/fault acceptance, signatures and launch gates separately.",
+      "releaseQualified": false,
+      "target": "linux/amd64",
+      "toolchain": "go1.27.0",
+      "version": "dev"
+    }
+  ],
+  "footprint": [
+    {
+      "target": "windows/amd64",
+      "executableBytes": 65873408,
+      "compressedPackageBytes": 24119385,
+      "nativePayloadBytes": 29828608,
+      "executablePlusExtractedBytes": 95702016,
+      "sizeBudgets": {
+        "compressedDownload40MiB": true,
+        "executable96MiB": true,
+        "extractedPayload64MiB": true,
+        "executablePlusExtracted160MiB": true
+      },
+      "scope": "artifact size only; memory/startup/load acceptance is separate"
+    },
+    {
+      "target": "linux/amd64",
+      "executableBytes": 68485383,
+      "compressedPackageBytes": 25409363,
+      "nativePayloadBytes": 32938344,
+      "executablePlusExtractedBytes": 101423727,
+      "sizeBudgets": {
+        "compressedDownload40MiB": true,
+        "executable96MiB": true,
+        "extractedPayload64MiB": true,
+        "executablePlusExtracted160MiB": true
+      },
+      "scope": "artifact size only; memory/startup/load acceptance is separate"
+    }
+  ],
+  "archiveIntegrity": {
+    "currentWindowsZIP": {
+      "sha256": "ede95895452a3e81500e5e15188bc0d8820025fc928ccf94e6a58e541ea44216",
+      "crcCheck": "passed"
+    },
+    "authoritativeReviewManifest": "dist/launch-review-manifest.json",
+    "scope": "Local unsigned packages only; no release-qualified or published claim. Source-archive hash is kept outside the archive to avoid a circular self-reference."
+  },
+  "missingTargetNegativeControls": [
+    {
+      "target": "darwin/amd64",
+      "exit": 1,
+      "missingPayloadRefused": true,
+      "error": "target payload is missing; build and qualify it before packaging: open internal\\mbengine\\platform\\payload\\darwin_amd64\\mirabase_engine.so: The system cannot find the path specified."
+    },
+    {
+      "target": "darwin/arm64",
+      "exit": 1,
+      "missingPayloadRefused": true,
+      "error": "target payload is missing; build and qualify it before packaging: open internal\\mbengine\\platform\\payload\\darwin_arm64\\mirabase_engine.so: The system cannot find the path specified."
+    },
+    {
+      "target": "linux/arm64",
+      "exit": 1,
+      "missingPayloadRefused": true,
+      "error": "target payload is missing; build and qualify it before packaging: open internal\\mbengine\\platform\\payload\\linux_arm64\\mirabase_engine.so: The system cannot find the path specified."
+    },
+    {
+      "target": "windows/arm64",
+      "exit": 1,
+      "missingPayloadRefused": true,
+      "error": "target payload is missing; build and qualify it before packaging: open internal\\mbengine\\platform\\payload\\windows_arm64\\mirabase_engine.dll: The system cannot find the path specified."
+    }
+  ],
+  "linuxNativeDependencies": {
+    "libraries": [
+      "libc.so.6",
+      "libm.so.6",
+      "libgcc_s.so.1"
+    ],
+    "highestReferencedGLIBCSymbolVersion": "2.38",
+    "testedGLIBC": "2.43",
+    "muslAndOlderDistributions": "not qualified"
+  },
+  "blockingFindings": [
+    {
+      "id": "Q-WIN-BACKUP",
+      "status": "Windows regression resolved; broader backup/recovery qualification remains",
+      "detail": "A stale connection schema caused VACUUM INTO helper SQL to reprepare and restart after output creation. The owned patch reparses the source schema within its read snapshot. Three runs each verify eight real archives under concurrent writes; backup/restore APIs also pass in the full Windows package run.",
+      "source": "core/backup_create.go",
+      "evidence": [
+        "qualification-backup-schema-exports.jsonl",
+        "qualification-windows-schema-full.jsonl"
+      ]
+    },
+    {
+      "id": "Q-WIN-CONNECTION",
+      "status": "unresolved intermittent artifact failure",
+      "detail": "One latest Windows artifact smoke had a connection reset after CRUD and before workspace completion. An isolated rerun and the Chrome/Dart/workspace run pass. The failed run did not retain a child exit code, so a native crash is not established and the reset is not dismissed. The harness now retains private child diagnostics on failure.",
+      "evidence": "qualification-windows-artifact.json"
+    },
+    {
+      "id": "Q-INTERMITTENT",
+      "status": "Passes latest full Windows package execution; earlier failures retained",
+      "detail": "Collection watcher and OAuth avatar assertions pass in the latest full execution. Earlier full-run failures and focused reruns remain archived; this is not a long-running stability qualification.",
+      "evidence": [
+        "qualification-windows-schema-full.jsonl",
+        "qualification-windows-core-api-final.jsonl"
+      ]
+    },
+    {
+      "id": "Q-TARGETS",
+      "status": "missing payloads and target runners",
+      "detail": "darwin/amd64, darwin/arm64, linux/arm64 and windows/arm64 cannot be packaged yet. Actual negative builds exit 1; that is refusal evidence, not successful target qualification."
+    },
+    {
+      "id": "Q-FEATURE-COMPLETION",
+      "status": "acceptance or implementation incomplete",
+      "detail": "Full upstream AgentFS SDK/KV/inode/mount/overlay integration, complete SDK/offline delivery and upstream native-sync interoperability, independent-application runtime isolation, the four unregistered operations and hard native memory admission still need their owning implementation/acceptance. Selected tests do not fulfill these broader families."
+    },
+    {
+      "id": "Q-RELEASE",
+      "status": "not completed",
+      "detail": "The native build now verifies the pinned engine revision, exact owned diff and patch hashes, and embeds patch-manifest provenance. Clean target coverage, full SBOM/signing/update trust, specified 50-start percentiles, dedicated 32-context load, large cold-DB populations and full disk/inode/crash/recovery acceptance remain required."
+    },
+    {
+      "id": "Q-MANAGED-CRUD",
+      "status": "release-blocking source audit finding",
+      "detail": "The managed-record CRUD handlers invoke the raw RecordStore after owner/grant authorization. Complete inherited per-operation collection rules, validation/forms, hooks and hidden-field masking are not applied on this path. The existing green isolation assertions do not cover that parity. The normal inherited API remains separate.",
+      "source": "apis/mirabase_records.go"
+    }
+  ],
+  "documentation": {
+    "documents": 96,
+    "localLinks": 1640,
+    "jsonBlocks": 514,
+    "storageTables": 46,
+    "errors": []
+  },
+  "managedCloud": "Design only; no deployed/distributed service qualification claimed.",
+  "runHistoryNotes": [
+    "Initial Linux suite exposed UTC serialization differences in S3 HEAD/GET and range metadata. UTC normalization now passes in the complete Linux rerun.",
+    "An attempt to run from the Windows mount exceeded the Linux APIs timeout; it is failed harness/environment evidence, not a pass.",
+    "The first copied source fixture accidentally excluded ui/dist and failed setup. UI assets were restored, all source/fixture/asset hashes verified, and the complete native rerun passed.",
+    "Raw JSONL logs and diagnostic evidence are retained privately under the workspace _build folder. SHA-256 values in the feature matrix bind the indexed run files."
+  ],
+  "packagingNotes": "Current Windows candidate, previous Linux baseline and owned source are packaged locally with legal notices. The external review manifest is authoritative. None is signed, published or release-qualified.",
+  "buildHistory": [
+    {
+      "engineRevision": "b0e1b8fde8eff66ef9843fdd1139fa3305cb16dd",
+      "executableBytes": 65860608,
+      "executableSHA256": "20139f88491188874ec89dc66dcccfc55c0c447644321b2490deddde2e0168af",
+      "nativeSHA256": "4c4b93a179a0fb1df1d6543391b3a1b207d13fdb563942139515cdda7c7fdaf1",
+      "qualification": "Build completed; execute target tests, security/fault acceptance, signatures and launch gates separately.",
+      "releaseQualified": false,
+      "target": "windows/amd64",
+      "toolchain": "go1.27.0",
+      "version": "dev"
+    },
+    {
+      "engineRevision": "b0e1b8fde8eff66ef9843fdd1139fa3305cb16dd",
+      "executableBytes": 68485383,
+      "executableSHA256": "999fd2c1bbbe827c2939b57b1afd2af908af6364830c17fc97bacc7c7655d9c8",
+      "nativeSHA256": "409617922e2fcdb711beb94f76cea2343e3d5dba8690d20b569b80277c86e89c",
+      "qualification": "Build completed; execute target tests, security/fault acceptance, signatures and launch gates separately.",
+      "releaseQualified": false,
+      "target": "linux/amd64",
+      "toolchain": "go1.27.0",
+      "version": "dev"
+    }
+  ],
+  "latestWindowsExecution": {
+    "fullRun": {
+      "artifact": "qualification-windows-schema-full.jsonl",
+      "sha256": "e557b22148c3bb2abf9da2515986c36a4e723d5b7f84002f403c846588e8b249",
+      "testOutcomesIncludingSubtests": {
+        "pass": 5236,
+        "fail": 4
+      },
+      "packageOutcomes": {
+        "pass": 41,
+        "skip": 14,
+        "fail": 1
+      },
+      "packagesWithoutTests": [
+        "mirabase/examples/base",
+        "mirabase/examples/embedded",
+        "mirabase/internal/livequery",
+        "mirabase/internal/mbengine",
+        "mirabase/mails/templates",
+        "mirabase/migrations",
+        "mirabase/plugins/jsvm/internal/types",
+        "mirabase/plugins/jsvm/internal/types/generated",
+        "mirabase/tests",
+        "mirabase/tools/filesystem/blob",
+        "mirabase/tools/filesystem/internal/fileblob",
+        "mirabase/tools/filesystem/internal/s3blob/s3/tests",
+        "mirabase/tools/release",
+        "mirabase/ui"
+      ],
+      "failedTests": [
+        "mirabase/tools/archive:TestCreateFailure",
+        "mirabase/tools/archive:TestCreateSuccess",
+        "mirabase/tools/archive:TestExtractFailure",
+        "mirabase/tools/archive:TestExtractSuccess"
+      ],
+      "unfinishedTests": [],
+      "unfinishedPackages": [],
+      "malformedLines": 0,
+      "executionPassed": false
+    },
+    "administratorArchiveRun": {
+      "artifact": "qualification-archive-admin-current.jsonl",
+      "sha256": "6fe1fe04a5873a9c741702e894e1ca30c036c0212456eca6af028181dda74747",
+      "testOutcomesIncludingSubtests": {
+        "pass": 4
+      },
+      "packageOutcomes": {
+        "pass": 1
+      },
+      "packagesWithoutTests": [],
+      "failedTests": [],
+      "unfinishedTests": [],
+      "unfinishedPackages": [],
+      "malformedLines": 0,
+      "executionPassed": true
+    },
+    "interpretation": "5236 test/subtest passes in the full run; its four archive failures are Windows symlink privilege refusals. Those four pass in the separately approved administrator run. This is not represented as a clean single full invocation. No test skips. Focused follow-ups are indexed separately."
+  },
+  "nativePatch": {
+    "engineRevision": "b0e1b8fde8eff66ef9843fdd1139fa3305cb16dd",
+    "manifest": "../native/patches/manifest.json",
+    "manifestSHA256": "c387adf28b626e0735b9d468f7080ead42abef7d74b6ee8c7d62b47bfbecb4bb",
+    "nativeSHA256": "fb0e6862e11ba39a33bf5b739f01576ac499eff1455318d1af1a9abc3ed0cc70",
+    "toolchain": "Rust 1.88 x86_64-pc-windows-msvc; MSVC 14.44.35207; Windows SDK 10.0.26100.0",
+    "runtimeRegression": {
+      "log": "qualification-backup-schema-exports.jsonl",
+      "sha256": "dcd369932956508f965744561b3ed2271b8a675b02003c94d642f29292c93931",
+      "runs": 3,
+      "realArchivesPerRun": 8,
+      "checks": "Independent archived DB reopen and two-row committed-write invariant during concurrent writes."
+    },
+    "scope": "Windows candidate only. Linux still carries the previously tested baseline payload; rebuild and repeat with the owned patch before treating targets as the same candidate."
+  },
+  "additionalFixes": {
+    "provisioning": "Database creation now loads/applies the published template before readiness. A real HTTP regression creates and immediately reads a record without test-side schema setup.",
+    "provisioningLog": "qualification-template-ready.jsonl",
+    "import": "Import table inventory comparisons now use bound case-insensitive identifiers and fail on metadata/count query errors. Mixed-case auth tables validate; an actual deleted staged row fails. The demo also replays a real pinned PocketBase backup.",
+    "importLog": "qualification-import-case-final.jsonl",
+    "ui": "The real import file picker now retains its filename on one line, with a bounded flex layout."
+  },
+  "nativeLoaderLatestWindows": {
+    "log": "qualification-loader-windows-patched.jsonl",
+    "sha256": "ead1fb533a2cdf62d7ff7d2ca8c47ddaaf8be95e1f5a509d9f112b81ac31ecce",
+    "exit": 0
+  },
+  "demo": {
+    "path": "dist/demo/MiraBase-Hackathon-Demo-3min.mp4",
+    "durationSeconds": 180,
+    "width": 1920,
+    "height": 1080,
+    "videoSHA256": "0a5202458b85453a45529c65e953e51272f99d125b3baa9990200ae7c29a114f",
+    "scenes": 20,
+    "actualArtifactSHA256": "7af2ccfd2cb99a44c78250da350fe38f8d4f63aa79d7165fc52ddef94fcd467e",
+    "roadmap": "Explicitly planned, not deployed.",
+    "validation": "Full H.264/AAC decode succeeds; 4500 video frames and audio are exactly 180 seconds. Captions, chapter metadata and transcript are included.",
+    "qualification": "A feature overview, not a release acceptance substitute.",
+    "subtitleSHA256": "4e8fe70ac5789a1ff0695106103839bd30643551a85e1e790e760da3218e6695",
+    "captionReview": "No caption under 0.75 seconds; no line over 96 characters."
+  }
+}

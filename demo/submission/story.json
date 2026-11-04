@@ -1,0 +1,166 @@
+[
+  {
+    "id": "hook",
+    "seconds": 10,
+    "title": "One backend. Private by design.",
+    "kind": "card",
+    "text": "What if every customer, every team, and every AI agent could have a private database, without running a separate backend for each one?"
+  },
+  {
+    "id": "foundation",
+    "seconds": 17,
+    "title": "Build the frontend. The backend is here.",
+    "kind": "desktop",
+    "text": "This is Mira Base, running locally. Create a collection, define typed fields, and save a real record in the dashboard. Collections, authentication, access rules, files, realtime, and trusted hooks build on Pocket Base."
+  },
+  {
+    "id": "databases",
+    "seconds": 20,
+    "title": "Four workspaces. One server process.",
+    "kind": "client",
+    "source": "databases",
+    "text": "One running server. Four separate database files. Alice gets a private user database. Bob gets a different user database. Northstar shares a tenant database across its team. The research agent has its own database.",
+    "segments": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "One running server. Four separate database files."
+      },
+      {
+        "start": 4,
+        "end": 8,
+        "text": "Alice gets a private user database."
+      },
+      {
+        "start": 8,
+        "end": 12,
+        "text": "Bob gets a different user database."
+      },
+      {
+        "start": 12,
+        "end": 16,
+        "text": "Northstar shares a tenant database across its team."
+      },
+      {
+        "start": 16,
+        "end": 20,
+        "text": "The research agent has its own database."
+      }
+    ]
+  },
+  {
+    "id": "access",
+    "seconds": 22,
+    "title": "Access changes only when authority changes.",
+    "kind": "client",
+    "source": "access",
+    "text": "Bob tries Alice\u2019s records. Denied. His own identity does not authorize her database. An operator adds an explicit read grant. Now Bob reads the same records successfully. Revoke the grant. His next request is denied again.",
+    "segments": [
+      {
+        "start": 0,
+        "end": 2.2,
+        "text": "Bob tries Alice\u2019s records."
+      },
+      {
+        "start": 2.2,
+        "end": 6.5,
+        "text": "Denied. His own identity does not authorize her database."
+      },
+      {
+        "start": 6.5,
+        "end": 11.5,
+        "text": "An operator adds an explicit read grant."
+      },
+      {
+        "start": 11.5,
+        "end": 16.5,
+        "text": "Now Bob reads the same records successfully."
+      },
+      {
+        "start": 16.5,
+        "end": 22,
+        "text": "Revoke the grant. His next request is denied again."
+      }
+    ]
+  },
+  {
+    "id": "search",
+    "seconds": 17,
+    "title": "Find the answer inside the private database.",
+    "kind": "client",
+    "source": "search",
+    "text": "Alice can search her own workspace with full text, vector similarity, hybrid ranking, or fuzzy matching. The results shown here come from Turso through Mira Base. Application developers get these search APIs alongside their backend."
+  },
+  {
+    "id": "live",
+    "seconds": 10,
+    "title": "The frontend stays connected.",
+    "kind": "client",
+    "source": "live",
+    "text": "Files, realtime record events, and live query results connect the frontend to changes. Committed records also have a durable journal and record synchronization APIs."
+  },
+  {
+    "id": "workspace",
+    "seconds": 22,
+    "title": "An agent can recover its working state.",
+    "kind": "client",
+    "source": "workspace",
+    "text": "An operator creates a persistent workspace for the research agent. Write a note into its working file. Save a snapshot of the original bytes. Replace the note with different contents. Restore the snapshot. The original note returns.",
+    "segments": [
+      {
+        "start": 0,
+        "end": 4.8,
+        "text": "An operator creates a persistent workspace for the research agent."
+      },
+      {
+        "start": 4.8,
+        "end": 8.8,
+        "text": "Write a note into its working file."
+      },
+      {
+        "start": 8.8,
+        "end": 12.9,
+        "text": "Save a snapshot of the original bytes."
+      },
+      {
+        "start": 12.9,
+        "end": 17.8,
+        "text": "Replace the note with different contents."
+      },
+      {
+        "start": 17.8,
+        "end": 22,
+        "text": "Restore the snapshot. The original note returns."
+      }
+    ]
+  },
+  {
+    "id": "operations",
+    "seconds": 12,
+    "title": "Bring an application. Keep operating it.",
+    "kind": "client",
+    "source": "operations",
+    "text": "Operators can inspect jobs and diagnostics, export data, and create backups. Pocket Base adoption has a real dashboard workflow: analyze, preview, stage, validate, then cut over."
+  },
+  {
+    "id": "engineering",
+    "seconds": 18,
+    "title": "Built with AI. Checked against evidence.",
+    "kind": "card",
+    "text": "We used Muse Spark one point three to build Mira Base and a separate Quint-based verification harness. It connects claims, executable models, adversarial checks, and reproducible evidence. Bounds and failures stay visible. This is not a blanket proof of the backend."
+  },
+  {
+    "id": "roadmap",
+    "seconds": 22,
+    "title": "The next steps are explicit.",
+    "kind": "card",
+    "text": "Next we close policy and platform qualification gaps, complete offline clients and native sync, and integrate full Agent F S. We will investigate Wasm packaging. Our designed managed platform adds placement, replication, routing, and failover underneath the same backend model. Those cloud capabilities are planned."
+  },
+  {
+    "id": "outro",
+    "seconds": 10,
+    "title": "One backend. A private database for everyone.",
+    "kind": "card",
+    "text": "Start on your own server. Give users, tenants, and agents their own data. Mira Base: build your frontend. Own your backend."
+  }
+]

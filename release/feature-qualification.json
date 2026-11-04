@@ -1,0 +1,5796 @@
+{
+  "formatVersion": 1,
+  "date": "2026-11-04",
+  "releaseQualified": false,
+  "counting": "Each Test and subtest is counted once per run. Package skip means no test files; test skips never count as a pass. Latest logs override earlier test outcomes but retain original run failures. A package pass from a focused invocation does not establish a clean full-package run; inspect the original runs and unresolved test outcomes.",
+  "targets": {
+    "windows/amd64": {
+      "runs": [
+        {
+          "artifact": "qualification-windows-qualified.jsonl",
+          "sha256": "040a28f34771f4c0b646081879739aad3c0967d11521b227ac26feef889928db",
+          "testOutcomesIncludingSubtests": {
+            "pass": 5229,
+            "fail": 4
+          },
+          "packageOutcomes": {
+            "pass": 39,
+            "skip": 14,
+            "fail": 2
+          },
+          "packagesWithoutTests": [
+            "mirabase/examples/base",
+            "mirabase/examples/embedded",
+            "mirabase/internal/livequery",
+            "mirabase/internal/mbengine",
+            "mirabase/mails/templates",
+            "mirabase/migrations",
+            "mirabase/plugins/jsvm/internal/types",
+            "mirabase/plugins/jsvm/internal/types/generated",
+            "mirabase/tests",
+            "mirabase/tools/filesystem/blob",
+            "mirabase/tools/filesystem/internal/fileblob",
+            "mirabase/tools/filesystem/internal/s3blob/s3/tests",
+            "mirabase/tools/release",
+            "mirabase/ui"
+          ],
+          "failedTests": [
+            "mirabase/apis:TestBackupsList/authorized_as_regular_user",
+            "mirabase/apis:TestBackupsList",
+            "mirabase/core:TestMFAHasExpired/2_5m0s",
+            "mirabase/core:TestMFAHasExpired"
+          ],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": false
+        },
+        {
+          "artifact": "qualification-archive-admin.jsonl",
+          "sha256": "f2de9b35aa3522449967c85acfa15ac8114b4eb3e425025cb32383f9fe6cfbd6",
+          "testOutcomesIncludingSubtests": {
+            "pass": 4
+          },
+          "packageOutcomes": {
+            "pass": 1
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        },
+        {
+          "artifact": "qualification-windows-core-api-final.jsonl",
+          "sha256": "17202cc589b6cda9beec9445f59b68e07a244fba7235653745fca70b7b60bbc7",
+          "testOutcomesIncludingSubtests": {
+            "pass": 3461,
+            "fail": 5
+          },
+          "packageOutcomes": {
+            "fail": 2
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [
+            "mirabase/core:TestNotifyWatcher_CollectionsUpdate",
+            "mirabase/apis:TestRecordAuthWithOAuth2/creating_user_(with_mapped_OAuth2_fields_and_avatarURL->file_field)",
+            "mirabase/apis:TestRecordAuthWithOAuth2",
+            "mirabase/apis:TestBackupsRestore/authorized_as_regular_user",
+            "mirabase/apis:TestBackupsRestore"
+          ],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": false
+        },
+        {
+          "artifact": "qualification-windows-intermittent-rerun.jsonl",
+          "sha256": "4a250df683abb061d2438c897ca3521e9cc6bbf8cbfac0c751654b4c9cacfc71",
+          "testOutcomesIncludingSubtests": {
+            "pass": 6
+          },
+          "packageOutcomes": {
+            "pass": 2
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        },
+        {
+          "artifact": "qualification-windows-schema-full.jsonl",
+          "sha256": "e557b22148c3bb2abf9da2515986c36a4e723d5b7f84002f403c846588e8b249",
+          "testOutcomesIncludingSubtests": {
+            "pass": 5236,
+            "fail": 4
+          },
+          "packageOutcomes": {
+            "pass": 41,
+            "skip": 14,
+            "fail": 1
+          },
+          "packagesWithoutTests": [
+            "mirabase/examples/base",
+            "mirabase/examples/embedded",
+            "mirabase/internal/livequery",
+            "mirabase/internal/mbengine",
+            "mirabase/mails/templates",
+            "mirabase/migrations",
+            "mirabase/plugins/jsvm/internal/types",
+            "mirabase/plugins/jsvm/internal/types/generated",
+            "mirabase/tests",
+            "mirabase/tools/filesystem/blob",
+            "mirabase/tools/filesystem/internal/fileblob",
+            "mirabase/tools/filesystem/internal/s3blob/s3/tests",
+            "mirabase/tools/release",
+            "mirabase/ui"
+          ],
+          "failedTests": [
+            "mirabase/tools/archive:TestCreateFailure",
+            "mirabase/tools/archive:TestCreateSuccess",
+            "mirabase/tools/archive:TestExtractFailure",
+            "mirabase/tools/archive:TestExtractSuccess"
+          ],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": false
+        },
+        {
+          "artifact": "qualification-archive-admin-current.jsonl",
+          "sha256": "6fe1fe04a5873a9c741702e894e1ca30c036c0212456eca6af028181dda74747",
+          "testOutcomesIncludingSubtests": {
+            "pass": 4
+          },
+          "packageOutcomes": {
+            "pass": 1
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        },
+        {
+          "artifact": "qualification-template-ready.jsonl",
+          "sha256": "726ce85e2bcf6139f8911d2a7389e69ac3a03b244dadaa63b61b111892799a90",
+          "testOutcomesIncludingSubtests": {
+            "pass": 3
+          },
+          "packageOutcomes": {
+            "pass": 2
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        },
+        {
+          "artifact": "qualification-backup-schema-exports.jsonl",
+          "sha256": "dcd369932956508f965744561b3ed2271b8a675b02003c94d642f29292c93931",
+          "testOutcomesIncludingSubtests": {
+            "pass": 1
+          },
+          "packageOutcomes": {
+            "pass": 1
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        },
+        {
+          "artifact": "qualification-import-case-final.jsonl",
+          "sha256": "39c77b424cf2b7b0e8933293cafcadf37acea5995d5a9c6f398dceee0124902f",
+          "testOutcomesIncludingSubtests": {
+            "pass": 4
+          },
+          "packageOutcomes": {
+            "pass": 2
+          },
+          "packagesWithoutTests": [],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        }
+      ],
+      "mergedTestOutcomesIncludingSubtests": {
+        "pass": 5277
+      },
+      "mergedPackageOutcomes": {
+        "pass": 42,
+        "skip": 14
+      }
+    },
+    "linux/amd64": {
+      "runs": [
+        {
+          "artifact": "qualification-linux-ext4.jsonl",
+          "sha256": "32c0c8a9786f718e4ed0a7c1c5af2c6f61a9bcb20fba573b9e3ae8142b681d13",
+          "testOutcomesIncludingSubtests": {
+            "pass": 5238
+          },
+          "packageOutcomes": {
+            "pass": 42,
+            "skip": 14
+          },
+          "packagesWithoutTests": [
+            "mirabase/examples/base",
+            "mirabase/examples/embedded",
+            "mirabase/internal/livequery",
+            "mirabase/internal/mbengine",
+            "mirabase/mails/templates",
+            "mirabase/migrations",
+            "mirabase/plugins/jsvm/internal/types",
+            "mirabase/plugins/jsvm/internal/types/generated",
+            "mirabase/tests",
+            "mirabase/tools/filesystem/blob",
+            "mirabase/tools/filesystem/internal/fileblob",
+            "mirabase/tools/filesystem/internal/s3blob/s3/tests",
+            "mirabase/tools/release",
+            "mirabase/ui"
+          ],
+          "failedTests": [],
+          "unfinishedTests": [],
+          "unfinishedPackages": [],
+          "malformedLines": 0,
+          "executionPassed": true
+        }
+      ],
+      "mergedTestOutcomesIncludingSubtests": {
+        "pass": 5238
+      },
+      "mergedPackageOutcomes": {
+        "pass": 42,
+        "skip": 14
+      }
+    }
+  },
+  "features": [
+    {
+      "id": "FQ-01",
+      "area": "Collections, CRUD and batch",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/batch_test.go",
+          "symbol": "TestBatchRequest",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/collection_import_test.go",
+          "symbol": "TestCollectionsImport",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/collection_test.go",
+          "symbol": "TestCollectionsList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/collection_test.go",
+          "symbol": "TestCollectionView",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/collection_test.go",
+          "symbol": "TestCollectionDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/collection_test.go",
+          "symbol": "TestCollectionCreate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/collection_test.go",
+          "symbol": "TestCollectionUpdate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/collection_test.go",
+          "symbol": "TestCollectionScaffolds",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/collection_test.go",
+          "symbol": "TestCollectionTruncate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/collection_test.go",
+          "symbol": "TestCollectionOAuth2Providers",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/collection_test.go",
+          "symbol": "TestCollectionTestView",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_auth_origin_test.go",
+          "symbol": "TestRecordCrudAuthOriginList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_auth_origin_test.go",
+          "symbol": "TestRecordCrudAuthOriginView",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_auth_origin_test.go",
+          "symbol": "TestRecordCrudAuthOriginDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_auth_origin_test.go",
+          "symbol": "TestRecordCrudAuthOriginCreate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_auth_origin_test.go",
+          "symbol": "TestRecordCrudAuthOriginUpdate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_external_auth_test.go",
+          "symbol": "TestRecordCrudExternalAuthList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_external_auth_test.go",
+          "symbol": "TestRecordCrudExternalAuthView",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_external_auth_test.go",
+          "symbol": "TestRecordCrudExternalAuthDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_external_auth_test.go",
+          "symbol": "TestRecordCrudExternalAuthCreate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_external_auth_test.go",
+          "symbol": "TestRecordCrudExternalAuthUpdate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_mfa_test.go",
+          "symbol": "TestRecordCrudMFAList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_mfa_test.go",
+          "symbol": "TestRecordCrudMFAView",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_mfa_test.go",
+          "symbol": "TestRecordCrudMFADelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_mfa_test.go",
+          "symbol": "TestRecordCrudMFACreate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_mfa_test.go",
+          "symbol": "TestRecordCrudMFAUpdate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_otp_test.go",
+          "symbol": "TestRecordCrudOTPList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_otp_test.go",
+          "symbol": "TestRecordCrudOTPView",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_otp_test.go",
+          "symbol": "TestRecordCrudOTPDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_otp_test.go",
+          "symbol": "TestRecordCrudOTPCreate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_otp_test.go",
+          "symbol": "TestRecordCrudOTPUpdate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_superuser_test.go",
+          "symbol": "TestRecordCrudSuperuserList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_superuser_test.go",
+          "symbol": "TestRecordCrudSuperuserView",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_superuser_test.go",
+          "symbol": "TestRecordCrudSuperuserDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_superuser_test.go",
+          "symbol": "TestRecordCrudSuperuserCreate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_superuser_test.go",
+          "symbol": "TestRecordCrudSuperuserUpdate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_test.go",
+          "symbol": "TestRecordCrudList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_test.go",
+          "symbol": "TestRecordCrudView",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_test.go",
+          "symbol": "TestRecordCrudDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_test.go",
+          "symbol": "TestRecordCrudCreate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_crud_test.go",
+          "symbol": "TestRecordCrudUpdate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 41
+        },
+        "linux/amd64": {
+          "pass": 41
+        }
+      }
+    },
+    {
+      "id": "FQ-02",
+      "area": "Authentication and account flows",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/record_auth_email_change_confirm_test.go",
+          "symbol": "TestRecordConfirmEmailChange",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_email_change_request_test.go",
+          "symbol": "TestRecordRequestEmailChange",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_impersonate_test.go",
+          "symbol": "TestRecordAuthImpersonate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_methods_test.go",
+          "symbol": "TestRecordAuthMethodsList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_otp_request_test.go",
+          "symbol": "TestRecordRequestOTP",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_password_reset_confirm_test.go",
+          "symbol": "TestRecordConfirmPasswordReset",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_password_reset_request_test.go",
+          "symbol": "TestRecordRequestPasswordReset",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_refresh_test.go",
+          "symbol": "TestRecordAuthRefresh",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_verification_confirm_test.go",
+          "symbol": "TestRecordConfirmVerification",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_verification_request_test.go",
+          "symbol": "TestRecordRequestVerification",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_with_oauth2_redirect_test.go",
+          "symbol": "TestRecordAuthWithOAuth2Redirect",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_with_oauth2_test.go",
+          "symbol": "TestRecordAuthWithOAuth2",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_with_otp_test.go",
+          "symbol": "TestRecordAuthWithOTP",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_with_otp_test.go",
+          "symbol": "TestRecordAuthWithOTPManualRateLimiterCheck",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/record_auth_with_password_test.go",
+          "symbol": "TestRecordAuthWithPassword",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 15
+        },
+        "linux/amd64": {
+          "pass": 15
+        }
+      }
+    },
+    {
+      "id": "FQ-03",
+      "area": "File APIs and protected downloads",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/file_test.go",
+          "symbol": "TestFileToken",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/file_test.go",
+          "symbol": "TestFileDownload",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/file_test.go",
+          "symbol": "TestConcurrentThumbsGeneration",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 3
+        },
+        "linux/amd64": {
+          "pass": 3
+        }
+      }
+    },
+    {
+      "id": "FQ-04",
+      "area": "S3 protocol and filesystem adapters",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "tools/filesystem/file_test.go",
+          "symbol": "TestFileAsMap",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/file_test.go",
+          "symbol": "TestNewFileFromPath",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/file_test.go",
+          "symbol": "TestNewFileFromBytes",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/file_test.go",
+          "symbol": "TestNewFileFromMultipart",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/file_test.go",
+          "symbol": "TestNewFileFromURLTimeout",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/file_test.go",
+          "symbol": "TestFileNameNormalizations",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemExists",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemAttributes",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemNewWriter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemDeletePrefixWithoutTrailingSlash",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemDeletePrefixWithTrailingSlash",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemIsEmptyDir",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemUploadMultipart",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemUploadFile",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemUpload",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemServe",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemGetReader",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemGetReuploadableFile",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemCopy",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemServeSingleRange",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemServeMultiRange",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemCreateThumb",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemCreateThumbWithMaxPixelsLimit",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/filesystem_test.go",
+          "symbol": "TestFilesystemClose",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/copy_object_test.go",
+          "symbol": "TestS3CopyObject",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/delete_object_test.go",
+          "symbol": "TestS3DeleteObject",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/error_test.go",
+          "symbol": "TestResponseErrorSerialization",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/error_test.go",
+          "symbol": "TestResponseErrorErrorInterface",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/get_object_test.go",
+          "symbol": "TestS3GetObject",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/head_object_test.go",
+          "symbol": "TestS3HeadObject",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/list_objects_test.go",
+          "symbol": "TestS3ListParamsEncode",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/list_objects_test.go",
+          "symbol": "TestS3ListObjects",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/s3_escape_test.go",
+          "symbol": "TestEscapePath",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/s3_escape_test.go",
+          "symbol": "TestEscapeQuery",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/s3_test.go",
+          "symbol": "TestS3URL",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/s3_test.go",
+          "symbol": "TestS3SignAndSend",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/uploader_test.go",
+          "symbol": "TestUploaderRequiredFields",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/uploader_test.go",
+          "symbol": "TestUploaderSingleUpload",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/uploader_test.go",
+          "symbol": "TestUploaderMultipartUploadSuccess",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/uploader_test.go",
+          "symbol": "TestUploaderMultipartUploadPartFailure",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3/uploader_test.go",
+          "symbol": "TestUploaderMultipartUploadCompleteFailure",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3blob_test.go",
+          "symbol": "TestNew",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3blob_test.go",
+          "symbol": "TestDriverClose",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3blob_test.go",
+          "symbol": "TestDriverNormilizeError",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3blob_test.go",
+          "symbol": "TestDriverDeleteEscaping",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3blob_test.go",
+          "symbol": "TestDriverCopyEscaping",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3blob_test.go",
+          "symbol": "TestDriverAttributes",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3blob_test.go",
+          "symbol": "TestDriverListPaged",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3blob_test.go",
+          "symbol": "TestDriverNewRangeReader",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/filesystem/internal/s3blob/s3blob_test.go",
+          "symbol": "TestDriverNewTypedWriter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 52
+        },
+        "linux/amd64": {
+          "pass": 52
+        }
+      }
+    },
+    {
+      "id": "FQ-05",
+      "area": "Realtime subscriptions",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/realtime_test.go",
+          "symbol": "TestRealtimeConnect",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/realtime_test.go",
+          "symbol": "TestRealtimeSubscribe",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/realtime_test.go",
+          "symbol": "TestRealtimeAuthRecordDeleteEvent",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/realtime_test.go",
+          "symbol": "TestRealtimeAuthRecordUpdateEvent",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/realtime_test.go",
+          "symbol": "TestRealtimeRecordHiddenFields",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/realtime_test.go",
+          "symbol": "TestRealtimeAuthRecordUnsetOnTokenKeyRefresh",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/realtime_test.go",
+          "symbol": "TestRealtimeAuthRecordUnsetOnCollectionSecretChange",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/realtime_test.go",
+          "symbol": "TestRealtimeAuthRecordUnsetOnCollectionDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/realtime_test.go",
+          "symbol": "TestRealtimeCustomAuthModelDeleteEvent",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/realtime_test.go",
+          "symbol": "TestRealtimeCustomAuthModelUpdateEvent",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/realtime_test.go",
+          "symbol": "TestRealtimeRecordResolve",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 11
+        },
+        "linux/amd64": {
+          "pass": 11
+        }
+      }
+    },
+    {
+      "id": "FQ-06",
+      "area": "Backups, settings and SQL console",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/backup_test.go",
+          "symbol": "TestBackupsList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/backup_test.go",
+          "symbol": "TestBackupsCreate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/backup_test.go",
+          "symbol": "TestBackupUpload",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/backup_test.go",
+          "symbol": "TestBackupsDownload",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/backup_test.go",
+          "symbol": "TestBackupsDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/backup_test.go",
+          "symbol": "TestBackupsRestore",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/settings_test.go",
+          "symbol": "TestSettingsList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/settings_test.go",
+          "symbol": "TestSettingsSet",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/settings_test.go",
+          "symbol": "TestSettingsTestS3",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/settings_test.go",
+          "symbol": "TestSettingsTestEmail",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/settings_test.go",
+          "symbol": "TestGenerateAppleClientSecret",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/sql_test.go",
+          "symbol": "TestSQLRun",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 12
+        },
+        "linux/amd64": {
+          "pass": 12
+        }
+      }
+    },
+    {
+      "id": "FQ-07",
+      "area": "Go and JavaScript extension integration",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/extensions_test.go",
+          "symbol": "TestUIExtensions_Mainjs",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/extensions_test.go",
+          "symbol": "TestUIExtensions_Files",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/ghupdate/ghupdate_negative_test.go",
+          "symbol": "TestRegisterNegative",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/ghupdate/ghupdate_test.go",
+          "symbol": "TestCompareVersions",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/ghupdate/release_test.go",
+          "symbol": "TestReleaseFindAssetBySuffix",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_app_reset_test.go",
+          "symbol": "TestHooksAppReset",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_app_reset_test.go",
+          "symbol": "TestRouterHandlerAppReset",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_app_reset_test.go",
+          "symbol": "TestRouterMiddlewareFuncAppReset",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_app_reset_test.go",
+          "symbol": "TestRouterMiddlewareClassAppReset",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreSleep",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreReaderToString",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreToString",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreToBytes",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreUnmarshal",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreContext",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreCookie",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreSubscriptionMessage",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreCollection",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreFieldsList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreField",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreNamedFields",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreMailerMessage",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreCommand",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreRequestInfo",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreMiddleware",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreTimezone",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreDateTime",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindCoreValidationError",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindDbx",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindMailsCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindMails",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindSecurityCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestSecurityCryptoBinds",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestSecurityRandomStringBinds",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestSecurityJWTBinds",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestSecurityEncryptAndDecryptBinds",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindFilesystem",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindForms",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindApisCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindApisErrors",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestLoadingDynamicModel",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestDynamicModelMapFieldCaching",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestLoadingArrayOf",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindHTTPCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindHTTPSend",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestCronBindsCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestHooksBindsCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestHooksBinds",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestHooksExceptionUnwrapping",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestRouterBindsCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestRouterBinds",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindFilepathCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/binds_test.go",
+          "symbol": "TestBindOSCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/form_data_test.go",
+          "symbol": "TestFormDataAppendAndSet",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/form_data_test.go",
+          "symbol": "TestFormDataDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/form_data_test.go",
+          "symbol": "TestFormDataGet",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/form_data_test.go",
+          "symbol": "TestFormDataGetAll",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/form_data_test.go",
+          "symbol": "TestFormDataHas",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/form_data_test.go",
+          "symbol": "TestFormDataKeys",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/form_data_test.go",
+          "symbol": "TestFormDataValues",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/form_data_test.go",
+          "symbol": "TestFormDataEntries",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/form_data_test.go",
+          "symbol": "TestFormDataToMultipart",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/jsvm/mapper_test.go",
+          "symbol": "TestFieldMapper",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/migratecmd/migratecmd_test.go",
+          "symbol": "TestAutomigrateCollectionCreate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/migratecmd/migratecmd_test.go",
+          "symbol": "TestAutomigrateCollectionDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/migratecmd/migratecmd_test.go",
+          "symbol": "TestAutomigrateCollectionUpdate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/migratecmd/migratecmd_test.go",
+          "symbol": "TestAutomigrateCollectionNoChanges",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/update/release_test.go",
+          "symbol": "TestReleaseFindFileBySuffix",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/update/release_test.go",
+          "symbol": "TestReleaseBuildFilePath",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/update/update_test.go",
+          "symbol": "TestCompareVersions",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 72
+        },
+        "linux/amd64": {
+          "pass": 72
+        }
+      }
+    },
+    {
+      "id": "FQ-08",
+      "area": "Private database HTTP isolation",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/mirabase_isolation_test.go",
+          "symbol": "TestV01_05IsolationAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 1
+        },
+        "linux/amd64": {
+          "pass": 1
+        }
+      }
+    },
+    {
+      "id": "FQ-09",
+      "area": "Provisioning, grants, agents and lifecycle",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/mirabase_provision_template_test.go",
+          "symbol": "TestDatabaseCreateAppliesPublishedTemplateBeforeReady",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "not executed"
+          }
+        },
+        {
+          "source": "internal/application/application_test.go",
+          "symbol": "TestRegistryDDLAndDatabaseKinds",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/application/application_test.go",
+          "symbol": "TestProvisionConvergesConcurrentRequestsOnOneBinding",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/application/application_test.go",
+          "symbol": "TestLifecycleQuarantineRestoreTombstonePurge",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/application/application_test.go",
+          "symbol": "TestGrantsAuthorizeAndRevokeAdvancesEpoch",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/application/application_test.go",
+          "symbol": "TestAgentsBindRevokeAndOwnerIsolation",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/application/application_test.go",
+          "symbol": "TestOwnerTransferPhases",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/application/application_test.go",
+          "symbol": "TestContextResolutionRules",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 8
+        },
+        "linux/amd64": {
+          "not executed": 1,
+          "pass": 7
+        }
+      }
+    },
+    {
+      "id": "FQ-10",
+      "area": "Empty app setup, memberships, schema types and derived data",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/mirabase_setup_acceptance_test.go",
+          "symbol": "TestV01_06EmptyAppAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/mirabase_setup_acceptance_test.go",
+          "symbol": "TestV01MembershipAndBootstrapAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/mirabase_setup_acceptance_test.go",
+          "symbol": "TestV01R6DerivedDataAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/mirabase_setup_acceptance_test.go",
+          "symbol": "TestV01R3ApplicationsAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/mirabase_setup_acceptance_test.go",
+          "symbol": "TestV01R1FieldKindsAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/mirabase_setup_acceptance_test.go",
+          "symbol": "TestV01AgentFSAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 6
+        },
+        "linux/amd64": {
+          "pass": 6
+        }
+      }
+    },
+    {
+      "id": "FQ-11",
+      "area": "Administrative operations and target backup effects",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/mirabase_admin_acceptance_test.go",
+          "symbol": "TestV01AdminSurfaceAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 1
+        },
+        "linux/amd64": {
+          "pass": 1
+        }
+      }
+    },
+    {
+      "id": "FQ-12",
+      "area": "PocketBase adoption and remote-file manifests",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/mirabase_import_case_test.go",
+          "symbol": "TestPocketBaseImportMixedCaseValidation",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "not executed"
+          }
+        },
+        {
+          "source": "apis/mirabase_pbimport_acceptance_test.go",
+          "symbol": "TestV01_08AdoptionAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pbimport/remotefiles_test.go",
+          "symbol": "TestParseRemoteManifest",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pbimport/remotefiles_test.go",
+          "symbol": "TestVerifyRemoteCoverage",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pbimport/renameprobe_test.go",
+          "symbol": "TestStagedDirEngineLock",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 5
+        },
+        "linux/amd64": {
+          "not executed": 1,
+          "pass": 4
+        }
+      }
+    },
+    {
+      "id": "FQ-13",
+      "area": "Search, ranking, cursors and budgets",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/mirabase_search_acceptance_test.go",
+          "symbol": "TestV01_07SearchAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/engineprobe_test.go",
+          "symbol": "TestEngineProbe",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/hybrid_fuzzy_test.go",
+          "symbol": "TestHybridFuzzyWireLiftAndValidation",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/hybrid_fuzzy_test.go",
+          "symbol": "TestHybridOutranksSingleLeg",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/hybrid_fuzzy_test.go",
+          "symbol": "TestFuzzyAlgorithms",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/hybrid_fuzzy_test.go",
+          "symbol": "TestFuzzyNormalizedSimilarity",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/hybrid_fuzzy_test.go",
+          "symbol": "TestFuzzyDeterministicOrdering",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/hybrid_fuzzy_test.go",
+          "symbol": "TestFuzzyCandidateBudgetBoundsScan",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/search_repair_test.go",
+          "symbol": "TestCursorLeaseBindingAndExpiry",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/search_repair_test.go",
+          "symbol": "TestCursorContinuationPages",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/search_repair_test.go",
+          "symbol": "TestCursorVectorContinuation",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/search_repair_test.go",
+          "symbol": "TestUnknownPropertiesRejected",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/search_repair_test.go",
+          "symbol": "TestWeightedTextRanking",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/search_repair_test.go",
+          "symbol": "TestWeightedBudgetOverflowIncomplete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/search_repair_test.go",
+          "symbol": "TestTextFilteredScannedCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/search_repair_test.go",
+          "symbol": "TestHighlightFieldAttribution",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/search/search_repair_test.go",
+          "symbol": "TestEnsureFTSIndexVerification",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 17
+        },
+        "linux/amd64": {
+          "pass": 17
+        }
+      }
+    },
+    {
+      "id": "FQ-14",
+      "area": "Record journal update/delete",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/mirabase_records_journal_acceptance_test.go",
+          "symbol": "TestV01_11bRecordJournalUpdateDeleteAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 1
+        },
+        "linux/amd64": {
+          "pass": 1
+        }
+      }
+    },
+    {
+      "id": "FQ-15",
+      "area": "Live-query effects and authorization",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/mirabase_live_acceptance_test.go",
+          "symbol": "TestV01_11LiveQueryAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 1
+        },
+        "linux/amd64": {
+          "pass": 1
+        }
+      }
+    },
+    {
+      "id": "FQ-16",
+      "area": "Reference refresh and secret/filter refusal",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "internal/application/reference_copy_test.go",
+          "symbol": "TestReferenceCopyRefreshAcceptance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/application/reference_copy_test.go",
+          "symbol": "TestReferenceCopyWorkerRefreshesWithoutManualCall",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/application/reference_copy_test.go",
+          "symbol": "TestReferenceCopyDefinitionRejectsSecretAndHiddenFields",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/application/reference_copy_test.go",
+          "symbol": "TestReferenceCopyFilterASTRejectsRawSQL",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/application/reference_copy_test.go",
+          "symbol": "TestReferenceCopyReadPastDeclaredLagSurfacesReferenceStale",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 5
+        },
+        "linux/amd64": {
+          "pass": 5
+        }
+      }
+    },
+    {
+      "id": "FQ-17",
+      "area": "PostgreSQL TLS/SCRAM, simple and extended wire tests",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "internal/pgateway/pgateway_extended_test.go",
+          "symbol": "TestPGGatewayExtendedProtocolRoundTrip",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_extended_test.go",
+          "symbol": "TestPGGatewayExtendedDescribeDoesNotExecute",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_extended_test.go",
+          "symbol": "TestPGGatewayDMLGeneratesCDC",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_extended_test.go",
+          "symbol": "TestPGGatewayRefusesCopyForReadOnly",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_extended_test.go",
+          "symbol": "TestPGGatewaySessionStateIsolation",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_extended_test.go",
+          "symbol": "TestPGGatewayDeniesUnclassifiedStatements",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_extended_test.go",
+          "symbol": "TestPGGatewayPrimaryPolicyEpochBoundary",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_extended_test.go",
+          "symbol": "TestPGGatewayNotices",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewayStartWiring",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewayAuthenticatesValidCredential",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewaySimpleQueryRoundTripsRows",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewayRejectsWrongCredentials",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewayRefusesCredentialScopedToAnotherDatabase",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewayRefusesUnknownDatabase",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewayRequiresTLSAndRejectsTrustFallback",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewayEnforcesSQLReadScope",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewayProtectedMetadata",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewayTransactionBoundaries",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewayEngineRoundTripThroughStart",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_test.go",
+          "symbol": "TestPGGatewayPrimaryAliasBinding",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_unit_test.go",
+          "symbol": "TestPGParameterSQL",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/pgateway/pgateway_unit_test.go",
+          "symbol": "TestSourceTablesOf",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 22
+        },
+        "linux/amd64": {
+          "pass": 22
+        }
+      }
+    },
+    {
+      "id": "FQ-18",
+      "area": "WAL/MVCC writers, idempotency, jobs, outbox and crash boundary",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "internal/dbexec/connector_test.go",
+          "symbol": "TestMvccConnectorSelectsBeginConcurrentForTaggedContext",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/connector_test.go",
+          "symbol": "TestMvccConnectorDefaultPreservesDriverBeginTx",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/connector_test.go",
+          "symbol": "TestMvccConnectorFallbackIssuesDeferredBegin",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_crash_test.go",
+          "symbol": "TestCrashKillAtCommitBoundary",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_jobs_test.go",
+          "symbol": "TestJobsLifecycleSucceedsWithManifest",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_jobs_test.go",
+          "symbol": "TestJobsRetryWaitsThenStopsAtMaxAttempts",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_jobs_test.go",
+          "symbol": "TestJobsNonRetryableStopsImmediately",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_jobs_test.go",
+          "symbol": "TestJobsLeaseExpiryReconciles",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_jobs_test.go",
+          "symbol": "TestJobsDuplicateWorkersClaimDifferentJobs",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_jobs_test.go",
+          "symbol": "TestJobsCancellationAtSafeBoundaryRecordsEffects",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_jobs_test.go",
+          "symbol": "TestOutboxIntentPersistsWithTransactionAndDeliversAtLeastOnce",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_jobs_test.go",
+          "symbol": "TestOutboxEnvelopeEncryptsAndBindsAssociatedData",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_jobs_test.go",
+          "symbol": "TestDeliveryKeyAtomicCreation",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_pool_test.go",
+          "symbol": "TestWriterPoolWALProfileSerializesWriters",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_pool_test.go",
+          "symbol": "TestWriterPoolMVCCConcurrentIndependentRowWriters",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_pool_test.go",
+          "symbol": "TestWriterPoolConstraintErrorsAreNotRetried",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_pool_test.go",
+          "symbol": "TestMutationBoundaryAdvancesWithCoordinatorAndNotAroundIt",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_pool_test.go",
+          "symbol": "TestIdempotencyReceiptsSameKeySameHashReplayAndConflict",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/dbexec/v01_04_pool_test.go",
+          "symbol": "TestIdempotencyReceiptRollbackLeavesNoReceipt",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 19
+        },
+        "linux/amd64": {
+          "pass": 19
+        }
+      }
+    },
+    {
+      "id": "FQ-19",
+      "area": "Shared service admission limits and cancellation",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "internal/admission/manager_test.go",
+          "symbol": "TestDefaultBoundsAreTheContractNumbers",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/admission/manager_test.go",
+          "symbol": "TestConnectionCeilingAndReservedPoolSeparation",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/admission/manager_test.go",
+          "symbol": "TestQueueWaitReturnsRetryableAfterDeadline",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/admission/manager_test.go",
+          "symbol": "TestAcquireHonoursContextCancellation",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/admission/manager_test.go",
+          "symbol": "TestConcurrentAcquireNeverExceedsCeiling",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/admission/manager_test.go",
+          "symbol": "TestReleaseIsIdempotent",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 6
+        },
+        "linux/amd64": {
+          "pass": 6
+        }
+      }
+    },
+    {
+      "id": "FQ-20",
+      "area": "Workspace historical bytes and integrity refusal",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "internal/application/agentfs_test.go",
+          "symbol": "TestAgentSnapshotHistoricalBytesAndIntegrity",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 1
+        },
+        "linux/amd64": {
+          "pass": 1
+        }
+      }
+    },
+    {
+      "id": "FQ-21",
+      "area": "Archive symlink and malformed input handling",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "tools/archive/create_test.go",
+          "symbol": "TestCreateFailure",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/archive/create_test.go",
+          "symbol": "TestCreateSuccess",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/archive/extract_test.go",
+          "symbol": "TestExtractFailure",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/archive/extract_test.go",
+          "symbol": "TestExtractSuccess",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 4
+        },
+        "linux/amd64": {
+          "pass": 4
+        }
+      }
+    },
+    {
+      "id": "FQ-22",
+      "area": "OpenAPI schema",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/mirabase_openapi_test.go",
+          "symbol": "TestOpenAPIDocument",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "internal/setup/openapi_test.go",
+          "symbol": "TestOpenAPIDocumentShape",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 2
+        },
+        "linux/amd64": {
+          "pass": 2
+        }
+      }
+    },
+    {
+      "id": "FQ-23",
+      "area": "Inherited field validation and serialization",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "core/field_autodate_test.go",
+          "symbol": "TestAutodateFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_autodate_test.go",
+          "symbol": "TestAutodateFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_autodate_test.go",
+          "symbol": "TestAutodateFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_autodate_test.go",
+          "symbol": "TestAutodateFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_autodate_test.go",
+          "symbol": "TestAutodateFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_autodate_test.go",
+          "symbol": "TestAutodateFieldFindSetter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_autodate_test.go",
+          "symbol": "TestAutodateFieldIntercept",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_autodate_test.go",
+          "symbol": "TestAutodateRecordResave",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_bool_test.go",
+          "symbol": "TestBoolFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_bool_test.go",
+          "symbol": "TestBoolFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_bool_test.go",
+          "symbol": "TestBoolFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_bool_test.go",
+          "symbol": "TestBoolFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_bool_test.go",
+          "symbol": "TestBoolFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_date_test.go",
+          "symbol": "TestDateFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_date_test.go",
+          "symbol": "TestDateFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_date_test.go",
+          "symbol": "TestDateFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_date_test.go",
+          "symbol": "TestDateFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_date_test.go",
+          "symbol": "TestDateFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_editor_test.go",
+          "symbol": "TestEditorFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_editor_test.go",
+          "symbol": "TestEditorFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_editor_test.go",
+          "symbol": "TestEditorFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_editor_test.go",
+          "symbol": "TestEditorFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_editor_test.go",
+          "symbol": "TestEditorFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_editor_test.go",
+          "symbol": "TestEditorFieldCalculateMaxBodySize",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_email_test.go",
+          "symbol": "TestEmailFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_email_test.go",
+          "symbol": "TestEmailFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_email_test.go",
+          "symbol": "TestEmailFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_email_test.go",
+          "symbol": "TestEmailFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_email_test.go",
+          "symbol": "TestEmailFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldIsMultiple",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldDriverValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldCalculateMaxBodySize",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldFindGetter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldFindSetter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldIntercept",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_file_test.go",
+          "symbol": "TestFileFieldInterceptTx",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_geo_point_test.go",
+          "symbol": "TestGeoPointFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_geo_point_test.go",
+          "symbol": "TestGeoPointFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_geo_point_test.go",
+          "symbol": "TestGeoPointFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_geo_point_test.go",
+          "symbol": "TestGeoPointFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_geo_point_test.go",
+          "symbol": "TestGeoPointFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_json_test.go",
+          "symbol": "TestJSONFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_json_test.go",
+          "symbol": "TestJSONFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_json_test.go",
+          "symbol": "TestJSONFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_json_test.go",
+          "symbol": "TestJSONFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_json_test.go",
+          "symbol": "TestJSONFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_json_test.go",
+          "symbol": "TestJSONFieldCalculateMaxBodySize",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_number_test.go",
+          "symbol": "TestNumberFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_number_test.go",
+          "symbol": "TestNumberFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_number_test.go",
+          "symbol": "TestNumberFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_number_test.go",
+          "symbol": "TestNumberFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_number_test.go",
+          "symbol": "TestNumberFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_number_test.go",
+          "symbol": "TestNumberFieldFindSetter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_password_test.go",
+          "symbol": "TestPasswordFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_password_test.go",
+          "symbol": "TestPasswordFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_password_test.go",
+          "symbol": "TestPasswordFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_password_test.go",
+          "symbol": "TestPasswordFieldDriverValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_password_test.go",
+          "symbol": "TestPasswordFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_password_test.go",
+          "symbol": "TestPasswordFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_password_test.go",
+          "symbol": "TestPasswordFieldFindSetter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_password_test.go",
+          "symbol": "TestPasswordFieldFindGetter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_relation_test.go",
+          "symbol": "TestRelationFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_relation_test.go",
+          "symbol": "TestRelationFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_relation_test.go",
+          "symbol": "TestRelationFieldIsMultiple",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_relation_test.go",
+          "symbol": "TestRelationFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_relation_test.go",
+          "symbol": "TestRelationFieldDriverValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_relation_test.go",
+          "symbol": "TestRelationFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_relation_test.go",
+          "symbol": "TestRelationFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_relation_test.go",
+          "symbol": "TestRelationFieldFindSetter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_select_test.go",
+          "symbol": "TestSelectFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_select_test.go",
+          "symbol": "TestSelectFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_select_test.go",
+          "symbol": "TestSelectFieldIsMultiple",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_select_test.go",
+          "symbol": "TestSelectFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_select_test.go",
+          "symbol": "TestSelectFieldDriverValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_select_test.go",
+          "symbol": "TestSelectFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_select_test.go",
+          "symbol": "TestSelectFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_select_test.go",
+          "symbol": "TestSelectFieldFindSetter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_text_test.go",
+          "symbol": "TestTextFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_text_test.go",
+          "symbol": "TestTextFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_text_test.go",
+          "symbol": "TestTextFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_text_test.go",
+          "symbol": "TestTextFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_text_test.go",
+          "symbol": "TestTextFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_text_test.go",
+          "symbol": "TestTextFieldAutogenerate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_text_test.go",
+          "symbol": "TestTextFieldFindSetter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_url_test.go",
+          "symbol": "TestURLFieldBaseMethods",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_url_test.go",
+          "symbol": "TestURLFieldColumnType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_url_test.go",
+          "symbol": "TestURLFieldPrepareValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_url_test.go",
+          "symbol": "TestURLFieldValidateValue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/field_url_test.go",
+          "symbol": "TestURLFieldValidateSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 94
+        },
+        "linux/amd64": {
+          "pass": 94
+        }
+      }
+    },
+    {
+      "id": "FQ-24",
+      "area": "OAuth provider adapters",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "tools/auth/auth_test.go",
+          "symbol": "TestProvidersCount",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/auth_test.go",
+          "symbol": "TestNewProviderByName",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestContext",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestDisplayName",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestOrder",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestLogo",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestPKCE",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestScopes",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestClientId",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestClientSecret",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestRedirectURL",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestAuthURL",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestTokenURL",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestUserInfoURL",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestExtra",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestBuildAuthURL",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestClient",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/base_provider_test.go",
+          "symbol": "TestOauth2Config",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/internal/jwk/jwk_test.go",
+          "symbol": "TestJWK_PublicKey",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/internal/jwk/jwk_test.go",
+          "symbol": "TestFetch",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/auth/internal/jwk/jwk_test.go",
+          "symbol": "TestValidateTokenSignature",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 21
+        },
+        "linux/amd64": {
+          "pass": 21
+        }
+      }
+    },
+    {
+      "id": "FQ-25",
+      "area": "Mail templates and transport",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "mails/record_test.go",
+          "symbol": "TestSendRecordAuthAlert",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "mails/record_test.go",
+          "symbol": "TestSendRecordPasswordReset",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "mails/record_test.go",
+          "symbol": "TestSendRecordVerification",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "mails/record_test.go",
+          "symbol": "TestSendRecordChangeEmail",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "mails/record_test.go",
+          "symbol": "TestSendRecordOTP",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/mailer/html2text_test.go",
+          "symbol": "TestHTML2Text",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/mailer/mailer_test.go",
+          "symbol": "TestAddressesToStrings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/mailer/mailer_test.go",
+          "symbol": "TestDetectReaderMimeType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/mailer/smtp_test.go",
+          "symbol": "TestLoginAuthStart",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/mailer/smtp_test.go",
+          "symbol": "TestLoginAuthNext",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 10
+        },
+        "linux/amd64": {
+          "pass": 10
+        }
+      }
+    },
+    {
+      "id": "FQ-26",
+      "area": "Cron, logs and schema migration tooling",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "apis/cron_test.go",
+          "symbol": "TestCronsList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/cron_test.go",
+          "symbol": "TestCronsRun",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/logs_test.go",
+          "symbol": "TestLogsList",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/logs_test.go",
+          "symbol": "TestLogView",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/logs_test.go",
+          "symbol": "TestLogsStats",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "apis/logs_test.go",
+          "symbol": "TestLogsTruncate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/migratecmd/migratecmd_test.go",
+          "symbol": "TestAutomigrateCollectionCreate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/migratecmd/migratecmd_test.go",
+          "symbol": "TestAutomigrateCollectionDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/migratecmd/migratecmd_test.go",
+          "symbol": "TestAutomigrateCollectionUpdate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "plugins/migratecmd/migratecmd_test.go",
+          "symbol": "TestAutomigrateCollectionNoChanges",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/cron_test.go",
+          "symbol": "TestCronNew",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/cron_test.go",
+          "symbol": "TestCronSetInterval",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/cron_test.go",
+          "symbol": "TestCronSetTimezone",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/cron_test.go",
+          "symbol": "TestCronAddAndRemove",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/cron_test.go",
+          "symbol": "TestCronMustAdd",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/cron_test.go",
+          "symbol": "TestCronRemoveAll",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/cron_test.go",
+          "symbol": "TestCronTotal",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/cron_test.go",
+          "symbol": "TestCronJobs",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/cron_test.go",
+          "symbol": "TestCronStartStop",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/job_test.go",
+          "symbol": "TestJobId",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/job_test.go",
+          "symbol": "TestJobExpr",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/job_test.go",
+          "symbol": "TestJobRun",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/job_test.go",
+          "symbol": "TestJobMarshalJSON",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/schedule_test.go",
+          "symbol": "TestNewMoment",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/schedule_test.go",
+          "symbol": "TestNewSchedule",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/cron/schedule_test.go",
+          "symbol": "TestScheduleIsDue",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 26
+        },
+        "linux/amd64": {
+          "pass": 26
+        }
+      }
+    },
+    {
+      "id": "FQ-27",
+      "area": "Core SQL, tables, query and transaction behavior",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "core/db_model_test.go",
+          "symbol": "TestBaseModel",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_retry_test.go",
+          "symbol": "TestGetDefaultRetryInterval",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_retry_test.go",
+          "symbol": "TestBaseLockRetry",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_table_test.go",
+          "symbol": "TestHasTable",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_table_test.go",
+          "symbol": "TestAuxHasTable",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_table_test.go",
+          "symbol": "TestTableColumns",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_table_test.go",
+          "symbol": "TestTableInfo",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_table_test.go",
+          "symbol": "TestTableIndexes",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_table_test.go",
+          "symbol": "TestDeleteTable",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_table_test.go",
+          "symbol": "TestVacuum",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_table_test.go",
+          "symbol": "TestAuxVacuum",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_test.go",
+          "symbol": "TestGenerateDefaultRandomId",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_test.go",
+          "symbol": "TestModelQuery",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_test.go",
+          "symbol": "TestValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_test.go",
+          "symbol": "TestValidateWithContext",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_tx_test.go",
+          "symbol": "TestRunInTransaction",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_tx_test.go",
+          "symbol": "TestTransactionHooksCallsOnFailure",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_tx_test.go",
+          "symbol": "TestTransactionHooksCallsOnSuccess",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_tx_test.go",
+          "symbol": "TestTransactionFromInnerCreateHook",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_tx_test.go",
+          "symbol": "TestTransactionFromInnerUpdateHook",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/db_tx_test.go",
+          "symbol": "TestTransactionFromInnerDeleteHook",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 21
+        },
+        "linux/amd64": {
+          "pass": 21
+        }
+      }
+    },
+    {
+      "id": "FQ-28",
+      "area": "Core backup archive contents and concurrent snapshot regressions",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "core/backup_concurrency_test.go",
+          "symbol": "TestCreateBackupConcurrentWritesPreserveSnapshot",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "not executed"
+          }
+        },
+        {
+          "source": "core/backup_test.go",
+          "symbol": "TestCreateBackupStaleScratchDoesNotBlock",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/backup_test.go",
+          "symbol": "TestCreateBackup",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/backup_test.go",
+          "symbol": "TestRestoreBackup",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 4
+        },
+        "linux/amd64": {
+          "not executed": 1,
+          "pass": 3
+        }
+      }
+    },
+    {
+      "id": "FQ-29",
+      "area": "Settings, OTP, MFA and account metadata",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "core/auth_origin_model_test.go",
+          "symbol": "TestNewAuthOrigin",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_model_test.go",
+          "symbol": "TestAuthOriginProxyRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_model_test.go",
+          "symbol": "TestAuthOriginRecordRef",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_model_test.go",
+          "symbol": "TestAuthOriginCollectionRef",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_model_test.go",
+          "symbol": "TestAuthOriginFingerprint",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_model_test.go",
+          "symbol": "TestAuthOriginCreated",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_model_test.go",
+          "symbol": "TestAuthOriginUpdated",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_model_test.go",
+          "symbol": "TestAuthOriginPreValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_model_test.go",
+          "symbol": "TestAuthOriginValidateHook",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_model_test.go",
+          "symbol": "TestAuthOriginPasswordChangeDeletion",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_query_test.go",
+          "symbol": "TestFindAllAuthOriginsByRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_query_test.go",
+          "symbol": "TestFindAllAuthOriginsByCollection",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_query_test.go",
+          "symbol": "TestFindAuthOriginById",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_query_test.go",
+          "symbol": "TestFindAuthOriginByRecordAndFingerprint",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/auth_origin_query_test.go",
+          "symbol": "TestDeleteAllAuthOriginsByRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_model_test.go",
+          "symbol": "TestNewExternalAuth",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_model_test.go",
+          "symbol": "TestExternalAuthProxyRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_model_test.go",
+          "symbol": "TestExternalAuthRecordRef",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_model_test.go",
+          "symbol": "TestExternalAuthCollectionRef",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_model_test.go",
+          "symbol": "TestExternalAuthProvider",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_model_test.go",
+          "symbol": "TestExternalAuthProviderId",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_model_test.go",
+          "symbol": "TestExternalAuthCreated",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_model_test.go",
+          "symbol": "TestExternalAuthUpdated",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_model_test.go",
+          "symbol": "TestExternalAuthPreValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_model_test.go",
+          "symbol": "TestExternalAuthValidateHook",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_model_test.go",
+          "symbol": "TestExternalAuthClearOnVerfiedUpgrade",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_query_test.go",
+          "symbol": "TestFindAllExternalAuthsByRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_query_test.go",
+          "symbol": "TestFindAllExternalAuthsByCollection",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_query_test.go",
+          "symbol": "TestFindFirstExternalAuthByExpr",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/external_auth_query_test.go",
+          "symbol": "TestDeleteAllExternalAuthsByRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_model_test.go",
+          "symbol": "TestNewMFA",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_model_test.go",
+          "symbol": "TestMFAProxyRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_model_test.go",
+          "symbol": "TestMFARecordRef",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_model_test.go",
+          "symbol": "TestMFACollectionRef",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_model_test.go",
+          "symbol": "TestMFAMethod",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_model_test.go",
+          "symbol": "TestMFACreated",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_model_test.go",
+          "symbol": "TestMFAUpdated",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_model_test.go",
+          "symbol": "TestMFAHasExpired",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_model_test.go",
+          "symbol": "TestMFAPreValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_model_test.go",
+          "symbol": "TestMFAValidateHook",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_model_test.go",
+          "symbol": "TestMFAClearOnPasswordChange",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_query_test.go",
+          "symbol": "TestFindAllMFAsByRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_query_test.go",
+          "symbol": "TestFindAllMFAsByCollection",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_query_test.go",
+          "symbol": "TestFindMFAById",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_query_test.go",
+          "symbol": "TestDeleteAllMFAsByRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/mfa_query_test.go",
+          "symbol": "TestDeleteExpiredMFAs",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_model_test.go",
+          "symbol": "TestNewOTP",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_model_test.go",
+          "symbol": "TestOTPProxyRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_model_test.go",
+          "symbol": "TestOTPRecordRef",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_model_test.go",
+          "symbol": "TestOTPCollectionRef",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_model_test.go",
+          "symbol": "TestOTPSentTo",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_model_test.go",
+          "symbol": "TestOTPCreated",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_model_test.go",
+          "symbol": "TestOTPUpdated",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_model_test.go",
+          "symbol": "TestOTPHasExpired",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_model_test.go",
+          "symbol": "TestOTPPreValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_model_test.go",
+          "symbol": "TestOTPValidateHook",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_model_test.go",
+          "symbol": "TestOTPClearOnTokenKeyChange",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_query_test.go",
+          "symbol": "TestFindAllOTPsByRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_query_test.go",
+          "symbol": "TestFindAllOTPsByCollection",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_query_test.go",
+          "symbol": "TestFindOTPById",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_query_test.go",
+          "symbol": "TestDeleteAllOTPsByRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/otp_query_test.go",
+          "symbol": "TestDeleteExpiredOTPs",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestSettingsDelete",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestSettings_DBExport",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestSettingsMerge",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestSettingsClone",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestSettingsMarshalJSON",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestSettingsValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestMetaConfigValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestLogsConfigValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestSMTPConfigValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestS3ConfigValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestBackupsConfigValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestBatchConfigValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestRateLimitsConfigValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestRateLimitsFindRateLimitRule",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestRateLimitRuleValidate",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestRateLimitRuleDurationTime",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_model_test.go",
+          "symbol": "TestRateLimitRuleString",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_query_test.go",
+          "symbol": "TestReloadSettings",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/settings_query_test.go",
+          "symbol": "TestReloadSettingsWithEncryption",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 81
+        },
+        "linux/amd64": {
+          "pass": 81
+        }
+      }
+    },
+    {
+      "id": "FQ-30",
+      "area": "Record query rules, filters and validators",
+      "claim": "selected assertions only; full-family release qualification remains separate",
+      "tests": [
+        {
+          "source": "core/record_query_expand_test.go",
+          "symbol": "TestExpandRecords",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_expand_test.go",
+          "symbol": "TestExpandRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_expand_test.go",
+          "symbol": "TestBackRelationExpandSingeVsArrayResult",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_expand_test.go",
+          "symbol": "TestExpandRecordsQuerySkipDuplicatedIds",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestRecordQueryWithDifferentCollectionValues",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestRecordQueryOne",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestRecordQueryAll",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestFindRecordById",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestFindRecordsByIds",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestFindAllRecords",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestFindFirstRecordByData",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestFindRecordsByFilter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestFindFirstRecordByFilter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestCountRecords",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestFindAuthRecordByToken",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestFindAuthRecordByEmail",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/record_query_test.go",
+          "symbol": "TestCanAccessRecord",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/validators/db_test.go",
+          "symbol": "TestUniqueId",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/validators/db_test.go",
+          "symbol": "TestNormalizeUniqueIndexError",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/validators/file_test.go",
+          "symbol": "TestUploadedFileSize",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/validators/file_test.go",
+          "symbol": "TestUploadedFileMimeType",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/validators/string_test.go",
+          "symbol": "TestIsRegex",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/validators/string_test.go",
+          "symbol": "TestIPOrSubnet",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "core/validators/validators_test.go",
+          "symbol": "TestJoinValidationErrors",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/filter_test.go",
+          "symbol": "TestFilterDataBuildExpr",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/filter_test.go",
+          "symbol": "TestFilterDataBuildExprWithParams",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/filter_test.go",
+          "symbol": "TestFilterDataBuildExprWithParamsFallbackError",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/filter_test.go",
+          "symbol": "TestFilterDataBuildExprWithLimit",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/filter_test.go",
+          "symbol": "TestLikeParamsWrapping",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/identifier_macros_test.go",
+          "symbol": "TestIdentifierMacros",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/multi_match_subquery_test.go",
+          "symbol": "TestMultiMatchSubqueryBuild",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestNewProvider",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestMaxFilterExprLimit",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestMaxSortExprLimit",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderQuery",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderSkipTotal",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderCountCol",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderPage",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderPerPage",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderSort",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderFilter",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderParse",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderExecEmptyQuery",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderExecNonEmptyQuery",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderFilterAndSortLimits",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/provider_test.go",
+          "symbol": "TestProviderParseAndExec",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/simple_field_resolver_test.go",
+          "symbol": "TestSimpleFieldResolverUpdateQuery",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/simple_field_resolver_test.go",
+          "symbol": "TestSimpleFieldResolverResolve",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/sort_test.go",
+          "symbol": "TestSortFieldBuildExpr",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/sort_test.go",
+          "symbol": "TestParseSortFromString",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/token_functions_test.go",
+          "symbol": "TestTokenFunctionsGeoDistance",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/token_functions_test.go",
+          "symbol": "TestTokenFunctionsGeoDistanceExec",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/token_functions_test.go",
+          "symbol": "TestTokenFunctionsStrftime",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        },
+        {
+          "source": "tools/search/token_functions_test.go",
+          "symbol": "TestTokenFunctionsStrftimeExec",
+          "targetOutcomes": {
+            "windows/amd64": "pass",
+            "linux/amd64": "pass"
+          }
+        }
+      ],
+      "targetSummary": {
+        "windows/amd64": {
+          "pass": 54
+        },
+        "linux/amd64": {
+          "pass": 54
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Linux execution is Ubuntu under WSL on amd64, not a clean physical release machine.",
+    "Windows archive run required explicitly approved administrator symlink privilege.",
+    "Test names and source groupings identify assertions; inspect the test before making a broader compatibility or durability claim.",
+    "macOS and ARM payloads/runners, external PG clients, full offline/AgentFS integration, native hard memory limits, signing, and full load/fault qualification remain separate gates."
+  ],
+  "testSourceSHA256": {
+    "apis/backup_test.go": "b2de183aa47de229a80e60a32b4d59e80312b1f59d85556b9d72ed23f7cebbe3",
+    "apis/batch_test.go": "01c8c875d1414190a04e1cb529682d940c6c2aa6160e30119c55be60e4d03968",
+    "apis/collection_import_test.go": "035cc9119854a98ca02d086caea2764669150d853f426beadbfc5afcd02cce96",
+    "apis/collection_test.go": "3f58db674d750e769f5017f6f597bb7bcb86b42ba740af82a10e3f23e8788998",
+    "apis/cron_test.go": "030a4737aebaaeb07b8f0124753e082ed2dda2dea2cf4abd90e5089478ac0cca",
+    "apis/extensions_test.go": "747d69ec9446b77a76abfc573c3bcef5fcbc0eeaac38669c3117fba2d06cdf4b",
+    "apis/file_test.go": "5f27c09d31aab9304145101847a5675f9dcd5bfe3c9c9ac13d8df2660c5975bc",
+    "apis/logs_test.go": "c090943373ef6f327fdd0832e0d81f2d98034df0a43cf4aa5651b901f650dd75",
+    "apis/mirabase_admin_acceptance_test.go": "b251e5b713e305642daf144a86467c414407ed68f6401a5ff92f5b8530364e8d",
+    "apis/mirabase_import_case_test.go": "f7d7da614ba5c012083c633017878bd93e92e73d61dffa638cd4d033c46df4d3",
+    "apis/mirabase_isolation_test.go": "583e0a0d85500bf7ec53d789771ba516371c50e7458e7c3269d042104cbe14d0",
+    "apis/mirabase_live_acceptance_test.go": "eb7fed02f9bc55c6f2e71afa68e5bb22620338ce5528e052b38fd0c721604ae6",
+    "apis/mirabase_openapi_test.go": "dc087a3538614482fefd73e292d65a136a0cf7b7868f022ecdffe4caea4800e9",
+    "apis/mirabase_pbimport_acceptance_test.go": "9ee52afb02810597862c04ee6382a31c0fb7c9ec03936e5cc901b943203ec433",
+    "apis/mirabase_provision_template_test.go": "77d82e73b6f99bb7c86af20f9b359e69d0ef0dada650b972bea24802df119049",
+    "apis/mirabase_records_journal_acceptance_test.go": "59c5bd180437ced462125d441cb678cccea4dec39a98d1308af8834dd094a83b",
+    "apis/mirabase_search_acceptance_test.go": "2896f240f5bda9c151b85634e41c52545319e10189eb606cf10489c81564e7fe",
+    "apis/mirabase_setup_acceptance_test.go": "17b37be8d32ca781a838d8b48a5fe1e9cfa1a9fe6bccb865e9b21012504f1e45",
+    "apis/realtime_test.go": "0cd30d8267ab48ea8d31462fb7597358a15046db6ec654e40e07bb8df973cca9",
+    "apis/record_auth_email_change_confirm_test.go": "4037b25c83c33a342fb0845b9914f86cf69d01d4f2b822f86daf249106ed7e49",
+    "apis/record_auth_email_change_request_test.go": "8e9f67554ec440cfc155f11915222175a586458c58021dd279f49edbd6811ef7",
+    "apis/record_auth_impersonate_test.go": "780ccf06a75bee2231645211736efda465b02909bda524ec98fb6114e85fa6de",
+    "apis/record_auth_methods_test.go": "ce3d079495faaab47e030fe9ee8c5811e639728304cce7cd97a63e4a10458b8d",
+    "apis/record_auth_otp_request_test.go": "b0eb0511b3f78f4c0463097bf2a77beb5d7f9c34d17b44f0a1df534288c01f6c",
+    "apis/record_auth_password_reset_confirm_test.go": "45f50836c2a2b3a824a2f966cbf787be28632cc1fa60df9902f1aa0326cb7744",
+    "apis/record_auth_password_reset_request_test.go": "dd50d3986eea1847688020b7964c5859814b96bbe1ad47ee0577b86b75e113e1",
+    "apis/record_auth_refresh_test.go": "a09bcb86db5c71ea450c0dae5f9321da500fa66bc8e8446b49bab8a1a064bf8c",
+    "apis/record_auth_verification_confirm_test.go": "df47ede34a8b791659448e1660d9c48d640a710c898d9b30cf491499b3a7f0c0",
+    "apis/record_auth_verification_request_test.go": "b9b58b46c79ce1405265ef68fabd539a0d80330b036b544d381f53360b55282d",
+    "apis/record_auth_with_oauth2_redirect_test.go": "6482e5191979510686d1fdf7e23dcc0d98d8ad8146500ad6153ba81c935cd9a6",
+    "apis/record_auth_with_oauth2_test.go": "5c0f477722eec0e9c24df396dcafa1bb836f42917511b33b7b00ffecd16ef6a3",
+    "apis/record_auth_with_otp_test.go": "8d6ffa4a9947fa284c58cbb46ec69e3956d93dd644a185d2f253a7785dd84802",
+    "apis/record_auth_with_password_test.go": "f21edb6866470659b48438bae977e3545c7f701602f2812496f137a069228fa4",
+    "apis/record_crud_auth_origin_test.go": "02d1c764e6c23d3a3ddd0e1661c11fc6a684d225d61e43e7c9fff8730ecc9488",
+    "apis/record_crud_external_auth_test.go": "9727f73a425bf544e01d424fae46780860b5e2eebed7d7a1e93f7aff22596cef",
+    "apis/record_crud_mfa_test.go": "54d365095458042dbc12bb25711df4217c716f9b246dd340b82fdd97469166b6",
+    "apis/record_crud_otp_test.go": "2e4f4d22858415f6ccd709a2dd7e2be700914778fb11eb49b89df7c17bf9694d",
+    "apis/record_crud_superuser_test.go": "d0ec2ce45495dfb28bbce0268cad325258673487dccee33f8f4ec67a19209930",
+    "apis/record_crud_test.go": "117d1e7327b12efee9d826899c4e519b741584472a7a0d4002bd3b290385be47",
+    "apis/settings_test.go": "1cc70e63a1e98af43cbcbd08ca72fb826569d0c4b10eb3da316c71ffff5920f9",
+    "apis/sql_test.go": "b971a1d84f9a97588f0cd07bed8f96a319097936251c84883a95c94d59ecd1c9",
+    "core/auth_origin_model_test.go": "88eaa48e8178a2d3753bdb5b4805697880c2bc9b41eb5a2976c77c2b5b9b5e70",
+    "core/auth_origin_query_test.go": "bd82944eec16d56e100c956a0e0e13fcdf926d5b12d25fc23ffefa104b9236a4",
+    "core/backup_concurrency_test.go": "c94c798493d396504b139fe7df20c51a3ff32f2ef08032b64cb54d46978df6b2",
+    "core/backup_test.go": "0fea10babb006767cc2438e6f974e8a89afbf2d714fe0dbbe24b15607ea8c2a5",
+    "core/db_model_test.go": "0d5820833969cc22849e176d88287a66aedd06e93ac5ef7755ee161285b6e3cf",
+    "core/db_retry_test.go": "e54f5cd4062cf82f9565226f00d7f6fc298d69f3c5b5e3cdf9fbf2c9c205a43f",
+    "core/db_table_test.go": "de9e9a563cca7e90b0ef5d8ce3143b272f0871deb45264d86965ccb855c1df37",
+    "core/db_test.go": "8268b856f56ef2c263cc1a3456c3cc9f369bc347f719d63d827ed94df4c0c2af",
+    "core/db_tx_test.go": "b99f17cde720c654e62a3ae7a10f7a681f977e982f4ec2b756a8fcc8157b00e2",
+    "core/external_auth_model_test.go": "87d261993aa7d0ab9a0e899fda7b39442f272bdb6595b6d6ace0fc9daa4ccd85",
+    "core/external_auth_query_test.go": "34945b84e7735fb879c4369655906544d18042923d9695544350bbcfac30af87",
+    "core/field_autodate_test.go": "e9883d03676c61b24e7a23ff490c8a051e8d35e2d1e73e3656f5bb17cc7a7185",
+    "core/field_bool_test.go": "0193667aef8ee9909c7c9801624cff30630b65de4f5791d4c7e4f5fc1f7e12d5",
+    "core/field_date_test.go": "0f03311f9b7b7cb0ccf88f43923146dddbccb75bfe15695555e22547331a3bc3",
+    "core/field_editor_test.go": "1acf936416b3cb58fb767bb10324f32c12fc03426c1326def042944025b0ac71",
+    "core/field_email_test.go": "2588150dc93c643c610f0650523140da71009a3069f431ba87c04b5137ca4876",
+    "core/field_file_test.go": "e39ba5c2d15e9749e7c4f9e10f51fe9bc05d2a6851472be8af3d7c82dcb68892",
+    "core/field_geo_point_test.go": "c5119f4906865d6b5a8b1687fc84108389ec82ec16cfe6a67fecec65cd050e8d",
+    "core/field_json_test.go": "3d2b987c041c22ed083e62e092162a92eec007ced665335344c4a403315b5a7a",
+    "core/field_number_test.go": "873d2bd2217f54920951916076b0aef007a9297ee04aa783e82aa853470c3cc5",
+    "core/field_password_test.go": "4d23bcfee00557f8d81df65dd5bbfe09d3a09c6c4358bfca31194734e1a51e94",
+    "core/field_relation_test.go": "86c27c58aa4acd62de32e822d8faff8f6a9f41d70b513b685b8ed1d42ce1aa0a",
+    "core/field_select_test.go": "7057ff0495b773cb1c0a3017f83d9b1169d2603a09db3066bc61ffcbbe9ed216",
+    "core/field_text_test.go": "18017ba51db0d85e84a67759acdc95991d7f1a7b7758008aba13b6bad0a15851",
+    "core/field_url_test.go": "2e27175a99f912a8bdb68fb49a116fbd468e38630e068a46a3598273e371a992",
+    "core/mfa_model_test.go": "c9dcd71c3e41fa243eb981382e97c311b3b97988393fdcc83c7de5f44afe9aa7",
+    "core/mfa_query_test.go": "52d3adc889e692a26a555db6c9af3dbbc49c31373f318636627c61d971f4bf59",
+    "core/otp_model_test.go": "05095d5caef925f16b8968aab0daed8e59331ad8ed3f2c417f08a4ee0debac6f",
+    "core/otp_query_test.go": "4b96ecac6a7039e0abf14d1f41f2b707787039b25ebd92c86fff743227f9684e",
+    "core/record_query_expand_test.go": "a46145c7da9e14b5ddc44c04fa6210e0b28b43524a7ce18b8ab846f41aa09139",
+    "core/record_query_test.go": "77599c1f3db8427f30455848260c2586e7d7f4b3f38671f0fcd8b20c8aa5eae2",
+    "core/settings_model_test.go": "f3cfcacfbc93d6f4ae7163b7cb2e83198f8a65f309aec33ceb7881483cdf9267",
+    "core/settings_query_test.go": "6538729bd842a3cccebfc86aeeb08ce0d5dcbfdee323bb38fdc08f6eb4d618e3",
+    "core/validators/db_test.go": "3472171ba2de8f01ea92e8d88fa1637d1b3190511e38e7b1d198e4de0c1d92df",
+    "core/validators/file_test.go": "5a0e1dad48873406eee83cc0549be39b220b7b13bc8b23ec89394a80ae952291",
+    "core/validators/string_test.go": "64892055fe8fe95f1f5b46e8cd367846279e4d52873b830b293c9d2870cb3f79",
+    "core/validators/validators_test.go": "a0c595a628645f77f5b057b3deff7a45f4d5aa83ae3e2c94ee7539cb29e0e46f",
+    "internal/admission/manager_test.go": "146cd4fb40c924b2ba5b1b0a6eea4865c2d66afda27da305dcd029ab564d4f84",
+    "internal/application/agentfs_test.go": "3fada75e41fff3369431e320549a0e1aa9628bb6d9b268a9a5f819d4d11b222f",
+    "internal/application/application_test.go": "375ed7d9c118f6160f737ec7c1bdd82c0a0b3ede32745d1450dcac7aec0fabd9",
+    "internal/application/reference_copy_test.go": "d5d8d6fbebba2caab0ec30f8bc3380fcf6d0c9d19a2794dd292669c5d359b53b",
+    "internal/dbexec/connector_test.go": "3bb0872c3b11f4a8b982c6333717df9bb1a8adaabda1e068810b489e0faad1c0",
+    "internal/dbexec/v01_04_crash_test.go": "0978377ad43b76e2e6e8036c552b9d62eaab477bf7697e2c4db6667aa6631b59",
+    "internal/dbexec/v01_04_jobs_test.go": "050e0cfb928a146bf623c80195156edf763b77b572ade801f913809830dd9bba",
+    "internal/dbexec/v01_04_pool_test.go": "10551efd4019c6356dff005e4578c9f47c22fa9df2e0dc58802dffbddeb8a85c",
+    "internal/pbimport/remotefiles_test.go": "91ad08e3c16dc7629f569b210670e839f79c3e09cede314f984d2ac2b85e9df2",
+    "internal/pbimport/renameprobe_test.go": "5006a63e2ee9c646849c9389df293b5a00eecb53f4a608c40b13de42134f97d8",
+    "internal/pgateway/pgateway_extended_test.go": "dd51a8e492e941c003ff01b55692f71cb7d6a37b0a2c25b4beb91b70680f9aae",
+    "internal/pgateway/pgateway_test.go": "783689caa0eb4b10f4d11fe176aa22872a9c0f27b51fc7b70370e13791cf3ed8",
+    "internal/pgateway/pgateway_unit_test.go": "2945eaed38592ba4f3e3ad28aac37e7a3f8f12192814d8a1e15f20ea71e3ff6d",
+    "internal/search/engineprobe_test.go": "d622185898687b59df5f171141ef1cbfbc888ad56a311b929e522579f68fbabd",
+    "internal/search/hybrid_fuzzy_test.go": "dae60ca6759e32a5612658af793b79cea75d7153d2f81f2917dc6ca5455a4056",
+    "internal/search/search_repair_test.go": "150d8fe994a88d4991aa7d7b5d057843ea9d5724a28920368c8e853e4e4d77c4",
+    "internal/setup/openapi_test.go": "d04da6487f245054dc616d58c52fafcde635c46e73d6db49008176b21f6ec3e3",
+    "mails/record_test.go": "a2941c9442417d0184d49c68f6972034be25c42de4e5b7ea6286343bcc3876ba",
+    "plugins/ghupdate/ghupdate_negative_test.go": "ea10333cc54ba9742530bc17ba237826578208ee87117edb5fa1a3920d579898",
+    "plugins/ghupdate/ghupdate_test.go": "11c27e17412d1487a3d8678270794514b1a6292c79710809c2b40a072c7bdee2",
+    "plugins/ghupdate/release_test.go": "0e5c60aec3f4d2e8477374abebfcbd0b97525b213c87966fc8afd19cc42b22d2",
+    "plugins/jsvm/binds_app_reset_test.go": "60d2b7ba4130ade70b9ec1dea5c8f3eca92aeba550ce6ded6b10e48753be3696",
+    "plugins/jsvm/binds_test.go": "b271ba368414130253f0c996ccefaad0ace99c0a63240442c2d89e1a85d1eaef",
+    "plugins/jsvm/form_data_test.go": "d131e0b73092f19c808935bcd1818b4afc3d5a9b1abc7a36c041b97df2f00f52",
+    "plugins/jsvm/mapper_test.go": "53c6a8e9b6787ee6de1aa9ffbd8a0c51ba8ccd258811f3f695c7e46d5c78078b",
+    "plugins/migratecmd/migratecmd_test.go": "1b48f26ebd843660f7fc78bda1183acc5f2549bfb0c0d33fdb65dcf12be727ec",
+    "plugins/update/release_test.go": "39cb8a9541700d88f7ad00ffd4e142f7d434fd95e38dce3f160dc766f9f1ce70",
+    "plugins/update/update_test.go": "4e602803cf1e3dcfc7e804e46cd535aa776fc467270e2f662ce61667d47261a4",
+    "tools/archive/create_test.go": "9ff38130958bd331fca5c35dec830b5831beab89f53eb67a132d42e6429d586c",
+    "tools/archive/extract_test.go": "147b811de2bb294667877c93afcc5d9ce2e620029e35f42c6f952f9c9639f93a",
+    "tools/auth/auth_test.go": "e4ef7ba5f276f42640c44cb60f479a718baf0f5b447b9271d3e83698207ed38d",
+    "tools/auth/base_provider_test.go": "50969f28a87d9a2192525512cdea9fddf3d98ad27555c8869aa72d9a4222eb91",
+    "tools/auth/internal/jwk/jwk_test.go": "05b955467679a4193950de7867bc91401ee97f144dce9552f3de4a6e99ced675",
+    "tools/cron/cron_test.go": "77ad2692f628c8e1732f83764a455739ce90b91dadbef8b58d178db1943ba91c",
+    "tools/cron/job_test.go": "5854e5fa80d23fe2d203b7d2f23463eb5f7a14cc9752285e64674cd6c4801104",
+    "tools/cron/schedule_test.go": "796aa9668a39439a68d9a93847e61ef14f93add8d67432d889bbbcc3c2be1297",
+    "tools/filesystem/file_test.go": "dbf41c019af1be9e9c606fdca8081c258101a565b8e92ff287a8f03ac8e43e53",
+    "tools/filesystem/filesystem_test.go": "30e7d3483152fcd08ee6de153f0b318506e3b4c4e81e8cd0bb694cbbf48e77e9",
+    "tools/filesystem/internal/s3blob/s3/copy_object_test.go": "55e635c2be08ea2960a64b859b112dd942cc8aeb67c9288c161c247addd2e1e3",
+    "tools/filesystem/internal/s3blob/s3/delete_object_test.go": "c4a8bbfbc40820d9f0aa2f8aa83557d6591909541b18716e4d71a8ab6b4d3ae1",
+    "tools/filesystem/internal/s3blob/s3/error_test.go": "ffdf187b2121a6f7d40d5dd4f6abcfbd2554bba76e23cb4c8b71ea1a2b6c497b",
+    "tools/filesystem/internal/s3blob/s3/get_object_test.go": "5d523af98380eef09a4c3361219735bea5c5e56e274bb2ddb1cad4a3626b8bfb",
+    "tools/filesystem/internal/s3blob/s3/head_object_test.go": "2356485f2c431d92e9ab3b0a066d257b0108eb773875f6b4312fb9dc5947db32",
+    "tools/filesystem/internal/s3blob/s3/list_objects_test.go": "0a6610faf82ed9545258005b1a0d722169abef781260a7186e4839d8ba098343",
+    "tools/filesystem/internal/s3blob/s3/s3_escape_test.go": "3cd8ac06dcef3ee7dad1f9262fbfbf59653c2e9b6b7c45f8511952d412ed4c3c",
+    "tools/filesystem/internal/s3blob/s3/s3_test.go": "eec4c35680e25fa5b849ae66ce33063e76c5a8f76f3e8e1a0339cbf082cea9e9",
+    "tools/filesystem/internal/s3blob/s3/uploader_test.go": "5ddc94eb734dbe989afb12c216bd6fa5e3ecd12c6fe212c2a461062bf5cad2f9",
+    "tools/filesystem/internal/s3blob/s3blob_test.go": "8c274c0b606a0a40ef7a6892b6c3a4382d9b3f69853c9bb4ef72d86e04af38b2",
+    "tools/mailer/html2text_test.go": "031a378178da137ab52440f00cdcde5aea43c28e182b6ba35ecbae64b0cbe489",
+    "tools/mailer/mailer_test.go": "a1a708c06ab6a9b303844e28f6ede266fc7f7afb451a619c0ac2ba34f3581c6a",
+    "tools/mailer/smtp_test.go": "ab4981c89ea0c971a057110744902b60ec27212614f8339e331e5078426653bc",
+    "tools/search/filter_test.go": "2c0ef36f25516bc8595e05eee56bcb20d0ec4662e3fd5d60bd2c60eb5a2f7d0a",
+    "tools/search/identifier_macros_test.go": "72f4157288ca0c8a2db85c079fca5669bc48915f15744671031595173d99caec",
+    "tools/search/multi_match_subquery_test.go": "cdc7a00088cd999c8a9139b4787219e05afe6d01f1bfaea0f42d812ef2624d35",
+    "tools/search/provider_test.go": "2b96c68832d2cefdd7a7a2d380030734728aecbe8c4f4a7a7a20d3c48ef78036",
+    "tools/search/simple_field_resolver_test.go": "2e06277499ea15e2d8069bbbc242fc215b82e289d9a30518a61c10767d3f4cc5",
+    "tools/search/sort_test.go": "5d0ce2336ff97d677e546a5f4444f4ebfc62a28a948507b541ec33a492e451de",
+    "tools/search/token_functions_test.go": "b46ca7e62a598c4d1d81b6fa249b94d1fddccea5522ded215257756f8d4b0319"
+  },
+  "targetObservations": {
+    "windows/amd64": {
+      "allLatestObservedAssertionsPassed": true,
+      "fullFamilyAcceptance": false
+    },
+    "linux/amd64": {
+      "allLatestObservedAssertionsPassed": true,
+      "fullFamilyAcceptance": false
+    }
+  }
+}
