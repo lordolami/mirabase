@@ -29,7 +29,7 @@ cd mirabase
 go run ./tools/release --version dev
 ```
 
-Stay at this repository root for the remaining commands. The public checkout already contains `go.mod`, `tools`, `docs` and `examples`; do not enter another `server` directory. A first Go build needs network access for module dependencies. Upgrade an old Go toolchain rather than lowering `go.mod`.
+In the public checkout, run `cd server` from the repository root before the remaining source-build commands. This application directory contains `go.mod`, `tools`, `docs` and `examples`. Downloaded standalone packages use their packaged layout. A first Go build needs network access for module dependencies. Upgrade an old Go toolchain rather than lowering `go.mod`.
 
 Expected output includes `Built dist/...`. The executable and adjacent `.manifest.json` are under `dist`; the manifest records build facts separately from full qualification:
 

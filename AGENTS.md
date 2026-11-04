@@ -1,6 +1,6 @@
 # MiraBase build instructions
 
-This folder is the owned release source. Read its README, docs/current-product.md, docs/user/index.md, docs/launch/status.md and all affected contracts/source/tests before changing behavior. The product has implementations beyond the initial v0.1 allocation; retain those features. Initial phase/roadmap labels are design ownership, not authority to delete integrated code or assert qualification.
+The owned release source is server/ in the workspace. Read its README, docs/current-product.md, docs/user/index.md, docs/launch/status.md and all affected contracts/source/tests before changing behavior. The product has implementations beyond the initial v0.1 allocation; retain those features. Initial phase/roadmap labels are design ownership, not authority to delete integrated code or assert qualification.
 
 - Preserve pinned PocketBase and Turso audit checkouts and all legal notices. SDKs, native bridge, vendored Go driver, documentation and launch tools belong in the release source folder.
 - Preserve collections, records, auth/rules, files, realtime, Go/JS hooks and the dashboard. One process serves optional tenant/user/agent DBs through bounded shared services; no process/scheduler/warm JS VM per DB.

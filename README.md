@@ -1,16 +1,33 @@
 # MiraBase v0.1
 
+## Codebase and dependencies
+
+**`internal/` showcases our MiraBase implementation. `server/` contains the complete, runnable MiraBase application, including inherited PocketBase code, dependencies and our additions.**
+
+| Directory | What it contains |
+|---|---|
+| [internal/](internal/README.md) | A review copy of `server/internal/`: database/application services, execution/jobs, engine integration, search, live queries, PostgreSQL gateway, PocketBase import and storage setup. |
+| [server/](server/README.md) | The complete application and Go framework, including the canonical `server/internal/`, inherited foundation, APIs, dashboard, SDKs, native bridge, tests, docs and build/release tools. **Build from here.** |
+
+The top-level copy makes the implementation easy to inspect; it is not a separate backend, extra feature set or independent Go module. `server/internal/` remains canonical. Changes inside the inherited PocketBase files and additions elsewhere in `server/` are also part of MiraBase; `internal/` alone is not the entire contribution.
+
+**Pre-existing dependencies:** PocketBase supplies the original backend/dashboard/auth/collections/files/realtime foundation; Turso supplies the database engine and upstream driver. Their source, licenses and notices retain their original authorship. The platform adapter and native payloads in the review copy also include upstream-derived material; placing a file in `internal/` does not make that dependency newly authored work. See [third-party notices](server/THIRD_PARTY_NOTICES.md), [source provenance](server/docs/mirabase/upstream-evidence.md) and the [hackathon build account](server/docs/hackathon-build.md).
+
+**Our contribution:** the MiraBase extensions, integration changes and supporting work described below. The separate [Formal Verification project](https://github.com/lordolami/formal-verification) supplies the assurance harness; Quint is its upstream checking engine. Neither product requires a MiraBase-hosted private service. This layout identifies source ownership; it does not remove inherited dependency code from `server/`.
+
+All source-build commands below run inside **`server/`**. Downloaded standalone packages retain their existing layout.
+
 **One backend. A private database for every user, tenant, and agent.**
 
 **Empowering the next generation of indie hackers and AI agents with zero-infra multi-tenancy.**
 
 ## Meta AI Developer Hackathon — what we built
 
-[Watch the three-minute demo](https://youtu.be/PVRYAADs-EQ) · [Formal Verification repository](https://github.com/lordolami/formal-verification) · [Full build account](docs/hackathon-build.md) · [Start MiraBase](#start-your-backend)
+[Watch the three-minute demo](https://youtu.be/PVRYAADs-EQ) · [Formal Verification repository](https://github.com/lordolami/formal-verification) · [Full build account](server/docs/hackathon-build.md) · [Start MiraBase](#start-your-backend)
 
 Our submission comprises the MiraBase extensions and integration, plus a separate [Formal Verification assurance harness](https://github.com/lordolami/formal-verification). We used **1.3-contributor for implementation** and **Muse Wonder for architecture documentation**. The account below describes our hackathon contribution and the current boundary of each implementation.
 
-[MiraBase source](https://github.com/lordolami/mirabase) · [Formal Verification source](https://github.com/lordolami/formal-verification) · [Three-minute demo](https://youtu.be/PVRYAADs-EQ) · [Source-linked inventory](docs/current-product.md) · [Executed evidence](docs/launch/status.md)
+[MiraBase source](https://github.com/lordolami/mirabase) · [Formal Verification source](https://github.com/lordolami/formal-verification) · [Three-minute demo](https://youtu.be/PVRYAADs-EQ) · [Source-linked inventory](server/docs/current-product.md) · [Executed evidence](server/docs/launch/status.md)
 
 ### The problem and the product
 
@@ -128,7 +145,7 @@ MiraBase extends the existing PocketBase backend/dashboard with Turso and a mult
 
 49. **Application-registry foundations.** Create/list/get/state/delete/bootstrap APIs and directory/supervisor machinery. Full independent application auth/settings/hooks/files/runtime isolation is unfinished; update/backup/restore and the per-app import-source listing operation are not registered.
 
-These are work areas, not a manufactured count of independently accepted features. [Current product](docs/current-product.md) links source and tests; [the catalog](docs/features.md) preserves inherited/additive/partial/planned distinctions.
+These are work areas, not a manufactured count of independently accepted features. [Current product](server/docs/current-product.md) links source and tests; [the catalog](server/docs/features.md) preserves inherited/additive/partial/planned distinctions.
 
 ### Formal Verification: the second project
 
@@ -182,17 +199,17 @@ The feature additions and integration described here are our hackathon contribut
 
 ### Release and roadmap
 
-Publication and a passing smoke test do not substitute for production qualification. The existing Windows artifact is unsigned. [Launch evidence](docs/launch/status.md) preserves current implementation/platform/recovery/signing obligations, including the managed-record policy gap described above.
+Publication and a passing smoke test do not substitute for production qualification. The existing Windows artifact is unsigned. [Launch evidence](server/docs/launch/status.md) preserves current implementation/platform/recovery/signing obligations, including the managed-record policy gap described above.
 
-Full offline/native sync, full AgentFS, independent application isolation, remaining schema/SDK/platform/resource/signing work and future placement/replication/routing/failover/balancing/PITR/fleet operations are [open-source roadmap work](ROADMAP.md). There is no MiraBase-hosted cloud or managed hosting offering.
+Full offline/native sync, full AgentFS, independent application isolation, remaining schema/SDK/platform/resource/signing work and future placement/replication/routing/failover/balancing/PITR/fleet operations are [open-source roadmap work](server/ROADMAP.md). There is no MiraBase-hosted cloud or managed hosting offering.
 
 ## Download and start
 
-The current Windows download is the **standalone release**. It is unsigned; its tested behavior and remaining production limitations are recorded in [launch status](docs/launch/status.md) and [release notes](release/standalone-2026-11-04.md).
+The current Windows download is the **standalone release**. It is unsigned; its tested behavior and remaining production limitations are recorded in [launch status](server/docs/launch/status.md) and [release notes](server/release/standalone-2026-11-04.md).
 
-**[Download Windows x64 ZIP](https://github.com/lordolami/mirabase/releases/download/standalone-2026-11-04/mirabase-windows-amd64.zip)** · [Release notes, SDK and source](https://github.com/lordolami/mirabase/releases/tag/standalone-2026-11-04) · [Download/start guide](docs/user/downloads.md)
+**[Download Windows x64 ZIP](https://github.com/lordolami/mirabase/releases/download/standalone-2026-11-04/mirabase-windows-amd64.zip)** · [Release notes, SDK and source](https://github.com/lordolami/mirabase/releases/tag/standalone-2026-11-04) · [Download/start guide](server/docs/user/downloads.md)
 
-Extract the whole ZIP, then run `start-mirabase.cmd` or `.\mirabase.exe serve --http=127.0.0.1:8090`. The dashboard and native payload are included. Running it needs no Go/Rust/Node; the Windows engine requires the [Microsoft VC++ x64 runtime](docs/user/downloads.md).
+Extract the whole ZIP, then run `start-mirabase.cmd` or `.\mirabase.exe serve --http=127.0.0.1:8090`. The dashboard and native payload are included. Running it needs no Go/Rust/Node; the Windows engine requires the [Microsoft VC++ x64 runtime](server/docs/user/downloads.md).
 
 ## What users get
 
@@ -219,16 +236,16 @@ A user can belong to multiple tenants. A tenant database is a storage boundary i
 
 ## Start your backend
 
-For the ready-to-run Windows package, follow [download and start](docs/user/downloads.md). The executable is unsigned and the current qualification/endpoint limits remain documented. To build from source instead, install **Git and Go 1.27.x**. The included dashboard and amd64 native payloads mean Rust/Node/npm are not needed for that first build on a compatible target. Rebuilding those components needs their separate toolchains.
+For the ready-to-run Windows package, follow [download and start](server/docs/user/downloads.md). The executable is unsigned and the current qualification/endpoint limits remain documented. To build from source instead, install **Git and Go 1.27.x**. The included dashboard and amd64 native payloads mean Rust/Node/npm are not needed for that first build on a compatible target. Rebuilding those components needs their separate toolchains.
 
 ```sh
 git clone https://github.com/lordolami/mirabase.git
-cd mirabase
+cd mirabase/server
 go version
 go run ./tools/release --version dev
 ```
 
-Run from the cloned repository root, which already contains `go.mod`; there is no extra `server` directory in the public checkout. The builder selects the native payload and compiles its digest pins. Plain `go build ./examples/base` is not the Turso product build.
+Run source-build commands from `server/`, which contains `go.mod`. The top-level `internal/` directory is a review copy; the build uses `server/internal/`. The builder selects the native payload and compiles its digest pins. Plain `go build ./examples/base` is not the Turso product build.
 
 **Windows amd64 / PowerShell:**
 
@@ -242,11 +259,11 @@ Run from the cloned repository root, which already contains `go.mod`; there is n
 ./dist/mirabase-linux-amd64 serve --http=127.0.0.1:8090 --publicDir=./examples/quickstart
 ```
 
-Mac/ARM payloads are not provided. See [platform details](docs/user/production.md). A cross-compile is not execution evidence.
+Mac/ARM payloads are not provided. See [platform details](server/docs/user/production.md). A cross-compile is not execution evidence.
 
-Open the private setup URL printed by the server and create the first superuser. Administration is at `http://127.0.0.1:8090/_/`; the included frontend is at `http://127.0.0.1:8090/`. Follow the [complete first-application tutorial](docs/user/quickstart.md) to create its exact collections/rules, two member accounts, save a note and check another member cannot read it. This frontend uses ordinary member credentials and requires no external SDK installation.
+Open the private setup URL printed by the server and create the first superuser. Administration is at `http://127.0.0.1:8090/_/`; the included frontend is at `http://127.0.0.1:8090/`. Follow the [complete first-application tutorial](server/docs/user/quickstart.md) to create its exact collections/rules, two member accounts, save a note and check another member cannot read it. This frontend uses ordinary member credentials and requires no external SDK installation.
 
-The tutorial uses shared storage with owner-based record rules. Optional private storage has a separate [setup guide and current integration limits](docs/user/databases.md). Data defaults to `mb_data` under the working directory. Stop with Ctrl+C; restarting the same command/directory reuses that data. Public hosting needs separate TLS, account recovery, backup and operational acceptance.
+The tutorial uses shared storage with owner-based record rules. Optional private storage has a separate [setup guide and current integration limits](server/docs/user/databases.md). Data defaults to `mb_data` under the working directory. Stop with Ctrl+C; restarting the same command/directory reuses that data. Public hosting needs separate TLS, account recovery, backup and operational acceptance.
 
 ## Backend features
 
@@ -260,7 +277,7 @@ The tutorial uses shared storage with owner-based record rules. Optional private
 
 Inherited fields include text, number, boolean, email, URL, rich text, password, date, autodate, select, JSON, relation, file and geopoint. Additional managed adapters exist for int64, decimal, UUID, typed date/time/timestamp, network addresses and vectors; complete dashboard/core-field/SDK parity for every added adapter remains open.
 
-[Foundation guide](docs/user/foundation.md) · [Field guide](docs/user/fields.md)
+[Foundation guide](server/docs/user/foundation.md) · [Field guide](server/docs/user/fields.md)
 
 ### Authentication and access rules
 
@@ -271,11 +288,11 @@ Inherited fields include text, number, boolean, email, URL, rich text, password,
 - Separate list/view/create/update/delete rules with locked, public or expression-based access.
 - Request/auth/relation-aware filters and protected secret fields on inherited record paths.
 
-Provider adapters include the major identity providers and generic OIDC; the [complete catalog](docs/features.md#8-authentication-and-accounts--inherited) lists the configured adapter families. Providers require their own credentials.
+Provider adapters include the major identity providers and generic OIDC; the [complete catalog](server/docs/features.md#8-authentication-and-accounts--inherited) lists the configured adapter families. Providers require their own credentials.
 
 **Managed-record limitation:** the additional `/api/mirabase/v1/db/...` CRUD handlers currently check ownership/grants and invoke a raw store. Complete inherited record rules, forms, hooks and hidden-field behavior are not applied there. The normal inherited record API is separate. Do not treat private database grants as full collection-policy parity.
 
-[Authentication](docs/user/authentication.md) · [Rules](docs/user/rules-and-filters.md) · [Implementation limits](docs/current-product.md)
+[Authentication](server/docs/user/authentication.md) · [Rules](server/docs/user/rules-and-filters.md) · [Implementation limits](server/docs/current-product.md)
 
 ### Files, email and realtime
 
@@ -286,7 +303,7 @@ Provider adapters include the major identity providers and generic OIDC; the [co
 
 Realtime notifications, durable changes and live-query results are separate capabilities. DB-only backups do not automatically contain remote S3 objects.
 
-[Files](docs/user/files.md) · [Realtime](docs/user/realtime.md) · [Account flows](docs/user/authentication.md)
+[Files](server/docs/user/files.md) · [Realtime](server/docs/user/realtime.md) · [Account flows](server/docs/user/authentication.md)
 
 ## MiraBase extensions
 
@@ -302,7 +319,7 @@ Realtime notifications, durable changes and live-query results are separate capa
 
 Joining an existing tenant reuses its database. Several eligible memberships require a choice. Changing an existing populated layout requires reviewed transformation; it is not a silent toggle.
 
-[Database layouts and workflow](docs/user/databases.md) · [Membership/schema operations](docs/user/schema-and-workflows.md)
+[Database layouts and workflow](server/docs/user/databases.md) · [Membership/schema operations](server/docs/user/schema-and-workflows.md)
 
 ### Four search modes
 
@@ -315,7 +332,7 @@ Joining an existing tenant reuses its database. Several eligible memberships req
 
 Search includes limits, candidate budgets, deadlines, deterministic ties, completion/scanned metadata and context-bound continuation leases. Embedding generation is not bundled. Exact vector search is not a claim of complete ANN coverage.
 
-[Search examples and limits](docs/user/search.md)
+[Search examples and limits](server/docs/user/search.md)
 
 ### Schemas, shared references and reporting
 
@@ -328,7 +345,7 @@ Search includes limits, candidate budgets, deadlines, deterministic ties, comple
 
 Unsupported custom-type/view/sequence operations in the additive planner are refused. Inherited view collections remain separate. References and workflows do not provide cross-file ACID transactions.
 
-[Schema and derived-data guide](docs/user/schema-and-workflows.md)
+[Schema and derived-data guide](server/docs/user/schema-and-workflows.md)
 
 ### Durable changes, record sync and live queries
 
@@ -339,7 +356,7 @@ Unsupported custom-type/view/sequence operations in the additive planner are ref
 
 Whole-system CDC capture needs evidence for each writer. Bootstrap/page currently requires operator authority; complete ordinary-user offline stores and upstream native whole-DB sync interoperability remain open. Live-query shapes that cannot be safely narrowed for ordinary actors may be refused.
 
-[Changes/live queries](docs/user/changes-and-live.md) · [Sync workflow](docs/user/synchronization.md)
+[Changes/live queries](server/docs/user/changes-and-live.md) · [Sync workflow](server/docs/user/synchronization.md)
 
 ### Agent workspaces
 
@@ -350,7 +367,7 @@ Whole-system CDC capture needs evidence for each writer. Bootstrap/page currentl
 
 Current HTTP operations are superuser-only, use string content, and cap snapshot content at 64 MiB. Multi-file crash-atomic restore and full upstream AgentFS KV/inode/chunk/overlay/mount/replication integration remain open. Do not give an untrusted agent a superuser token.
 
-[Workspace API and boundaries](docs/user/agent-workspaces.md)
+[Workspace API and boundaries](server/docs/user/agent-workspaces.md)
 
 ### PostgreSQL client access
 
@@ -358,7 +375,7 @@ The optional gateway provides TLS/SCRAM, separately scoped SQL credentials, simp
 
 It is not a complete PostgreSQL server. COPY, binary formats, introspection, SQL dialect and ORM compatibility need specific qualification. Record rules do not constrain privileged SQL as if it were ordinary record access.
 
-[Enable and use the PostgreSQL gateway](docs/user/postgresql.md)
+[Enable and use the PostgreSQL gateway](server/docs/user/postgresql.md)
 
 ### PocketBase adoption
 
@@ -370,7 +387,7 @@ It is not a complete PostgreSQL server. COPY, binary formats, introspection, SQL
 
 The pinned baseline is PocketBase v0.41.1. Complete no-loss conversion, arbitrary historical-version support and independent-app consolidation require further acceptance. Collection schema import alone is not full application adoption.
 
-[Import procedure and recovery](docs/user/pocketbase-import.md)
+[Import procedure and recovery](server/docs/user/pocketbase-import.md)
 
 ## Developer tools and operations
 
@@ -380,7 +397,7 @@ Go embedding, hooks, custom models/proxies/routes/middleware/commands, transacti
 
 Trusted extensions have process privileges. Goja is not Node.js, and installed hooks are not hostile tenant-code sandboxes.
 
-[Extensions](docs/user/extensions.md) · [Jobs/migrations](docs/user/jobs-and-migrations.md)
+[Extensions](server/docs/user/extensions.md) · [Jobs/migrations](server/docs/user/jobs-and-migrations.md)
 
 ### SDKs and APIs
 
@@ -388,7 +405,7 @@ JS/TS and Dart packages provide application clients, immutable database/tenant v
 
 The owned wrappers are not complete inherited auth/files/realtime clients or offline local engines. Dart currently uses `dart:io`; Flutter Web is not established. Registry publication is not implied by local packages.
 
-[SDK methods and examples](docs/user/sdks.md) · [Actual route reference](docs/user/api-reference.md)
+[SDK methods and examples](server/docs/user/sdks.md) · [Actual route reference](server/docs/user/api-reference.md)
 
 ### Jobs, recovery and diagnostics
 
@@ -400,13 +417,13 @@ The owned wrappers are not complete inherited auth/files/realtime clients or off
 
 Recovery remains subject to open acceptance gates. The latest Windows concurrent-backup regression passes; it does not establish full platform/fault coverage. Native page encryption/key rotation/custom codecs are currently refused, despite related route/config names. Outbox/settings protection is a separate layer.
 
-[Operational procedure](docs/user/operations.md) · [Errors and recovery decisions](docs/user/errors-and-troubleshooting.md)
+[Operational procedure](server/docs/user/operations.md) · [Errors and recovery decisions](server/docs/user/errors-and-troubleshooting.md)
 
 ### Application registry
 
 Create/list/get/state/delete/bootstrap APIs and per-app supervisor/directory machinery are present. Complete independently isolated application execution is not established. Application update/backup/restore and one per-application import-source listing operation remain unregistered; the batch-level sources endpoint is separate.
 
-The [42-family feature catalog](docs/features.md) retains the detailed inventory and each important boundary. [Current product](docs/current-product.md) connects families to source/tests; [launch status](docs/launch/status.md) records actual acceptance.
+The [42-family feature catalog](server/docs/features.md) retains the detailed inventory and each important boundary. [Current product](server/docs/current-product.md) connects families to source/tests; [launch status](server/docs/launch/status.md) records actual acceptance.
 
 ## One process, many databases
 
@@ -420,7 +437,7 @@ Fresh paths are `mb_data`, `mb_hooks`, `mb_migrations` and `mb_public`. Database
 
 **There is no MiraBase cloud or managed hosting offering.** The current project is the self-hosted open-source backend. Future open-source platform work covers placement, replication, routing, failover, balancing, cold databases, backups/PITR, an operator console, quotas and resource accounting. Preserve the frontend/API and private-database model as those capabilities develop.
 
-[Open-source roadmap](ROADMAP.md) · [Future platform scope](docs/roadmap/platform/README.md) · [Distributed design](docs/roadmap/platform/distributed-architecture.md) · [Operator journey](docs/roadmap/platform/customer-journey.md) · [Resources/economics](docs/roadmap/platform/operations-and-economics.md) · [Future acceptance](docs/roadmap/platform/acceptance.md)
+[Open-source roadmap](server/ROADMAP.md) · [Future platform scope](server/docs/roadmap/platform/README.md) · [Distributed design](server/docs/roadmap/platform/distributed-architecture.md) · [Operator journey](server/docs/roadmap/platform/customer-journey.md) · [Resources/economics](server/docs/roadmap/platform/operations-and-economics.md) · [Future acceptance](server/docs/roadmap/platform/acceptance.md)
 
 These are open-source roadmap designs, not current distributed runtime features. They add no vendor account, subscription or distributed-cluster requirement to today's standalone. Details live in `docs/roadmap/platform`; no vendor-operated service is part of the product direction.
 
@@ -435,10 +452,10 @@ go run ./tools/release --check
 
 The tool hashes the target payload, compiles both trusted digest pins, uses `no_default_driver`, and writes an executable plus SHA-256 manifest under `dist/`. Missing target payloads fail explicitly. Plain `go build ./examples/base` selects the inherited comparison provider and must not be shipped as the Turso product.
 
-Run nested loader-module, SDK, UI, security/fault and platform checks too. [Launch instructions](docs/launch/README.md) give the commands; [status](docs/launch/status.md) records actual failures and unverified targets. A successful build is not release qualification.
+Run nested loader-module, SDK, UI, security/fault and platform checks too. [Launch instructions](server/docs/launch/README.md) give the commands; [status](server/docs/launch/status.md) records actual failures and unverified targets. A successful build is not release qualification.
 
 ## Documentation and attribution
 
-[Detailed contracts](docs/mirabase/README.md) retain wire/storage/field definitions and decisions. Their initial v0.1 allocation is not today's implementation inventory. See [roadmap](ROADMAP.md), [contributing](CONTRIBUTING.md), [security](SECURITY.md), [license](LICENSE.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
+[Detailed contracts](server/docs/mirabase/README.md) retain wire/storage/field definitions and decisions. Their initial v0.1 allocation is not today's implementation inventory. See [roadmap](server/ROADMAP.md), [contributing](server/CONTRIBUTING.md), [security](server/SECURITY.md), [license](server/LICENSE.md) and [third-party notices](server/THIRD_PARTY_NOTICES.md).
 
-Preserve PocketBase and Turso copyright/license notices. Downloadable artifact checks and publication are recorded separately in [distribution metadata](release/distribution.json); production-assurance evidence remains in [launch status](docs/launch/status.md).
+Preserve PocketBase and Turso copyright/license notices. Downloadable artifact checks and publication are recorded separately in [distribution metadata](server/release/distribution.json); production-assurance evidence remains in [launch status](server/docs/launch/status.md).
