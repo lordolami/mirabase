@@ -1,6 +1,8 @@
-# Managed cloud implementation and launch gates
+# Future open-source platform implementation and acceptance gates
 
 This is a separate gate from the standalone release. No current binary or source registration satisfies these distributed tests automatically.
+
+The platform is future [open-source roadmap](../../ROADMAP.md) work. Managed-deployment acceptance remains documented here for any future operator, without asserting a live MiraBase hosting service. These production gates are distinct from hackathon eligibility and demonstration evidence.
 
 | Gate | Required artifacts and real effects |
 |---|---|

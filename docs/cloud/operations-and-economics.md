@@ -1,12 +1,14 @@
-# Managed operations, quotas and economics
+# Future platform operations, quotas and economics
 
 **Status:** product/engineering design. No prices, margin, SLA or certified capacity are established.
+
+These are future open-source platform/operator capabilities under the [roadmap](../../ROADMAP.md). Cost accounting informs capacity and fair resource use. Optional charging/invoice mechanisms describe what an operator might implement; this document does not select a MiraBase commercial offering or impose a fee on standalone users.
 
 ## Resource economics
 
 Database count is not free: every cold DB has metadata, snapshot/log retention, object operations, keys, inode/cache and support cost. Active DBs add CPU, native cache, connections, I/O, replication and network. Multiplexing reduces per-DB idle compute; it does not remove storage or maintenance costs.
 
-Selected charging units are provisioned/consumed compute time, retained storage GiB-time including replicas/backups where stated, operations/IO where priced, network egress and optional support/isolation tiers. Publish the exact included allowances, rounding, overage/limits and whether replica/storage costs are bundled before charging. No numeric tariff is decided here. Avoid an automatic fixed fee/process per DB while protecting metadata/create-churn abuse.
+Candidate operator accounting/charging units are compute time, retained storage GiB-time including replicas/backups where stated, operations/IO, network egress and optional service/isolation classes. A future managed operator must publish allowances/rounding/limits and bundled costs before charging. No tariff or MiraBase-operated service is selected. Avoid a process per DB while protecting metadata/create-churn abuse.
 
 Every usage event has project/resource, meter kind/version, interval, integer quantity/unit, region, unique event ID and source watermark. Deduplicate ingestion and append adjustments rather than rewriting billed history. Use integer money units and explicit currency/tax records. Invoices reconcile with aggregated usage and retain disputed/provisional state.
 

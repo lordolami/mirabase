@@ -1,6 +1,6 @@
 # MiraBase specification
 
-**Current release authority:** [current implementation inventory](../current-product.md), [user documentation](../user/index.md) and [launch status](../launch/status.md). Initial v0.1/roadmap delivery labels below preserve planning contracts; they do not establish today's implementation or permit deleting subsequently integrated features. [Managed cloud](../cloud/README.md) has separate design and gates.
+**Current release authority:** [current implementation inventory](../current-product.md), [user documentation](../user/index.md) and [launch status](../launch/status.md). Initial v0.1/roadmap delivery labels below preserve planning contracts; they do not establish today's implementation or permit deleting subsequently integrated features. [Future open-source platform](../cloud/README.md) has separate design and gates.
 
 **Start with current behavior:** the [feature catalog](../features.md), [task guides](../user/index.md), [source inventory](../current-product.md) and [launch status](../launch/status.md). These specifications retain complete target contracts, including unfinished work. The [v0.1 build contract](v0.1-build.md) and [original roadmap](roadsmap.md) preserve planning ownership; they are not today's implementation allocation. The source baseline remains PocketBase v0.41.1 and the pinned Turso snapshot in [upstream evidence](upstream-evidence.md).
 

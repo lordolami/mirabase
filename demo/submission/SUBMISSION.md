@@ -2,11 +2,15 @@
 
 **One backend. A private database for every user, tenant, and agent.**
 
+**Empowering the next generation of indie hackers and AI agents with zero-infra multi-tenancy.**
+
 ## Short description
 
-MiraBase extends PocketBase with the Turso engine and private databases inside one backend process. Developers keep collections, authentication, files, realtime and the dashboard, then add user, tenant and agent database contexts, search, change history, live queries and recoverable working files. Built with Muse Spark 1.3, alongside a separate Quint-based verification harness.
+MiraBase extends PocketBase with the Turso engine and private databases inside one backend process. Developers keep collections, authentication, files, realtime and the dashboard, then add user, tenant and agent database contexts, search, change history, live queries and recoverable working files. Developed with 1.3-contributor for implementation and Muse Wonder for architecture documentation, alongside a separate Quint-based verification harness.
 
 ## The problem
+
+A solo developer building a customer portal, a team workspace or a multi-agent application needs durable state without assembling another backend deployment for every tenant. PocketBase supplies the familiar application experience; Turso adds in-process database capabilities. Zero-infra multi-tenancy means no additional process/container/service per database, while one server and its persistent storage still need to be operated.
 
 A customer portal, a team workspace and an AI agent all need durable state. They also need clear ownership. Developers should not have to assemble a new backend stack or run another backend process whenever they want a separate database.
 
@@ -59,9 +63,9 @@ The custom frontend shown in several chapters is a connected example client, exp
 
 ## How we used Meta tooling
 
-We used **Muse Spark 1.3** to build MiraBase and to build our separate [formal-verification companion](https://github.com/lordolami/formal-verification). This is our stated development-tool provenance; the film does not invent token counts, productivity multipliers or model-attribution percentages.
+We used **1.3-contributor for implementation** and **Muse Wonder for full architecture documentation** across MiraBase and our separate [formal-verification companion](https://github.com/lordolami/formal-verification). This is our stated development-tool provenance; the film does not invent token counts, productivity multipliers or model-attribution percentages.
 
-The companion addresses a problem that became especially clear while building infrastructure with AI: a convincing completion report is not evidence that a boundary holds. It drives Quint models and links claims to source, checking methods and recorded results. Its repository includes model execution, bounded exhaustive checks, guard-weakening mutation tools, claim-linked HTTP probes, trace conformance and provenance-aware reports.
+The companion supports verification during design, implementation, testing and maintenance, including proposed designs, new software and existing systems. It addresses a problem that became especially clear while building infrastructure with AI: a convincing completion report is not evidence that a boundary holds. It drives Quint models and links claims to source, checking methods and recorded results. Its repository includes model execution, bounded exhaustive checks, guard-weakening mutation tools, claim-linked HTTP probes, trace conformance and provenance-aware reports.
 
 These are capabilities of a separate assurance tool. We do not claim that every MiraBase path has been mapped, exhaustively verified or proven correct. A successful bounded model check has the model's assumptions and bounds; a live authorization test has its actual endpoints and identities. They are valuable, different forms of evidence.
 
@@ -83,9 +87,9 @@ See [current implementation](../../docs/current-product.md), [launch status](../
 
 1. Complete collection-policy parity and outstanding safety dependencies; qualify platforms, SDKs, resource behavior, recovery and signed delivery.
 2. Complete ordinary-client offline bootstrap/native sync and full upstream AgentFS integration. Investigate Wasm/wazero packaging against actual filesystem, feature, performance and lifetime requirements.
-3. Build the designed managed platform: placement, replication, routing, fenced failover, balancing, cold-database handling, backups/recovery, project console and metering. Keep the application/private-database model while infrastructure changes underneath it. This is planned, not deployed. One hot database's write sharding and cross-database distributed transactions are not implied.
+3. Develop the future open-source platform and managed-deployment capabilities: placement, replication, routing, fenced failover, balancing, cold-database handling, backups/recovery, project console and metering. Keep the application/private-database model while infrastructure changes underneath it. This is planned, not deployed. One hot database's write sharding and cross-database distributed transactions are not implied.
 
-Self-hosted MiraBase remains useful without a managed-cloud account. The cloud is a separate operational offering, not a hidden requirement for local use.
+Self-hosted MiraBase remains useful without a managed-cloud account. Distribution and managed-deployment tooling remain part of the future open-source roadmap; no current hosted service or commercial offering is implied.
 
 ## Why this matters
 

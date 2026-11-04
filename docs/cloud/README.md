@@ -1,12 +1,12 @@
-# MiraBase managed cloud
+# Future open-source platform roadmap
 
-**Status: selected target design; not an implemented or launched service.** This documentation defines what the managed product must build and prove. It does not grant the standalone binary distributed capabilities or establish a public endpoint, tariff or SLA.
+**Status: future open-source design; not an implemented distributed runtime or launched managed service.** The current product is the self-hosted MiraBase backend for indie developers and AI-agent applications. This folder retains earlier managed-deployment designs as roadmap work for the open-source platform. Existing paths are retained to preserve references. No public service, tariff or SLA is established.
 
-## Customer product
+## Future operator and developer experience
 
-A developer can start with self-hosted MiraBase, then move the same backend/application and private-database model onto our managed platform. Frontend collection/auth/file/realtime/SDK contracts remain; the server URL or custom domain, credentials and allowed origins are updated through a reviewed migration. Stored IDs, rules, identity and data retain their meaning. A change of endpoint is not an application rewrite.
+A developer starts with one self-hosted MiraBase process. A future platform implementation should retain the application/private-database model while adding the infrastructure described here. A managed deployment is a possible operating model for that future software, not a requirement to use today's backend or a currently offered MiraBase service. Frontend collection/auth/file/realtime/SDK compatibility remains a migration requirement; server URL/custom domain, credentials and origins change explicitly where necessary.
 
-The managed offer operates database/backend infrastructure: provisioning, placement, persistent storage, replicas, routing, balancing, recovery, backups, monitoring, usage and quotas. A private DB per user, tenant or agent remains optional. Millions of cold DBs are a capacity goal to qualify, not a claim about current tests. We charge for resources/service, not automatically a process or fixed fee for every DB.
+Future open-source work includes provisioning, placement, persistent storage, replicas, routing, balancing, recovery, backups, monitoring, usage and quotas. A private DB per user/tenant/agent remains optional. Millions of cold DBs remain a capacity goal to qualify. Metering/billing designs are future operator capabilities, not a selected charge or commercial dependency for self-hosters.
 
 ## Complete platform feature inventory
 
@@ -27,11 +27,11 @@ The managed offer operates database/backend infrastructure: provisioning, placem
 | Agent product | Same ordinary API identities/rules plus qualified workspace features; no mandatory MCP gateway or agent execution service |
 | Delivery/operations | Signed artifacts, canaries, format compatibility, observability, incident runbooks, support and published tested limits |
 
-The [distributed architecture](distributed-architecture.md) fixes state/transaction/recovery decisions. [Customer journey](customer-journey.md) covers signup, migration and dashboard/API. [Operations/economics](operations-and-economics.md) covers resource accounting, pricing units and runbooks. [Acceptance](acceptance.md) defines launch gates.
+The [distributed architecture](distributed-architecture.md) retains state/transaction/recovery proposals. [Operator journey](customer-journey.md) covers future signup/migration/dashboard/API. [Operations/economics](operations-and-economics.md) covers resource accounting, optional operator charging and runbooks. [Acceptance](acceptance.md) defines future delivery gates. All are governed by the [open-source roadmap](../../ROADMAP.md).
 
 ## Product boundaries
 
-Standalone remains one process on one host with no required cloud account. Managed distribution is our infrastructure and additional adapters, not a requirement that self-hosters assemble a distributed cluster. Customer application databases are not nodes in a consensus group.
+Standalone remains one process on one host with no required cloud account or distributed cluster. Future distribution requires additional platform services/adapters and real acceptance. Customer application databases are not individual consensus nodes.
 
 Horizontal placement of many independent DBs differs from splitting one hot database's writes across nodes. The selected platform scales one hot DB through larger primary capacity and qualified read replicas; transparent intra-database SQL sharding and cross-database distributed transactions are not claimed. They would require a separate engine design and qualification, not a routing switch.
 

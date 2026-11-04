@@ -42,6 +42,6 @@ Distinguish auth denial, not found, schema/generation mismatch, policy change, m
 
 Current workspaces provide selected local files/snapshots/history helpers. Full upstream AgentFS KV/inode storage, mounts, overlays/session apply and offline replication have additional implementation requirements. Snapshots do not preserve an LLM process or undo external effects.
 
-For coding, read [build instructions](../../AGENTS.md), [current inventory](../current-product.md), owning symbols and actual tests. Old v0.1 allocations are planning records, not permission to delete later features. Separate design, implementation presence, testing and release qualification. [Cloud design](../cloud/README.md) is a separate managed service, not a hidden standalone capability.
+For coding, read [build instructions](../../AGENTS.md), [current inventory](../current-product.md), owning symbols and actual tests. Old v0.1 allocations are planning records, not permission to delete later features. Separate design, implementation presence, testing and release qualification. [Open-source platform roadmap](../cloud/README.md) is a separate managed service, not a hidden standalone capability.
 
 Run [launch checks](../launch/README.md), retain real artifacts and report failures. Do not publish/deploy/send messages/create remote repositories without authorization.

@@ -2,7 +2,11 @@
 
 **One backend. A private database for every user, tenant, and agent.**
 
+**Empowering the next generation of indie hackers and AI agents with zero-infra multi-tenancy.**
+
 MiraBase extends the PocketBase backend and dashboard with the Turso database engine. Build your frontend against collections, authentication, rules, files and realtime; optionally give each customer, workspace, user or agent its own database in one server process.
+
+The goal is to give a solo developer PocketBase's familiar backend experience with Turso's multi-database capabilities, so they can build a SaaS or multi-agent application without assembling a separate backend deployment for every tenant. Here, **zero-infra multi-tenancy** means no additional process/container/service to provision for each database. You still deploy and operate a server, manage persistent storage and configure access policies.
 
 The backend includes collection APIs, account flows, files, realtime, email, trusted Go/JavaScript extensions and administration. MiraBase adds database-per-user/tenant/agent layouts, grants, four search modes, schema plans and rollouts, references/reports, durable changes, record-sync APIs, live queries, workspace snapshots, PostgreSQL client access and PocketBase adoption workflows.
 
@@ -12,7 +16,7 @@ The backend includes collection APIs, account flows, files, realtime, email, tru
 
 [![MiraBase application demo](demo/media/preview.png)](demo/media/MiraBase-Submission-3min.mp4)
 
-**Current status:** integrated code extends beyond the original v0.1 allocation, but this candidate remains unqualified for release. Managed CRUD policy parity, complete offline/native sync, full AgentFS, independent application runtime isolation and additional platform/security/recovery acceptance remain open. Feature descriptions below identify important limits; [launch status](docs/launch/status.md) owns executed results. A route, source file or successful build does not establish full acceptance.
+**Production testing and current scope:** the native Windows invocation recorded 5,236 test/subtest passes; four archive assertions passed separately with administrator access. Concurrent-write backups, authorization, import validation, native trust and verified-TLS PostgreSQL queries also have executed evidence. The earlier Linux baseline passed 5,238 tests/subtests. Remaining managed-CRUD policy parity, offline/native sync, full AgentFS, independent-app runtime, platform/signing/fault obligations are explicit in [the evidence report](docs/launch/status.md). Passing those tests does not erase unfinished integrations. This production-assurance status is separate from hackathon eligibility.
 
 ## What users get
 
@@ -34,18 +38,39 @@ A user can belong to multiple tenants. A tenant database is a storage boundary i
 - [MiraBase extensions](#mirabase-extensions): private storage, search, schemas, sync, agents and SQL clients.
 - [Developer tools and operations](#developer-tools-and-operations).
 - [Delivery and scaling](#one-process-many-databases).
-- [Managed cloud design](#managed-cloud).
+- [Future open-source platform roadmap](#future-open-source-platform-roadmap).
 - [Build from source](#build-from-this-folder).
 
 ## Start your backend
 
-Use a signed, qualified artifact matching your platform when a release is published. No download domain or live hosted service is implied by this source tree.
+The public repository is a development source distribution; there is no signed, qualified binary release yet. Install **Git and Go 1.27.x**, then build from source. The included dashboard and amd64 native payloads mean Rust/Node/npm are not needed for this first build on a compatible target. Rebuilding those components needs their separate toolchains.
 
 ```sh
-mirabase serve --http=127.0.0.1:8090
+git clone https://github.com/lordolami/mirabase.git
+cd mirabase
+go version
+go run ./tools/release --version dev
 ```
 
-Open the setup URL printed at startup, create the first superuser, then open `http://127.0.0.1:8090/_/`. Configure collections, access rules, files and email, then connect your frontend. Shared storage is the default. Private storage requires neither an organization account with us nor a process per database.
+Run from the cloned repository root, which already contains `go.mod`; there is no extra `server` directory in the public checkout. The builder selects the native payload and compiles its digest pins. Plain `go build ./examples/base` is not the Turso product build.
+
+**Windows amd64 / PowerShell:**
+
+```powershell
+.\dist\mirabase-windows-amd64.exe serve --http=127.0.0.1:8090 --publicDir=./examples/quickstart
+```
+
+**Compatible Linux amd64:** the current payload references GLIBC_2.38; its recorded baseline is Ubuntu/WSL with glibc 2.43. Musl/Alpine, older glibc and the current full Linux candidate are not qualified by that run.
+
+```sh
+./dist/mirabase-linux-amd64 serve --http=127.0.0.1:8090 --publicDir=./examples/quickstart
+```
+
+Mac/ARM payloads are not provided. See [platform details](docs/user/production.md). A cross-compile is not execution evidence.
+
+Open the private setup URL printed by the server and create the first superuser. Administration is at `http://127.0.0.1:8090/_/`; the included frontend is at `http://127.0.0.1:8090/`. Follow the [complete first-application tutorial](docs/user/quickstart.md) to create its exact collections/rules, two member accounts, save a note and check another member cannot read it. This frontend uses ordinary member credentials and requires no external SDK installation.
+
+The tutorial uses shared storage with owner-based record rules. Optional private storage has a separate [setup guide and current integration limits](docs/user/databases.md). Data defaults to `mb_data` under the working directory. Stop with Ctrl+C; restarting the same command/directory reuses that data. Public hosting needs separate TLS, account recovery, backup and operational acceptance.
 
 ## Backend features
 
@@ -215,13 +240,13 @@ Standalone growth uses a larger machine and a verified move of the complete appl
 
 Fresh paths are `mb_data`, `mb_hooks`, `mb_migrations` and `mb_public`. Databases, sidecars, files, keys and recovery state live outside the executable. Copying one `data.db` is not a full application backup.
 
-## Managed cloud
+## Future open-source platform roadmap
 
-The planned managed platform retains the frontend/API and database model while our infrastructure handles placement, replication, routing, failover, balancing, cold databases, backups, quotas and metering.
+The current project is the self-hosted open-source backend. Future open-source platform work covers placement, replication, routing, failover, balancing, cold databases, backups/PITR, a project console, quotas, resource metering and optional operator billing integrations. Preserve the frontend/API and private-database model as those capabilities develop.
 
-[Cloud product](docs/cloud/README.md) · [Distributed architecture](docs/cloud/distributed-architecture.md) · [Customer journey](docs/cloud/customer-journey.md) · [Operations and economics](docs/cloud/operations-and-economics.md) · [Cloud acceptance](docs/cloud/acceptance.md)
+[Open-source roadmap](ROADMAP.md) · [Future platform scope](docs/cloud/README.md) · [Distributed design](docs/cloud/distributed-architecture.md) · [Operator journey](docs/cloud/customer-journey.md) · [Resources/economics](docs/cloud/operations-and-economics.md) · [Future acceptance](docs/cloud/acceptance.md)
 
-These are platform designs. The standalone executable does not already supply distributed storage, automatic cross-node failover, a public cloud dashboard or billing. Those services have separate implementation and qualification requirements. Self-hosted use continues without a company account.
+These remain roadmap designs, not a launched managed service or current distributed runtime. They add no required cloud account or distributed cluster to today's standalone. The existing `docs/cloud` paths retain the detailed proposals and their acceptance obligations; the roadmap is part of the open-source project. No hosted-service availability, prices or SLA is promised.
 
 ## Build from this folder
 

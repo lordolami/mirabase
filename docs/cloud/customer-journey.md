@@ -1,6 +1,8 @@
-# Managed customer journey and dashboard
+# Future platform operator journey and dashboard
 
 **Status:** designed interfaces, not a published console or deployed API.
+
+This journey describes an optional managed deployment of future open-source platform components. It is roadmap work, not current service availability. Today's indie developer starts with the [standalone quick start](../user/quickstart.md); no cloud signup is required. See [scope](README.md) and [open-source roadmap](../../ROADMAP.md).
 
 ## Start cheaply
 

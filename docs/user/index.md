@@ -63,6 +63,6 @@ Use [actual routes](api-reference.md) for method/path/handler details. A capabil
 
 ## Read the right kind of document
 
-The [feature catalog](../features.md) explains breadth; these guides explain tasks; the [API reference](api-reference.md) links bound handlers; [current product](../current-product.md) links implementation/test ownership; [launch status](../launch/status.md) records acceptance; [specifications](../mirabase/README.md) preserve complete target contracts. [Managed cloud](../cloud/README.md) is a separate design, not a running distributed service.
+The [feature catalog](../features.md) explains breadth; these guides explain tasks; the [API reference](api-reference.md) links bound handlers; [current product](../current-product.md) links implementation/test ownership; [launch status](../launch/status.md) records acceptance; [specifications](../mirabase/README.md) preserve complete target contracts. [Future open-source platform](../cloud/README.md) is a separate design, not a running distributed service.
 
-[Agent guide](../agents/README.md) · [Managed cloud design](../cloud/README.md) · [Launch instructions](../launch/README.md) · [Launch status](../launch/status.md)
+[Agent guide](../agents/README.md) · [Future open-source platform](../cloud/README.md) · [Launch instructions](../launch/README.md) · [Launch status](../launch/status.md)

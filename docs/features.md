@@ -340,7 +340,7 @@ Current native page encryption, native page-key rotation and custom codec reques
 
 Remaining standalone commitments include managed record-policy parity, complete SDK/offline/native-sync delivery, full AgentFS, independent application isolation, further schema/type adapters, hard native memory admission, additional platforms, qualified recovery and signed delivery. Wasm/wazero is an investigation, not the current provider. See [roadmap](../ROADMAP.md).
 
-The [managed-cloud design](cloud/README.md) covers projects/environments, regions, placement, replication, stable routing, fenced failover, balancing/draining, cold DB storage/wake-up, read replicas, backup/PITR/disaster recovery, console, metrics, quotas, metering/billing, secret/key management, upgrades and migration/exit. These are not deployed features. Standalone remains one process on one host; transparent write sharding inside one hot DB and cross-database distributed transactions are not implied.
+The [future open-source platform design](cloud/README.md) covers projects/environments, regions, placement, replication, stable routing, fenced failover, balancing/draining, cold DB storage/wake-up, read replicas, backup/PITR/disaster recovery, console, metrics, quotas, metering/billing, secret/key management, upgrades and migration/exit. These are not deployed features. Standalone remains one process on one host; transparent write sharding inside one hot DB and cross-database distributed transactions are not implied.
 
 ## Find the right detail
 
@@ -352,4 +352,4 @@ The [managed-cloud design](cloud/README.md) covers projects/environments, region
 | Locate symbols and tests | [Current implementation inventory](current-product.md). |
 | Decide whether a candidate is accepted | [Launch status](launch/status.md) and linked evidence. |
 | Implement an outstanding obligation | [Detailed contracts](mirabase/README.md), current source and relevant tests. |
-| Understand future managed distribution | [Cloud design](cloud/README.md). |
+| Understand future open-source distribution | [Open-source platform roadmap](cloud/README.md). |

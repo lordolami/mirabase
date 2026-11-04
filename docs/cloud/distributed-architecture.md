@@ -1,6 +1,8 @@
-# Distributed managed architecture
+# Future open-source distributed platform architecture
 
 **Design status:** implementation required. Internal service/API names below are owned contracts to build, not symbols claimed in the standalone source.
+
+This is future work under the [open-source roadmap](../../ROADMAP.md). Managed operation is a possible deployment of those components, not a current MiraBase-hosted product or a requirement for standalone users. Preserve these design/acceptance obligations without implementing consensus in today's standalone by implication.
 
 ## Topology and components
 

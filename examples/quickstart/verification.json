@@ -1,0 +1,22 @@
+{
+  "artifactSHA256": "7af2ccfd2cb99a44c78250da350fe38f8d4f63aa79d7165fc52ddef94fcd467e",
+  "checks": [
+    "Documented members/notes schemas and exact five ownership rules created through real API",
+    "member login",
+    "create",
+    "owner-scoped listing",
+    "sign-out refusal",
+    "re-login",
+    "Bob cannot read Alice note (404)",
+    "Forged owner create refused (400)",
+    "Owner transfer via member update refused (404)",
+    "Required title enforced (400)",
+    "Title length enforced (400)",
+    "Frontend HTML/modules and dashboard served with expected content types",
+    "Authenticated note persisted across actual server stop/restart"
+  ],
+  "method": "Real Windows native artifact, HTTP provisioning of documented collections/rules, exact example client under Node; no browser UI automation.",
+  "result": "PASS",
+  "temporaryDataRemoved": true,
+  "scope": "Shared-storage inherited record tutorial only; not managed-CRUD policy parity, full UI click-through or complete product/platform qualification."
+}

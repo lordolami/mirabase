@@ -1,6 +1,6 @@
-# Platform and feature qualification
+# Executed evidence and production qualification
 
-Run date: 2026-11-04. **The release remains unqualified.** Windows runtime evidence has improved; the remaining implementation and cross-platform obligations have not been replaced with passing flags. No publication or deployment was performed.
+Run date: 2026-11-04. **The development preview has build/runtime evidence; production release qualification remains open.** This is a production-assurance distinction, not a statement of hackathon eligibility. Public source is available at [lordolami/mirabase](https://github.com/lordolami/mirabase). No qualified production binary release or deployed hosting service is claimed. Remaining implementation and cross-platform obligations retain their actual status.
 
 ## Current executed evidence
 
@@ -14,6 +14,7 @@ Run date: 2026-11-04. **The release remains unqualified.** Windows runtime evide
 | Native payload trust | Latest Windows extraction/load, pin rejection and cache-tamper assertions pass with the patched payload. The previous Linux loader run passed its older payload. |
 | PostgreSQL external client | node-postgres 8.23.1 executes simple and prepared queries against the current server with a scoped SQL credential, verified certificate and TLS 1.3. Other clients and full native-frontend compatibility remain separate. |
 | Browser demonstration | Real admin screens, a labelled connected example frontend, actual subscriptions, files, search, record sync, historical workspace restoration and SDK requests were exercised. The recording is not full-family qualification. |
+| First-application tutorial | Exact documented shared-storage schemas/rules were provisioned through HTTP. The actual tutorial client under Node passed member login/create/list/logout/re-login, cross-account read denial, forged-owner/owner-transfer refusal, required/title-length validation and persistence after process stop/restart. Frontend HTML/modules/dashboard were served. This was not automated browser click-through or managed-CRUD parity; see [scoped evidence](../../examples/quickstart/verification.json). Disposable data was removed. |
 | Linux amd64 baseline | Previous full run: 5,238 test/subtest passes, zero failures/skips; 42 tested packages plus 14 without tests. It uses the earlier Linux source/payload and does not qualify the new Windows patch or subsequent source changes. |
 | Other platforms | macOS amd64/arm64, Linux arm64 and Windows arm64 payloads/executions remain missing. Earlier negative builds correctly refused missing payloads. |
 
