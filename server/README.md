@@ -8,7 +8,7 @@ Build and edit this `server/` source. The top-level copy is not a second applica
 
 **One backend. A private database for every user, tenant, and agent.**
 
-**Empowering the next generation of indie hackers and AI agents with zero-infra multi-tenancy.**
+An open-source, self-hosted backend combining PocketBase simplicity with Turso’s multi-database power. Authentication, APIs, files, realtime, and private databases for users, tenants, and agents—all in one process.
 
 ## Meta AI Developer Hackathon — what we built
 
