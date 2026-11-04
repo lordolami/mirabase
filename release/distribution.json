@@ -48,5 +48,9 @@
   "qualificationInterpretation": "Existing full qualification evidence is preserved unchanged; this file records separate artifact/publication facts, not a replacement verdict.",
   "publishedAt": "2026-11-04T16:23:02Z",
   "githubReleaseId": 434160724,
-  "anonymousDownloadVerification": "passed; downloaded ZIP, SDK and scoped check report match local SHA-256 and byte lengths; SHA256SUMS matches"
+  "anonymousDownloadVerification": "passed; downloaded ZIP, SDK and scoped check report match local SHA-256 and byte lengths; SHA256SUMS matches",
+  "releaseChannel": "release-candidate",
+  "isPrerelease": true,
+  "productionRelease": false,
+  "signingIdentityStatus": "No usable code-signing certificate found locally; no repository signing secrets configured; owner confirms no signing identity yet."
 }
